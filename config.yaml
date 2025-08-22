@@ -1,0 +1,106 @@
+# DevoTG Configuration File
+
+# Data settings
+data:
+  feature_dim: 172
+  csv_path: "data/raw/cells_birth_and_pos.csv"
+  processed_data_path: "data/processed/"
+  
+# Model configuration
+model:
+  memory_dim: 100
+  time_dim: 100
+  embedding_dim: 100
+  learning_rate: 0.001
+  dropout: 0.1
+  heads: 2  # Number of attention heads
+
+# Training parameters
+training:
+  epochs: 20
+  batch_size: 200
+  val_ratio: 0.15
+  test_ratio: 0.15
+  neg_sampling_ratio: 1.0
+  neighbor_size: 10
+  seed: 12345
+  device: "auto"  # "auto", "cpu", "cuda"
+
+# Visualization settings
+visualization:
+  # Size-based thresholds (will be calculated automatically if not provided)
+  size_threshold_small: null  # Will use 1-sigma below mean
+  size_threshold_large: null  # Will use 1-sigma above mean
+  
+  # Time-based thresholds (will be calculated automatically if not provided) 
+  birth_time_threshold_low: null   # Will use 1-sigma below mean
+  birth_time_threshold_high: null  # Will use 1-sigma above mean
+  
+  # Plot settings
+  figure_size:
+    width: 1000
+    height: 800
+  
+  # Color schemes
+  colors:
+    size:
+      small: '#3498db'    # Blue
+      medium: '#f39c12'   # Orange  
+      large: '#e74c3c'    # Red
+    time:
+      early: '#2ecc71'    # Green
+      mid: '#9b59b6'      # Purple
+      late: '#e67e22'     # Orange
+  
+  # Animation settings
+  animation:
+    interval: 1000  # milliseconds between frames
+    fps: 2          # frames per second for video export
+    
+  # Export settings
+  export:
+    dpi: 300
+    format: "png"   # png, jpg, svg, pdf
+    html_auto_open: false
+
+# Analysis settings
+analysis:
+  statistical_tests: true
+  generate_reports: true
+  save_intermediate_results: true
+  
+  # Threshold calculation method
+  threshold_method: "1sigma"  # "1sigma", "2sigma", "percentile", "manual"
+  percentile_values: [25, 75]  # Used if threshold_method is "percentile"
+
+# Output settings
+output:
+  base_dir: "outputs/"
+  subdirs:
+    visualizations: "visualizations/"
+    statistics: "statistics/"
+    models: "models/"
+    reports: "reports/"
+  
+  # File naming
+  timestamp_format: "%Y%m%d_%H%M%S"
+  include_timestamp: true
+
+# Logging settings
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "devotg.log"
+  console: true
+
+# Performance settings
+performance:
+  use_multiprocessing: true
+  n_workers: 4
+  batch_processing: true
+  memory_limit_gb: 16
+
+# Reproducibility
+random_state: 42
+torch_seed: 42
+numpy_seed: 42
