@@ -3,8 +3,8 @@
 # Data settings
 data:
   feature_dim: 172
-  csv_path: "data/raw/cells_birth_and_pos.csv"
-  processed_data_path: "data/processed/"
+  csv_path: "data/cell_lineage_datasets/cells_birth_and_pos.csv"
+  processed_data_path: "data/processed_datasets/"
   
 # Model configuration
 model:

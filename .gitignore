@@ -149,8 +149,8 @@ tb_logs/
 *.h5
 *.hdf5
 # data/raw/
-data/processed/
-!data/sample/
+data/processed_datasets/
+# !data/sample/
 
 # Output files
 outputs/

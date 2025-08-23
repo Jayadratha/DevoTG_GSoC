@@ -10,7 +10,17 @@ This script runs the complete DevoTG analysis pipeline including:
 - Report creation
 
 Usage:
-    python scripts/run_analysis.py [--csv_path PATH] [--output_dir PATH] [--config PATH]
+    python scripts/run_cell_lineage_analysis.py [--csv_path PATH] [--output_dir PATH] [--config PATH]
+        [--threshold_method METHOD] [--verbose]
+Options:
+  --csv_path PATH         Path to cell division CSV file (default: data/cell_lineage_datasets/cells_birth_and_pos.csv)
+  --output_dir PATH       Output directory for results (default: outputs/lineage_analysis)
+  --config PATH           Path to configuration file (JSON/YAML) (default: config.yaml)
+  --threshold_method METHOD
+                          Method for threshold calculation: '1sigma', '2sigma', 'percentile' (default: '1sigma')
+  --verbose               Enable verbose output
+Example:
+  python scripts/run_cell_lineage_analysis.py --csv_path data/cell_lineage_datasets/cells_birth_and_pos.csv --output_dir outputs/lineage_analysis --threshold_method 1sigma --verbose
 """
 
 import argparse
@@ -28,6 +38,22 @@ from devotg.utils import ThresholdCalculator
 from devotg.analysis import StatisticalAnalyzer, generate_comprehensive_report
 from devotg.visualization import CellDivisionVisualizer
 
+# Configure logging
+import logging
+
+# Ensure log directory exists
+Path("logs").mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('logs/analysis_pipeline.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+logger = logging.getLogger(__name__)
 
 def setup_directories(output_dir: Path) -> dict:
     """Create output directories and return paths."""
@@ -40,14 +66,14 @@ def setup_directories(output_dir: Path) -> dict:
     
     for name, path in directories.items():
         path.mkdir(parents=True, exist_ok=True)
-        print(f"📁 Created directory: {path}")
+        logger.info(f"📁 Created directory: {path}")
     
     return directories
 
 
 def load_and_validate_data(csv_path: str) -> tuple:
     """Load and validate dataset."""
-    print(f"📊 Loading dataset from: {csv_path}")
+    logger.info(f"📊 Loading dataset from: {csv_path}")
     
     try:
         loader = DatasetLoader(default_csv_path=csv_path)
@@ -55,27 +81,27 @@ def load_and_validate_data(csv_path: str) -> tuple:
         is_valid = loader.validate_dataset(df)
         
         if is_valid:
-            print("✅ Dataset loaded and validated successfully!")
+            logger.info("✅ Dataset loaded and validated successfully!")
             return df, loader, True
         else:
-            print("⚠️  Dataset loaded but validation issues found.")
+            logger.info("⚠️  Dataset loaded but validation issues found.")
             return df, loader, False
             
     except FileNotFoundError:
-        print(f"❌ Dataset file not found: {csv_path}")
-        print("🔄 Using sample data for demonstration...")
+        logger.error(f"❌ Dataset file not found: {csv_path}")
+        logger.info("🔄 Using sample data for demonstration...")
         df = load_sample_data()
         loader = DatasetLoader()
         return df, loader, True
         
     except Exception as e:
-        print(f"❌ Error loading dataset: {e}")
+        logger.error(f"❌ Error loading dataset: {e}")
         raise
 
 
 def perform_statistical_analysis(df, directories: dict) -> dict:
     """Perform comprehensive statistical analysis."""
-    print("\n📈 Performing statistical analysis...")
+    logger.info("\n📈 Performing statistical analysis...")
     
     # Initialize analyzer
     analyzer = StatisticalAnalyzer(df)
@@ -90,13 +116,13 @@ def perform_statistical_analysis(df, directories: dict) -> dict:
     report_path = directories['statistics'] / 'comprehensive_analysis_report.json'
     comprehensive_report = generate_comprehensive_report(df, save_path=str(report_path))
     
-    print("✅ Statistical analysis completed!")
+    logger.info("✅ Statistical analysis completed!")
     return results
 
 
 def calculate_thresholds(df, directories: dict, method: str = "1sigma") -> dict:
     """Calculate thresholds for visualization."""
-    print(f"\n🎯 Calculating thresholds using {method} method...")
+    logger.info(f"\n🎯 Calculating thresholds using {method} method...")
     
     # Calculate cell size if not present
     if 'cell_size' not in df.columns:
@@ -109,19 +135,20 @@ def calculate_thresholds(df, directories: dict, method: str = "1sigma") -> dict:
     
     # Print summary
     threshold_calc.print_summary(df)
+    logger.info("✅ Threshold calculation completed!")
     
     # Save thresholds
     threshold_path = directories['dataset_processing'] / 'calculated_thresholds.json'
     with open(threshold_path, 'w') as f:
         json.dump(thresholds, f, indent=2)
     
-    print(f"💾 Thresholds saved to: {threshold_path}")
+    logger.info(f"💾 Thresholds saved to: {threshold_path}")
     return thresholds
 
 
 def create_visualizations(df, thresholds: dict, directories: dict) -> dict:
     """Create comprehensive visualizations."""
-    print("\n🎨 Creating visualizations...")
+    logger.info("\n🎨 Creating visualizations...")
     
     # Initialize visualizer
     visualizer = CellDivisionVisualizer(
@@ -136,58 +163,58 @@ def create_visualizations(df, thresholds: dict, directories: dict) -> dict:
     output_dir = directories['visualizations']
     
     # Create static plots
-    print("📊 Creating static plots...")
+    logger.info("📊 Creating static plots...")
     for color_scheme in ['generation', 'size', 'time']:
         try:
             fig, ax = visualizer.create_static_plot(color_by=color_scheme)
             fig_path = output_dir / f'static_plot_{color_scheme}.png'
             fig.savefig(fig_path, dpi=300, bbox_inches='tight')
-            print(f"  ✅ Saved: {fig_path.name}")
+            logger.info(f"  ✅ Saved: {fig_path.name}")
             viz_results[f'static_{color_scheme}'] = str(fig_path)
         except Exception as e:
-            print(f"  ❌ Error creating static plot ({color_scheme}): {e}")
+            logger.error(f"  ❌ Error creating static plot ({color_scheme}): {e}")
     
     # Create division pattern analysis
-    print("📈 Creating division pattern analysis...")
+    logger.info("📈 Creating division pattern analysis...")
     try:
         fig_patterns = visualizer.analyze_division_patterns()
         patterns_path = output_dir / 'division_patterns_analysis.png'
         fig_patterns.savefig(patterns_path, dpi=300, bbox_inches='tight')
-        print(f"  ✅ Saved: {patterns_path.name}")
+        logger.info(f"  ✅ Saved: {patterns_path.name}")
         viz_results['patterns'] = str(patterns_path)
     except Exception as e:
-        print(f"  ❌ Error creating pattern analysis: {e}")
+        logger.info(f"  ❌ Error creating pattern analysis: {e}")
     
     # Create interactive plots
-    print("🎮 Creating interactive plots...")
+    logger.info("🎮 Creating interactive plots...")
     for color_scheme in ['generation', 'size', 'time']:
         try:
             fig_interactive = visualizer.create_interactive_plot(color_by=color_scheme)
             html_path = output_dir / f'interactive_plot_{color_scheme}.html'
             fig_interactive.write_html(str(html_path))
-            print(f"  ✅ Saved: {html_path.name}")
+            logger.info(f"  ✅ Saved: {html_path.name}")
             viz_results[f'interactive_{color_scheme}'] = str(html_path)
         except Exception as e:
-            print(f"  ❌ Error creating interactive plot ({color_scheme}): {e}")
+            logger.error(f"  ❌ Error creating interactive plot ({color_scheme}): {e}")
     
     # Export processed data
-    print("💾 Exporting processed data...")
+    logger.info("💾 Exporting processed data...")
     try:
         export_path = directories['dataset_processing'] / 'visualization_ready_data.csv'
         exported_data = visualizer.export_data(str(export_path))
-        print(f"  ✅ Exported {len(exported_data)} records")
+        logger.info(f"  ✅ Exported {len(exported_data)} records")
         viz_results['processed_data'] = str(export_path)
     except Exception as e:
-        print(f"  ❌ Error exporting data: {e}")
+        logger.error(f"  ❌ Error exporting data: {e}")
     
-    print("✅ Visualization creation completed!")
+    logger.info("✅ Visualization creation completed!")
     return viz_results
 
 
 def generate_summary_report(directories: dict, results: dict, viz_results: dict, 
                           thresholds: dict, runtime: float) -> dict:
     """Generate final summary report."""
-    print("\n📋 Generating summary report...")
+    logger.info("\n📋 Generating summary report...")
     
     summary = {
         'metadata': {
@@ -218,7 +245,7 @@ def generate_summary_report(directories: dict, results: dict, viz_results: dict,
     with open(summary_path, 'w') as f:
         json.dump(summary, f, indent=2, default=str)
     
-    print(f"📋 Summary report saved: {summary_path}")
+    logger.info(f"📋 Summary report saved: {summary_path}")
     return summary
 
 
@@ -232,14 +259,14 @@ def main():
     parser.add_argument(
         '--csv_path', 
         type=str, 
-        default='data/raw/cells_birth_and_pos.csv',
+        default='data/cell_lineage_datasets/cells_birth_and_pos.csv',
         help='Path to cell division CSV file'
     )
     
     parser.add_argument(
         '--output_dir',
         type=str,
-        default='outputs',
+        default='outputs/lineage_analysis',
         help='Output directory for results'
     )
     
@@ -254,6 +281,7 @@ def main():
     parser.add_argument(
         '--config',
         type=str,
+        default='config.yaml',
         help='Path to configuration file (JSON/YAML)'
     )
     
@@ -268,12 +296,12 @@ def main():
     # Record start time
     start_time = time.time()
     
-    print("🚀 DevoTG Complete Analysis Pipeline")
-    print("=" * 50)
-    print(f"CSV Path: {args.csv_path}")
-    print(f"Output Directory: {args.output_dir}")
-    print(f"Threshold Method: {args.threshold_method}")
-    print("=" * 50)
+    logger.info("🚀 DevoTG Complete Analysis Pipeline")
+    logger.info("=" * 50)
+    logger.info(f"CSV Path: {args.csv_path}")
+    logger.info(f"Output Directory: {args.output_dir}")
+    logger.info(f"Threshold Method: {args.threshold_method}")
+    logger.info("=" * 50)
     
     try:
         # 1. Setup directories
@@ -283,7 +311,7 @@ def main():
         df, loader, is_valid = load_and_validate_data(args.csv_path)
         
         if args.verbose:
-            print("\nDataset Info:")
+            logger.info("\nDataset Info:")
             loader.print_dataset_info(df)
         
         # 3. Perform statistical analysis
@@ -304,25 +332,25 @@ def main():
         )
         
         # Final summary
-        print("\n" + "=" * 70)
-        print("🎉 ANALYSIS PIPELINE COMPLETED SUCCESSFULLY!")
-        print("=" * 70)
-        print(f"⏱️  Total runtime: {runtime:.1f} seconds")
-        print(f"📁 Results saved to: {directories['base']}")
-        print(f"📊 Generated {len(viz_results)} visualization files")
-        print(f"📈 Statistical analysis: {'✅ Complete' if analysis_results else '❌ Failed'}")
-        print(f"🎯 Threshold calculation: {'✅ Complete' if thresholds else '❌ Failed'}")
+        logger.info("\n" + "=" * 70)
+        logger.info("🎉 ANALYSIS PIPELINE COMPLETED SUCCESSFULLY!")
+        logger.info("=" * 70)
+        logger.info(f"⏱️  Total runtime: {runtime:.1f} seconds")
+        logger.info(f"📁 Results saved to: {directories['base']}")
+        logger.info(f"📊 Generated {len(viz_results)} visualization files")
+        logger.info(f"📈 Statistical analysis: {'✅ Complete' if analysis_results else '❌ Failed'}")
+        logger.info(f"🎯 Threshold calculation: {'✅ Complete' if thresholds else '❌ Failed'}")
         
-        print("\n💡 Next steps:")
+        logger.info("\n💡 Next steps:")
         for step in summary['next_steps']:
-            print(f"   • {step}")
+            logger.info(f"   • {step}")
         
-        print(f"\n📋 Full summary available at: {directories['base'] / 'analysis_summary.json'}")
+        logger.info(f"\n📋 Full summary available at: {directories['base'] / 'analysis_summary.json'}")
         
         return 0
         
     except Exception as e:
-        print(f"\n❌ Analysis pipeline failed: {e}")
+        logger.error(f"\n❌ Analysis pipeline failed: {e}")
         if args.verbose:
             import traceback
             traceback.print_exc()

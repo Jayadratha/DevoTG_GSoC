@@ -6,6 +6,30 @@ This script trains a Temporal Graph Network on C. elegans cell division data.
 
 Usage:
     python scripts/train_tgn.py [--csv_path PATH] [--epochs N] [--output_dir PATH]
+        [--memory_dim N] [--embedding_dim N] [--batch_size N] [--learning_rate LR]
+        [--val_ratio R] [--test_ratio R] [--device DEVICE] [--seed N]
+        [--save_model] [--verbose]
+
+Options:
+  --csv_path PATH
+  --epochs N
+  --output_dir PATH
+  --memory_dim N
+  --embedding_dim N
+  --batch_size N
+  --learning_rate LR
+  --val_ratio R
+  --test_ratio R
+  --device DEVICE
+  --seed N
+  --save_model
+  --verbose
+Example:
+  python scripts/train_tgn.py --csv_path data/cell_lineage_datasets/cells_birth_and_pos.csv --epochs 30 --output_dir outputs/models --save_model --verbose
+Outputs:
+- Trained model weights in specified output directory (if --save_model is used)
+- Training history plots in specified output directory
+- Training summary JSON file in specified output directory
 """
 
 import argparse
@@ -22,6 +46,24 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from devotg.data import build_cell_ctdg, load_sample_data
 from devotg.models import TGNModel
 
+# Configure logging
+import logging
+
+# Ensure log directory exists
+Path("logs").mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('logs/tgn_training.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+logger = logging.getLogger(__name__)
+
+
 
 def parse_arguments():
     """Parse command line arguments."""
@@ -33,7 +75,7 @@ def parse_arguments():
     parser.add_argument(
         '--csv_path',
         type=str,
-        default='data/raw/cells_birth_and_pos.csv',
+        default='data/cell_lineage_datasets/cells_birth_and_pos.csv',
         help='Path to cell division CSV file'
     )
     
@@ -134,12 +176,12 @@ def setup_reproducibility(seed: int):
     import numpy as np
     np.random.seed(seed)
     
-    print(f"🌱 Random seed set to: {seed}")
+    logger.info(f"🌱 Random seed set to: {seed}")
 
 
 def load_temporal_data(csv_path: str, verbose: bool = False):
     """Load and prepare temporal graph data."""
-    print(f"📊 Loading temporal graph data from: {csv_path}")
+    logger.info(f"📊 Loading temporal graph data from: {csv_path}")
     
     try:
         temporal_data = build_cell_ctdg(
@@ -148,16 +190,16 @@ def load_temporal_data(csv_path: str, verbose: bool = False):
         )
         
         if verbose:
-            print(f"   Nodes: {temporal_data.num_nodes}")
-            print(f"   Events: {temporal_data.num_events}")
-            print(f"   Node features: {temporal_data.x.shape}")
-            print(f"   Edge features: {temporal_data.msg.shape}")
+            logger.info(f"   Nodes: {temporal_data.num_nodes}")
+            logger.info(f"   Events: {temporal_data.num_events}")
+            logger.info(f"   Node features: {temporal_data.x.shape}")
+            logger.info(f"   Edge features: {temporal_data.msg.shape}")
         
         return temporal_data
         
     except FileNotFoundError:
-        print(f"❌ Dataset file not found: {csv_path}")
-        print("🔄 Using sample data for demonstration...")
+        logger.error(f"❌ Dataset file not found: {csv_path}")
+        logger.info("🔄 Using sample data for demonstration...")
         
         # Create sample data
         sample_df = load_sample_data()
@@ -174,13 +216,13 @@ def load_temporal_data(csv_path: str, verbose: bool = False):
             raise e
     
     except Exception as e:
-        print(f"❌ Error loading temporal data: {e}")
+        logger.error(f"❌ Error loading temporal data: {e}")
         raise
 
 
 def create_model(temporal_data, args) -> TGNModel:
     """Create and initialize TGN model."""
-    print("🧠 Initializing TGN model...")
+    logger.info("🧠 Initializing TGN model...")
     
     model_config = {
         'memory_dim': args.memory_dim,
@@ -199,24 +241,24 @@ def create_model(temporal_data, args) -> TGNModel:
     if args.learning_rate != 0.001:
         for param_group in tgn_model.optimizer.param_groups:
             param_group['lr'] = args.learning_rate
-        print(f"   Learning rate set to: {args.learning_rate}")
+        logger.info(f"   Learning rate set to: {args.learning_rate}")
     
     if args.verbose:
         model_info = tgn_model.get_model_info()
-        print("   Model configuration:")
+        logger.info("   Model configuration:")
         for key, value in model_info.items():
-            print(f"     {key}: {value}")
+            logger.info(f"     {key}: {value}")
     
     return tgn_model, model_config
 
 
 def train_model(tgn_model, temporal_data, args) -> dict:
     """Train the TGN model."""
-    print("🚀 Starting TGN training...")
-    print(f"   Epochs: {args.epochs}")
-    print(f"   Batch size: {args.batch_size}")
-    print(f"   Device: {tgn_model.device}")
-    print("\n" + "=" * 60)
+    logger.info("🚀 Starting TGN training...")
+    logger.info(f"   Epochs: {args.epochs}")
+    logger.info(f"   Batch size: {args.batch_size}")
+    logger.info(f"   Device: {tgn_model.device}")
+    logger.info("\n" + "=" * 60)
     
     # Training configuration
     training_config = {
@@ -232,15 +274,15 @@ def train_model(tgn_model, temporal_data, args) -> dict:
     history = tgn_model.train_model(temporal_data, **training_config)
     training_time = time.time() - start_time
     
-    print("\n" + "=" * 60)
-    print(f"✅ Training completed in {training_time:.1f} seconds")
+    logger.info("\n" + "=" * 60)
+    logger.info(f"✅ Training completed in {training_time:.1f} seconds")
     
     return history, training_time
 
 
 def save_results(tgn_model, history, training_time, model_config, args, output_dir: Path):
     """Save training results and model."""
-    print(f"💾 Saving results to: {output_dir}")
+    logger.info(f"💾 Saving results to: {output_dir}")
     
     # Create output directory
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -294,7 +336,7 @@ def save_results(tgn_model, history, training_time, model_config, args, output_d
     plot_path = output_dir / 'training_history.png'
     fig.savefig(plot_path, dpi=300, bbox_inches='tight')
     plt.close(fig)
-    print(f"   📊 Training plot saved: {plot_path}")
+    logger.info(f"   📊 Training plot saved: {plot_path}")
     
     # Save performance summary
     final_metrics = {
@@ -323,20 +365,20 @@ def save_results(tgn_model, history, training_time, model_config, args, output_d
     summary_path = output_dir / 'training_summary.json'
     with open(summary_path, 'w') as f:
         json.dump(performance_summary, f, indent=2)
-    print(f"   📋 Training summary saved: {summary_path}")
+    logger.info(f"   📋 Training summary saved: {summary_path}")
     
     # Save model if requested
     if args.save_model:
         model_path = output_dir / 'trained_tgn_model.pth'
         tgn_model.save_model(str(model_path))
-        print(f"   🧠 Model weights saved: {model_path}")
+        logger.info(f"   🧠 Model weights saved: {model_path}")
         return model_path
     
     return None
 
 
-def print_final_summary(history, training_time, model_path, output_dir):
-    """Print final training summary."""
+def print_info_final_summary(history, training_time, model_path, output_dir):
+    """logger.info final training summary."""
     import numpy as np
     
     final_metrics = {
@@ -347,17 +389,17 @@ def print_final_summary(history, training_time, model_path, output_dir):
         'Final Test AUC': history['test_auc'][-1]
     }
     
-    print("\n" + "=" * 70)
-    print("🎉 TGN TRAINING COMPLETED SUCCESSFULLY!")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("🎉 TGN TRAINING COMPLETED SUCCESSFULLY!")
+    logger.info("=" * 70)
     
-    print(f"\n⏱️  Training Time: {training_time:.1f} seconds")
-    print("📊 Final Performance Metrics:")
+    logger.info(f"\n⏱️  Training Time: {training_time:.1f} seconds")
+    logger.info("📊 Final Performance Metrics:")
     for metric, value in final_metrics.items():
-        print(f"   • {metric}: {value:.4f}")
+        logger.info(f"   • {metric}: {value:.4f}")
     
     best_epoch = np.argmax(history['val_ap']) + 1
-    print(f"\n🏆 Best performance at epoch {best_epoch}")
+    logger.info(f"\n🏆 Best performance at epoch {best_epoch}")
     
     # Performance assessment
     final_auc = history['test_auc'][-1]
@@ -370,30 +412,30 @@ def print_final_summary(history, training_time, model_path, output_dir):
     else:
         performance = "Poor"
     
-    print(f"🎯 Model Performance: {performance} (Test AUC: {final_auc:.3f})")
+    logger.info(f"🎯 Model Performance: {performance} (Test AUC: {final_auc:.3f})")
     
-    print(f"\n📁 Results saved to: {output_dir}")
+    logger.info(f"\n📁 Results saved to: {output_dir}")
     if model_path:
-        print(f"💾 Model available at: {model_path}")
+        logger.info(f"💾 Model available at: {model_path}")
     
-    print("\n💡 Next Steps:")
-    print("   • Review training plots and metrics")
-    print("   • Analyze model performance on specific data subsets")
-    print("   • Experiment with different hyperparameters")
-    print("   • Use trained model for downstream tasks")
+    logger.info("\n💡 Next Steps:")
+    logger.info("   • Review training plots and metrics")
+    logger.info("   • Analyze model performance on specific data subsets")
+    logger.info("   • Experiment with different hyperparameters")
+    logger.info("   • Use trained model for downstream tasks")
 
 
 def main():
     """Main training function."""
     args = parse_arguments()
     
-    print("🚀 DevoTG TGN Training Script")
-    print("=" * 50)
-    print(f"CSV Path: {args.csv_path}")
-    print(f"Output Directory: {args.output_dir}")
-    print(f"Epochs: {args.epochs}")
-    print(f"Device: {args.device}")
-    print("=" * 50)
+    logger.info("🚀 DevoTG TGN Training Script")
+    logger.info("=" * 50)
+    logger.info(f"CSV Path: {args.csv_path}")
+    logger.info(f"Output Directory: {args.output_dir}")
+    logger.info(f"Epochs: {args.epochs}")
+    logger.info(f"Device: {args.device}")
+    logger.info("=" * 50)
     
     try:
         # Setup
@@ -414,17 +456,17 @@ def main():
             tgn_model, history, training_time, model_config, args, output_dir
         )
         
-        # Print summary
-        print_final_summary(history, training_time, model_path, output_dir)
+        # print info summary
+        print_info_final_summary(history, training_time, model_path, output_dir)
         
         return 0
         
     except KeyboardInterrupt:
-        print("\n⚠️  Training interrupted by user")
+        logger.info("\n⚠️  Training interrupted by user")
         return 1
         
     except Exception as e:
-        print(f"\n❌ Training failed: {e}")
+        logger.error(f"\n❌ Training failed: {e}")
         if args.verbose:
             import traceback
             traceback.print_exc()

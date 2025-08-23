@@ -11,7 +11,7 @@ from .thresholds import (
     calculate_thresholds_sigma,
     calculate_thresholds_percentile,
     print_threshold_summary,
-    validate_thresholds
+    validate_thresholds,
 )
 
 __all__ = [
