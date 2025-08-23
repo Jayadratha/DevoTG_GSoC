@@ -142,7 +142,7 @@ runs/
 tb_logs/
 
 # Data files
-*.csv
+# *.csv
 *.json
 *.pkl
 *.pickle
