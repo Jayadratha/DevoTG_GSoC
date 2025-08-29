@@ -388,7 +388,7 @@ Please also cite the original data sources:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENCE.md) file for details.
 
 ## 🙏 Acknowledgments
 
