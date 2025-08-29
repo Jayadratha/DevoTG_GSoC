@@ -15,7 +15,7 @@ The project focuses on:
 
 ### 🔬 Data Analysis & Processing
 - Comprehensive cell division dataset analysis
-- Connectome dataset loading and processing from Witvliet et al. 2021
+- Connectome [dataset](https://github.com/openworm/ConnectomeToolbox/blob/main/cect/data) loading and processing from [ConnectomeToolbox](https://openworm.org/ConnectomeToolbox/Witvliet_2021) given by [Witvliet et al. 2021](https://doi.org/10.1038/s41586-021-03778-8)
 - Temporal graph construction (CTDG/DTDG formats)
 - Statistical analysis of developmental patterns
 - Connection stability analysis (stable, developmental, variable)
@@ -116,7 +116,7 @@ DevoTG/
 ## 🛠️ Installation
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.12+
 - CUDA-compatible GPU (recommended for TGN training)
 - FFmpeg (for animation export)
 
@@ -367,20 +367,6 @@ training:
 - Link prediction capabilities
 - Memory-based attention mechanisms
 - Comprehensive evaluation metrics
-
-<!-- ## 🛣️ Roadmap
-
-### Version 0.3.0 (Next Release)
-- Enhanced TGN model architectures
-- Additional connectome datasets integration
-- Real-time analysis capabilities
-- Extended statistical testing framework
-
-### Version 0.4.0 (Future)
-- 3D visualization enhancements
-- Multi-species comparison tools
-- Cloud deployment options
-- API for external integrations -->
 
 ## 📚 Citation
 

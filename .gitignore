@@ -153,22 +153,22 @@ data/processed_datasets/
 # !data/sample/
 
 # Output files
-outputs/
-results/
-visualizations/
-plots/
-animations/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.mp4
-*.avi
-*.html
+# outputs/
+# results/
+# visualizations/
+# plots/
+# animations/
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.mp4
+# *.avi
+# *.html
 !notebooks/*.html
 
 # Model files
-models/
+# models/
 checkpoints/
 *.model
 *.weights

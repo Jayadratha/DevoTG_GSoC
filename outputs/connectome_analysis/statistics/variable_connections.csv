@@ -1,0 +1,2441 @@
+source_id,target_id,source_name,target_name,type,timepoints_present,first_appearance,last_appearance,timepoint_list
+2,115,ADEL,FLPR,chemical,1,1,1,[np.int64(1)]
+3,57,ADER,AVKR,electrical,1,1,1,[np.int64(1)]
+3,145,ADER,PVCR,chemical,1,1,1,[np.int64(1)]
+5,29,ADFR,ASER,chemical,1,1,1,[np.int64(1)]
+8,4,AFDL,ADFL,chemical,1,1,1,[np.int64(1)]
+10,62,AIAL,AWBL,chemical,1,1,1,[np.int64(1)]
+15,65,AIMR,AWCR,chemical,1,1,1,[np.int64(1)]
+17,12,AINR,AIBL,chemical,2,1,2,"[np.int64(1), np.int64(2)]"
+17,31,AINR,ASGR,chemical,1,1,1,[np.int64(1)]
+17,39,AINR,ASKR,electrical,1,1,1,[np.int64(1)]
+18,200,AIYL,SIBDL,chemical,1,1,1,[np.int64(1)]
+20,29,AIZL,ASER,chemical,1,1,1,[np.int64(1)]
+29,63,ASER,AWBR,electrical,1,1,1,[np.int64(1)]
+31,37,ASGR,ASJR,chemical,1,1,1,[np.int64(1)]
+32,204,ASHL,SMBDL,chemical,2,1,3,"[np.int64(1), np.int64(3)]"
+33,43,ASHR,AVAR,electrical,1,1,1,[np.int64(1)]
+33,207,ASHR,SMBVR,electrical,1,1,1,[np.int64(1)]
+34,17,ASIL,AINR,chemical,1,1,1,[np.int64(1)]
+35,29,ASIR,ASER,chemical,2,1,3,"[np.int64(1), np.int64(3)]"
+36,107,ASJL,CEPshDL,chemical,2,1,2,"[np.int64(1), np.int64(2)]"
+37,11,ASJR,AIAR,chemical,2,1,3,"[np.int64(1), np.int64(3)]"
+42,159,AVAL,RICR,electrical,1,1,1,[np.int64(1)]
+56,163,AVKL,RIGL,chemical,1,1,1,[np.int64(1)]
+56,207,AVKL,SMBVR,chemical,1,1,1,[np.int64(1)]
+66,156,BAGL,RIBL,electrical,1,1,1,[np.int64(1)]
+68,69,BDUL,BDUR,chemical,1,1,1,[np.int64(1)]
+68,117,BDUL,GLRDR,chemical,1,1,1,[np.int64(1)]
+103,0,CEPDL,ADAL,chemical,2,1,2,"[np.int64(1), np.int64(2)]"
+112,173,DVA,RIVR,electrical,1,1,1,[np.int64(1)]
+113,2,DVC,ADEL,chemical,1,1,1,[np.int64(1)]
+114,115,FLPL,FLPR,electrical,1,1,1,[np.int64(1)]
+138,140,OLQDL,OLQVL,electrical,1,1,1,[np.int64(1)]
+138,158,OLQDL,RICL,electrical,1,1,1,[np.int64(1)]
+139,43,OLQDR,AVAR,chemical,1,1,1,[np.int64(1)]
+141,158,OLQVR,RICL,chemical,1,1,1,[np.int64(1)]
+141,207,OLQVR,SMBVR,chemical,1,1,1,[np.int64(1)]
+144,165,PVCL,RIH,chemical,1,1,1,[np.int64(1)]
+144,205,PVCL,SMBDR,chemical,1,1,1,[np.int64(1)]
+145,69,PVCR,BDUR,chemical,1,1,1,[np.int64(1)]
+148,145,PVPL,PVCR,chemical,1,1,1,[np.int64(1)]
+149,42,PVPR,AVAL,chemical,1,1,1,[np.int64(1)]
+152,213,PVR,URADR,electrical,1,1,1,[np.int64(1)]
+155,159,RIAR,RICR,chemical,1,1,1,[np.int64(1)]
+157,67,RIBR,BAGR,chemical,1,1,1,[np.int64(1)]
+157,110,RIBR,CEPshVR,chemical,1,1,1,[np.int64(1)]
+159,97,RICR,BWM-VR04,chemical,1,1,1,[np.int64(1)]
+159,173,RICR,RIVR,electrical,1,1,1,[np.int64(1)]
+159,174,RICR,RMDDL,chemical,1,1,1,[np.int64(1)]
+160,220,RID,URYDL,electrical,1,1,1,[np.int64(1)]
+161,109,RIFL,CEPshVL,chemical,1,1,1,[np.int64(1)]
+161,151,RIFL,PVQR,chemical,1,1,1,[np.int64(1)]
+163,109,RIGL,CEPshVL,chemical,1,1,1,[np.int64(1)]
+165,181,RIH,RMEL,chemical,2,1,3,"[np.int64(1), np.int64(3)]"
+166,12,RIML,AIBL,chemical,1,1,1,[np.int64(1)]
+166,209,RIML,SMDDR,electrical,1,1,1,[np.int64(1)]
+167,105,RIMR,CEPVL,chemical,1,1,1,[np.int64(1)]
+173,121,RIVR,GLRVR,chemical,1,1,1,[np.int64(1)]
+181,215,RMEL,URAVR,chemical,1,1,1,[np.int64(1)]
+186,154,RMGL,RIAL,chemical,1,1,1,[np.int64(1)]
+187,127,RMGR,IL1R,chemical,1,1,1,[np.int64(1)]
+187,175,RMGR,RMDDR,chemical,1,1,1,[np.int64(1)]
+201,210,SIBDR,SMDVL,electrical,1,1,1,[np.int64(1)]
+215,180,URAVR,RMED,chemical,2,1,2,"[np.int64(1), np.int64(2)]"
+216,71,URBL,BWM-DL02,chemical,2,1,2,"[np.int64(1), np.int64(2)]"
+216,87,URBL,BWM-VL02,chemical,1,1,1,[np.int64(1)]
+217,79,URBR,BWM-DR02,chemical,1,1,1,[np.int64(1)]
+218,140,URXL,OLQVL,chemical,2,1,2,"[np.int64(1), np.int64(2)]"
+0,160,ADAL,RID,chemical,1,2,2,[np.int64(2)]
+0,208,ADAL,SMDDL,chemical,1,2,2,[np.int64(2)]
+1,24,ADAR,ALMR,electrical,2,2,4,"[np.int64(2), np.int64(4)]"
+1,49,ADAR,AVER,electrical,1,2,2,[np.int64(2)]
+4,200,ADFL,SIBDL,chemical,1,2,2,[np.int64(2)]
+6,136,ADLL,OLLL,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+7,137,ADLR,OLLR,chemical,1,2,2,[np.int64(2)]
+10,63,AIAL,AWBR,electrical,1,2,2,[np.int64(2)]
+10,150,AIAL,PVQL,chemical,2,2,3,"[np.int64(2), np.int64(3)]"
+11,5,AIAR,ADFR,chemical,1,2,2,[np.int64(2)]
+13,148,AIBR,PVPL,chemical,1,2,2,[np.int64(2)]
+14,36,AIML,ASJL,electrical,1,2,2,[np.int64(2)]
+15,24,AIMR,ALMR,electrical,1,2,2,[np.int64(2)]
+15,36,AIMR,ASJL,chemical,1,2,2,[np.int64(2)]
+16,5,AINL,ADFR,chemical,1,2,2,[np.int64(2)]
+16,11,AINL,AIAR,chemical,1,2,2,[np.int64(2)]
+16,31,AINL,ASGR,chemical,1,2,2,[np.int64(2)]
+17,64,AINR,AWCL,chemical,1,2,2,[np.int64(2)]
+17,107,AINR,CEPshDL,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+18,10,AIYL,AIAL,chemical,1,2,2,[np.int64(2)]
+19,40,AIYR,AUAL,electrical,1,2,2,[np.int64(2)]
+19,173,AIYR,RIVR,chemical,1,2,2,[np.int64(2)]
+19,201,AIYR,SIBDR,chemical,1,2,2,[np.int64(2)]
+20,200,AIZL,SIBDL,chemical,1,2,2,[np.int64(2)]
+32,44,ASHL,AVBL,electrical,1,2,2,[np.int64(2)]
+33,151,ASHR,PVQR,chemical,1,2,2,[np.int64(2)]
+33,207,ASHR,SMBVR,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+34,6,ASIL,ADLL,chemical,1,2,2,[np.int64(2)]
+36,151,ASJL,PVQR,chemical,1,2,2,[np.int64(2)]
+38,36,ASKL,ASJL,chemical,1,2,2,[np.int64(2)]
+39,61,ASKR,AWAR,electrical,1,2,2,[np.int64(2)]
+39,162,ASKR,RIFR,chemical,1,2,2,[np.int64(2)]
+41,157,AUAR,RIBR,electrical,1,2,2,[np.int64(2)]
+41,170,AUAR,RIR,electrical,1,2,2,[np.int64(2)]
+48,210,AVEL,SMDVL,electrical,1,2,2,[np.int64(2)]
+54,33,AVJL,ASHR,chemical,1,2,2,[np.int64(2)]
+54,48,AVJL,AVEL,chemical,1,2,2,[np.int64(2)]
+54,52,AVJL,AVHL,chemical,1,2,2,[np.int64(2)]
+54,207,AVJL,SMBVR,chemical,1,2,2,[np.int64(2)]
+56,12,AVKL,AIBL,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+56,149,AVKL,PVPR,electrical,1,2,2,[np.int64(2)]
+56,186,AVKL,RMGL,chemical,3,2,4,"[np.int64(2), np.int64(3), np.int64(4)]"
+56,192,AVKL,SAAVL,chemical,2,2,3,"[np.int64(2), np.int64(3)]"
+56,204,AVKL,SMBDL,electrical,1,2,2,[np.int64(2)]
+56,205,AVKL,SMBDR,electrical,1,2,2,[np.int64(2)]
+57,191,AVKR,SAADR,chemical,2,2,3,"[np.int64(2), np.int64(3)]"
+57,193,AVKR,SAAVR,chemical,1,2,2,[np.int64(2)]
+58,110,AVL,CEPshVR,chemical,1,2,2,[np.int64(2)]
+60,61,AWAL,AWAR,chemical,1,2,2,[np.int64(2)]
+60,65,AWAL,AWCR,chemical,1,2,2,[np.int64(2)]
+61,151,AWAR,PVQR,chemical,1,2,2,[np.int64(2)]
+64,28,AWCL,ASEL,chemical,3,2,4,"[np.int64(2), np.int64(3), np.int64(4)]"
+64,127,AWCL,IL1R,chemical,1,2,2,[np.int64(2)]
+64,133,AWCL,IL2R,chemical,1,2,2,[np.int64(2)]
+66,157,BAGL,RIBR,electrical,1,2,2,[np.int64(2)]
+104,1,CEPDR,ADAR,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+104,152,CEPDR,PVR,chemical,1,2,2,[np.int64(2)]
+112,158,DVA,RICL,chemical,1,2,2,[np.int64(2)]
+112,196,DVA,SIADL,chemical,1,2,2,[np.int64(2)]
+113,66,DVC,BAGL,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+125,117,IL1DR,GLRDR,chemical,1,2,2,[np.int64(2)]
+130,169,IL2DL,RIPR,chemical,2,2,3,"[np.int64(2), np.int64(3)]"
+132,103,IL2L,CEPDL,chemical,1,2,2,[np.int64(2)]
+138,178,OLQDL,RMDVL,chemical,1,2,2,[np.int64(2)]
+138,220,OLQDL,URYDL,chemical,1,2,2,[np.int64(2)]
+140,165,OLQVL,RIH,chemical,1,2,2,[np.int64(2)]
+141,175,OLQVR,RMDDR,chemical,1,2,2,[np.int64(2)]
+144,160,PVCL,RID,electrical,1,2,2,[np.int64(2)]
+148,222,PVPL,URYVL,chemical,1,2,2,[np.int64(2)]
+149,46,PVPR,AVDL,chemical,1,2,2,[np.int64(2)]
+149,47,PVPR,AVDR,chemical,1,2,2,[np.int64(2)]
+150,12,PVQL,AIBL,chemical,1,2,2,[np.int64(2)]
+151,10,PVQR,AIAL,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+151,13,PVQR,AIBR,chemical,1,2,2,[np.int64(2)]
+152,46,PVR,AVDL,chemical,1,2,2,[np.int64(2)]
+152,222,PVR,URYVL,chemical,1,2,2,[np.int64(2)]
+153,190,PVT,SAADL,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+154,198,RIAL,SIAVL,chemical,1,2,2,[np.int64(2)]
+155,205,RIAR,SMBDR,chemical,1,2,2,[np.int64(2)]
+157,44,RIBR,AVBL,chemical,1,2,2,[np.int64(2)]
+158,224,RICL,excgl,electrical,1,2,2,[np.int64(2)]
+159,202,RICR,SIBVL,chemical,1,2,2,[np.int64(2)]
+163,124,RIGL,IL1DL,chemical,1,2,2,[np.int64(2)]
+163,181,RIGL,RMEL,chemical,1,2,2,[np.int64(2)]
+164,155,RIGR,RIAR,chemical,3,2,4,"[np.int64(2), np.int64(3), np.int64(4)]"
+165,170,RIH,RIR,electrical,1,2,2,[np.int64(2)]
+165,171,RIH,RIS,chemical,1,2,2,[np.int64(2)]
+166,144,RIML,PVCL,chemical,1,2,2,[np.int64(2)]
+166,197,RIML,SIADR,chemical,1,2,2,[np.int64(2)]
+166,203,RIML,SIBVR,chemical,1,2,2,[np.int64(2)]
+170,110,RIR,CEPshVR,chemical,1,2,2,[np.int64(2)]
+171,187,RIS,RMGR,chemical,1,2,2,[np.int64(2)]
+172,42,RIVL,AVAL,chemical,1,2,2,[np.int64(2)]
+173,210,RIVR,SMDVL,chemical,1,2,2,[np.int64(2)]
+176,137,RMDL,OLLR,chemical,3,2,4,"[np.int64(2), np.int64(3), np.int64(4)]"
+180,183,RMED,RMEV,chemical,2,2,3,"[np.int64(2), np.int64(3)]"
+182,214,RMER,URAVL,chemical,1,2,2,[np.int64(2)]
+204,70,SMBDL,BWM-DL01,chemical,1,2,2,[np.int64(2)]
+204,74,SMBDL,BWM-DL05,chemical,1,2,2,[np.int64(2)]
+204,116,SMBDL,GLRDL,chemical,1,2,2,[np.int64(2)]
+204,205,SMBDL,SMBDR,chemical,1,2,2,[np.int64(2)]
+205,202,SMBDR,SIBVL,chemical,1,2,2,[np.int64(2)]
+205,209,SMBDR,SMDDR,chemical,1,2,2,[np.int64(2)]
+206,211,SMBVL,SMDVR,chemical,1,2,2,[np.int64(2)]
+208,210,SMDDL,SMDVL,chemical,1,2,2,[np.int64(2)]
+208,221,SMDDL,URYDR,electrical,1,2,2,[np.int64(2)]
+211,96,SMDVR,BWM-VR03,chemical,2,2,4,"[np.int64(2), np.int64(4)]"
+211,209,SMDVR,SMDDR,chemical,1,2,2,[np.int64(2)]
+213,181,URADR,RMEL,chemical,1,2,2,[np.int64(2)]
+214,134,URAVL,IL2VL,chemical,1,2,2,[np.int64(2)]
+214,180,URAVL,RMED,chemical,1,2,2,[np.int64(2)]
+216,109,URBL,CEPshVL,chemical,1,2,2,[np.int64(2)]
+217,83,URBR,BWM-DR06,chemical,1,2,2,[np.int64(2)]
+218,13,URXL,AIBR,chemical,1,2,2,[np.int64(2)]
+218,126,URXL,IL1L,chemical,1,2,2,[np.int64(2)]
+218,214,URXL,URAVL,chemical,1,2,2,[np.int64(2)]
+222,109,URYVL,CEPshVL,chemical,1,2,2,[np.int64(2)]
+0,4,ADAL,ADFL,electrical,2,3,5,"[np.int64(3), np.int64(5)]"
+2,114,ADEL,FLPL,chemical,1,3,3,[np.int64(3)]
+4,13,ADFL,AIBR,electrical,1,3,3,[np.int64(3)]
+5,28,ADFR,ASEL,chemical,1,3,3,[np.int64(3)]
+5,61,ADFR,AWAR,chemical,1,3,3,[np.int64(3)]
+6,197,ADLL,SIADR,chemical,1,3,3,[np.int64(3)]
+9,13,AFDR,AIBR,chemical,1,3,3,[np.int64(3)]
+9,18,AFDR,AIYL,chemical,1,3,3,[np.int64(3)]
+9,29,AFDR,ASER,chemical,1,3,3,[np.int64(3)]
+9,64,AFDR,AWCL,chemical,1,3,3,[np.int64(3)]
+10,32,AIAL,ASHL,chemical,3,3,5,"[np.int64(3), np.int64(4), np.int64(5)]"
+13,115,AIBR,FLPR,electrical,2,3,5,"[np.int64(3), np.int64(5)]"
+14,150,AIML,PVQL,chemical,1,3,3,[np.int64(3)]
+15,31,AIMR,ASGR,electrical,1,3,3,[np.int64(3)]
+20,49,AIZL,AVER,electrical,1,3,3,[np.int64(3)]
+23,144,ALML,PVCL,electrical,1,3,3,[np.int64(3)]
+23,216,ALML,URBL,chemical,1,3,3,[np.int64(3)]
+24,145,ALMR,PVCR,electrical,1,3,3,[np.int64(3)]
+29,7,ASER,ADLR,chemical,1,3,3,[np.int64(3)]
+30,64,ASGL,AWCL,chemical,1,3,3,[np.int64(3)]
+31,65,ASGR,AWCR,chemical,1,3,3,[np.int64(3)]
+32,23,ASHL,ALML,chemical,1,3,3,[np.int64(3)]
+32,202,ASHL,SIBVL,chemical,1,3,3,[np.int64(3)]
+33,29,ASHR,ASER,chemical,1,3,3,[np.int64(3)]
+36,60,ASJL,AWAL,chemical,1,3,3,[np.int64(3)]
+37,15,ASJR,AIMR,chemical,1,3,3,[np.int64(3)]
+37,61,ASJR,AWAR,chemical,1,3,3,[np.int64(3)]
+37,109,ASJR,CEPshVL,chemical,1,3,3,[np.int64(3)]
+52,9,AVHL,AFDR,chemical,1,3,3,[np.int64(3)]
+52,21,AVHL,AIZR,chemical,3,3,5,"[np.int64(3), np.int64(4), np.int64(5)]"
+52,141,AVHL,OLQVR,chemical,1,3,3,[np.int64(3)]
+52,201,AVHL,SIBDR,electrical,1,3,3,[np.int64(3)]
+53,60,AVHR,AWAL,chemical,1,3,3,[np.int64(3)]
+54,19,AVJL,AIYR,chemical,1,3,3,[np.int64(3)]
+54,69,AVJL,BDUR,electrical,1,3,3,[np.int64(3)]
+55,54,AVJR,AVJL,chemical,1,3,3,[np.int64(3)]
+55,206,AVJR,SMBVL,chemical,1,3,3,[np.int64(3)]
+56,177,AVKL,RMDR,chemical,1,3,3,[np.int64(3)]
+56,211,AVKL,SMDVR,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+57,164,AVKR,RIGR,chemical,1,3,3,[np.int64(3)]
+58,67,AVL,BAGR,chemical,1,3,3,[np.int64(3)]
+58,113,AVL,DVC,electrical,1,3,3,[np.int64(3)]
+58,181,AVL,RMEL,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+60,53,AWAL,AVHR,chemical,1,3,3,[np.int64(3)]
+60,206,AWAL,SMBVL,chemical,1,3,3,[np.int64(3)]
+61,37,AWAR,ASJR,chemical,1,3,3,[np.int64(3)]
+62,218,AWBL,URXL,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+63,20,AWBR,AIZL,chemical,1,3,3,[np.int64(3)]
+64,30,AWCL,ASGL,chemical,1,3,3,[np.int64(3)]
+66,16,BAGL,AINL,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+68,44,BDUL,AVBL,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+68,53,BDUL,AVHR,chemical,1,3,3,[np.int64(3)]
+68,152,BDUL,PVR,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+68,201,BDUL,SIBDR,chemical,1,3,3,[np.int64(3)]
+69,44,BDUR,AVBL,chemical,1,3,3,[np.int64(3)]
+69,152,BDUR,PVR,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+112,12,DVA,AIBL,chemical,1,3,3,[np.int64(3)]
+112,164,DVA,RIGR,chemical,1,3,3,[np.int64(3)]
+112,199,DVA,SIAVR,electrical,1,3,3,[np.int64(3)]
+113,223,DVC,URYVR,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+114,58,FLPL,AVL,chemical,1,3,3,[np.int64(3)]
+115,113,FLPR,DVC,chemical,1,3,3,[np.int64(3)]
+131,168,IL2DR,RIPL,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+133,201,IL2R,SIBDR,chemical,1,3,3,[np.int64(3)]
+136,191,OLLL,SAADR,electrical,1,3,3,[np.int64(3)]
+137,178,OLLR,RMDVL,chemical,1,3,3,[np.int64(3)]
+150,11,PVQL,AIAR,chemical,1,3,3,[np.int64(3)]
+150,105,PVQL,CEPVL,chemical,1,3,3,[np.int64(3)]
+152,213,PVR,URADR,chemical,1,3,3,[np.int64(3)]
+153,136,PVT,OLLL,chemical,1,3,3,[np.int64(3)]
+153,166,PVT,RIML,chemical,1,3,3,[np.int64(3)]
+153,207,PVT,SMBVR,chemical,1,3,3,[np.int64(3)]
+153,216,PVT,URBL,chemical,1,3,3,[np.int64(3)]
+158,222,RICL,URYVL,chemical,1,3,3,[np.int64(3)]
+159,192,RICR,SAAVL,chemical,1,3,3,[np.int64(3)]
+163,56,RIGL,AVKL,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+163,191,RIGL,SAADR,chemical,1,3,3,[np.int64(3)]
+164,46,RIGR,AVDL,chemical,1,3,3,[np.int64(3)]
+165,86,RIH,BWM-VL01,chemical,1,3,3,[np.int64(3)]
+165,108,RIH,CEPshDR,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+166,53,RIML,AVHR,chemical,1,3,3,[np.int64(3)]
+167,1,RIMR,ADAR,chemical,1,3,3,[np.int64(3)]
+167,186,RIMR,RMGL,chemical,1,3,3,[np.int64(3)]
+168,131,RIPL,IL2DR,chemical,1,3,3,[np.int64(3)]
+168,165,RIPL,RIH,chemical,1,3,3,[np.int64(3)]
+168,169,RIPL,RIPR,chemical,1,3,3,[np.int64(3)]
+170,42,RIR,AVAL,chemical,1,3,3,[np.int64(3)]
+170,223,RIR,URYVR,chemical,1,3,3,[np.int64(3)]
+173,88,RIVR,BWM-VL03,chemical,1,3,3,[np.int64(3)]
+173,165,RIVR,RIH,chemical,1,3,3,[np.int64(3)]
+178,120,RMDVL,GLRVL,chemical,1,3,3,[np.int64(3)]
+180,182,RMED,RMER,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+182,120,RMER,GLRVL,chemical,1,3,3,[np.int64(3)]
+183,103,RMEV,CEPDL,chemical,1,3,3,[np.int64(3)]
+187,57,RMGR,AVKR,chemical,1,3,3,[np.int64(3)]
+192,44,SAAVL,AVBL,chemical,1,3,3,[np.int64(3)]
+192,137,SAAVL,OLLR,chemical,1,3,3,[np.int64(3)]
+192,164,SAAVL,RIGR,chemical,1,3,3,[np.int64(3)]
+204,200,SMBDL,SIBDL,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+205,116,SMBDR,GLRDL,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+206,178,SMBVL,RMDVL,chemical,1,3,3,[np.int64(3)]
+207,118,SMBVR,GLRL,chemical,1,3,3,[np.int64(3)]
+209,78,SMDDR,BWM-DR01,chemical,2,3,5,"[np.int64(3), np.int64(5)]"
+209,178,SMDDR,RMDVL,chemical,1,3,3,[np.int64(3)]
+209,180,SMDDR,RMED,chemical,1,3,3,[np.int64(3)]
+216,107,URBL,CEPshDL,chemical,1,3,3,[np.int64(3)]
+217,81,URBR,BWM-DR04,chemical,2,3,4,"[np.int64(3), np.int64(4)]"
+0,20,ADAL,AIZL,chemical,1,4,4,[np.int64(4)]
+0,192,ADAL,SAAVL,chemical,1,4,4,[np.int64(4)]
+1,48,ADAR,AVEL,chemical,1,4,4,[np.int64(4)]
+1,141,ADAR,OLQVR,chemical,3,4,6,"[np.int64(4), np.int64(5), np.int64(6)]"
+1,213,ADAR,URADR,chemical,1,4,4,[np.int64(4)]
+2,171,ADEL,RIS,chemical,1,4,4,[np.int64(4)]
+2,190,ADEL,SAADL,chemical,1,4,4,[np.int64(4)]
+2,211,ADEL,SMDVR,chemical,1,4,4,[np.int64(4)]
+4,5,ADFL,ADFR,chemical,1,4,4,[np.int64(4)]
+4,8,ADFL,AFDL,chemical,1,4,4,[np.int64(4)]
+4,167,ADFL,RIMR,chemical,1,4,4,[np.int64(4)]
+5,4,ADFR,ADFL,chemical,1,4,4,[np.int64(4)]
+5,9,ADFR,AFDR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+6,36,ADLL,ASJL,chemical,1,4,4,[np.int64(4)]
+9,61,AFDR,AWAR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+11,21,AIAR,AIZR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+11,29,AIAR,ASER,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+12,172,AIBL,RIVL,chemical,1,4,4,[np.int64(4)]
+13,183,AIBR,RMEV,chemical,1,4,4,[np.int64(4)]
+14,46,AIML,AVDL,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+15,10,AIMR,AIAL,chemical,1,4,4,[np.int64(4)]
+15,32,AIMR,ASHL,chemical,1,4,4,[np.int64(4)]
+15,45,AIMR,AVBR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+16,107,AINL,CEPshDL,chemical,1,4,4,[np.int64(4)]
+18,66,AIYL,BAGL,chemical,1,4,4,[np.int64(4)]
+20,20,AIZL,AIZL,electrical,1,4,4,[np.int64(4)]
+20,42,AIZL,AVAL,chemical,1,4,4,[np.int64(4)]
+20,210,AIZL,SMDVL,chemical,1,4,4,[np.int64(4)]
+21,211,AIZR,SMDVR,chemical,1,4,4,[np.int64(4)]
+22,36,ALA,ASJL,chemical,1,4,4,[np.int64(4)]
+22,37,ALA,ASJR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+22,127,ALA,IL1R,chemical,1,4,4,[np.int64(4)]
+22,132,ALA,IL2L,chemical,1,4,4,[np.int64(4)]
+22,133,ALA,IL2R,chemical,1,4,4,[np.int64(4)]
+23,46,ALML,AVDL,electrical,2,4,6,"[np.int64(4), np.int64(6)]"
+23,145,ALML,PVCR,chemical,1,4,4,[np.int64(4)]
+24,144,ALMR,PVCL,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+27,1,AQR,ADAR,chemical,1,4,4,[np.int64(4)]
+28,29,ASEL,ASER,chemical,1,4,4,[np.int64(4)]
+32,38,ASHL,ASKL,electrical,1,4,4,[np.int64(4)]
+32,43,ASHL,AVAR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+32,145,ASHL,PVCR,chemical,1,4,4,[np.int64(4)]
+33,39,ASHR,ASKR,chemical,1,4,4,[np.int64(4)]
+34,108,ASIL,CEPshDR,chemical,1,4,4,[np.int64(4)]
+38,150,ASKL,PVQL,electrical,2,4,5,"[np.int64(4), np.int64(5)]"
+39,17,ASKR,AINR,chemical,1,4,4,[np.int64(4)]
+41,223,AUAR,URYVR,chemical,1,4,4,[np.int64(4)]
+42,221,AVAL,URYDR,electrical,1,4,4,[np.int64(4)]
+43,222,AVAR,URYVL,electrical,3,4,6,"[np.int64(4), np.int64(5), np.int64(6)]"
+52,1,AVHL,ADAR,chemical,1,4,4,[np.int64(4)]
+52,32,AVHL,ASHL,chemical,1,4,4,[np.int64(4)]
+52,62,AVHL,AWBL,chemical,1,4,4,[np.int64(4)]
+52,162,AVHL,RIFR,chemical,1,4,4,[np.int64(4)]
+53,10,AVHR,AIAL,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+53,43,AVHR,AVAR,chemical,1,4,4,[np.int64(4)]
+54,69,AVJL,BDUR,chemical,1,4,4,[np.int64(4)]
+54,114,AVJL,FLPL,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+55,47,AVJR,AVDR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+56,148,AVKL,PVPL,electrical,1,4,4,[np.int64(4)]
+56,187,AVKL,RMGR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+57,149,AVKR,PVPR,electrical,2,4,6,"[np.int64(4), np.int64(6)]"
+57,204,AVKR,SMBDL,electrical,1,4,4,[np.int64(4)]
+57,206,AVKR,SMBVL,electrical,1,4,4,[np.int64(4)]
+61,60,AWAR,AWAL,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+63,33,AWBR,ASHR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+63,170,AWBR,RIR,chemical,1,4,4,[np.int64(4)]
+63,219,AWBR,URXR,chemical,1,4,4,[np.int64(4)]
+64,17,AWCL,AINR,chemical,1,4,4,[np.int64(4)]
+65,16,AWCR,AINL,chemical,1,4,4,[np.int64(4)]
+69,144,BDUR,PVCL,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+104,43,CEPDR,AVAR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+105,134,CEPVL,IL2VL,chemical,1,4,4,[np.int64(4)]
+112,223,DVA,URYVR,chemical,1,4,4,[np.int64(4)]
+113,21,DVC,AIZR,chemical,1,4,4,[np.int64(4)]
+113,46,DVC,AVDL,chemical,1,4,4,[np.int64(4)]
+113,107,DVC,CEPshDL,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+113,215,DVC,URAVR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+114,152,FLPL,PVR,electrical,1,4,4,[np.int64(4)]
+114,165,FLPL,RIH,electrical,2,4,5,"[np.int64(4), np.int64(5)]"
+114,167,FLPL,RIMR,electrical,1,4,4,[np.int64(4)]
+115,152,FLPR,PVR,electrical,1,4,4,[np.int64(4)]
+115,165,FLPR,RIH,electrical,2,4,5,"[np.int64(4), np.int64(5)]"
+120,183,GLRVL,RMEV,electrical,1,4,4,[np.int64(4)]
+126,168,IL1L,RIPL,chemical,1,4,4,[np.int64(4)]
+126,212,IL1L,URADL,chemical,1,4,4,[np.int64(4)]
+140,165,OLQVL,RIH,electrical,1,4,4,[np.int64(4)]
+144,201,PVCL,SIBDR,chemical,1,4,4,[np.int64(4)]
+145,114,PVCR,FLPL,chemical,1,4,4,[np.int64(4)]
+145,144,PVCR,PVCL,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+145,198,PVCR,SIAVL,chemical,1,4,4,[np.int64(4)]
+151,38,PVQR,ASKL,chemical,1,4,4,[np.int64(4)]
+151,60,PVQR,AWAL,chemical,1,4,4,[np.int64(4)]
+154,104,RIAL,CEPDR,chemical,1,4,4,[np.int64(4)]
+154,106,RIAL,CEPVR,chemical,1,4,4,[np.int64(4)]
+154,155,RIAL,RIAR,electrical,2,4,5,"[np.int64(4), np.int64(5)]"
+156,209,RIBL,SMDDR,electrical,2,4,5,"[np.int64(4), np.int64(5)]"
+156,211,RIBL,SMDVR,electrical,1,4,4,[np.int64(4)]
+157,21,RIBR,AIZR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+157,47,RIBR,AVDR,chemical,1,4,4,[np.int64(4)]
+157,141,RIBR,OLQVR,chemical,1,4,4,[np.int64(4)]
+157,160,RIBR,RID,chemical,1,4,4,[np.int64(4)]
+158,188,RICL,RMHL,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+158,204,RICL,SMBDL,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+161,145,RIFL,PVCR,chemical,1,4,4,[np.int64(4)]
+163,2,RIGL,ADEL,chemical,1,4,4,[np.int64(4)]
+163,53,RIGL,AVHR,chemical,1,4,4,[np.int64(4)]
+165,116,RIH,GLRDL,chemical,1,4,4,[np.int64(4)]
+165,130,RIH,IL2DL,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+165,131,RIH,IL2DR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+172,170,RIVL,RIR,chemical,1,4,4,[np.int64(4)]
+173,170,RIVR,RIR,chemical,1,4,4,[np.int64(4)]
+177,49,RMDR,AVER,chemical,1,4,4,[np.int64(4)]
+186,49,RMGL,AVER,chemical,1,4,4,[np.int64(4)]
+195,69,SDQR,BDUR,chemical,1,4,4,[np.int64(4)]
+195,152,SDQR,PVR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+204,119,SMBDL,GLRR,chemical,2,4,6,"[np.int64(4), np.int64(6)]"
+206,105,SMBVL,CEPVL,chemical,1,4,4,[np.int64(4)]
+211,174,SMDVR,RMDDL,chemical,1,4,4,[np.int64(4)]
+212,126,URADL,IL1L,chemical,1,4,4,[np.int64(4)]
+212,178,URADL,RMDVL,chemical,1,4,4,[np.int64(4)]
+216,75,URBL,BWM-DL06,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+216,152,URBL,PVR,chemical,2,4,5,"[np.int64(4), np.int64(5)]"
+217,97,URBR,BWM-VR04,chemical,1,4,4,[np.int64(4)]
+223,110,URYVR,CEPshVR,chemical,1,4,4,[np.int64(4)]
+0,32,ADAL,ASHL,chemical,1,5,5,[np.int64(5)]
+0,48,ADAL,AVEL,chemical,1,5,5,[np.int64(5)]
+0,130,ADAL,IL2DL,chemical,1,5,5,[np.int64(5)]
+0,154,ADAL,RIAL,chemical,1,5,5,[np.int64(5)]
+0,202,ADAL,SIBVL,chemical,1,5,5,[np.int64(5)]
+1,11,ADAR,AIAR,chemical,1,5,5,[np.int64(5)]
+1,13,ADAR,AIBR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+1,215,ADAR,URAVR,chemical,1,5,5,[np.int64(5)]
+2,109,ADEL,CEPshVL,chemical,1,5,5,[np.int64(5)]
+2,144,ADEL,PVCL,chemical,1,5,5,[np.int64(5)]
+2,216,ADEL,URBL,chemical,1,5,5,[np.int64(5)]
+3,56,ADER,AVKL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+3,108,ADER,CEPshDR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+3,109,ADER,CEPshVL,chemical,1,5,5,[np.int64(5)]
+3,115,ADER,FLPR,chemical,1,5,5,[np.int64(5)]
+3,189,ADER,RMHR,electrical,1,5,5,[np.int64(5)]
+3,195,ADER,SDQR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+4,41,ADFL,AUAR,chemical,1,5,5,[np.int64(5)]
+5,19,ADFR,AIYR,chemical,1,5,5,[np.int64(5)]
+6,109,ADLL,CEPshVL,electrical,1,5,5,[np.int64(5)]
+6,140,ADLL,OLQVL,chemical,1,5,5,[np.int64(5)]
+7,54,ADLR,AVJL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+7,217,ADLR,URBR,chemical,1,5,5,[np.int64(5)]
+9,5,AFDR,ADFR,chemical,1,5,5,[np.int64(5)]
+9,41,AFDR,AUAR,chemical,1,5,5,[np.int64(5)]
+10,4,AIAL,ADFL,chemical,1,5,5,[np.int64(5)]
+10,18,AIAL,AIYL,chemical,1,5,5,[np.int64(5)]
+10,20,AIAL,AIZL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+11,35,AIAR,ASIR,chemical,1,5,5,[np.int64(5)]
+12,114,AIBL,FLPL,electrical,1,5,5,[np.int64(5)]
+12,153,AIBL,PVT,electrical,1,5,5,[np.int64(5)]
+12,180,AIBL,RMED,electrical,1,5,5,[np.int64(5)]
+13,204,AIBR,SMBDL,chemical,1,5,5,[np.int64(5)]
+13,218,AIBR,URXL,electrical,1,5,5,[np.int64(5)]
+14,34,AIML,ASIL,chemical,1,5,5,[np.int64(5)]
+14,48,AIML,AVEL,chemical,1,5,5,[np.int64(5)]
+14,108,AIML,CEPshDR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+14,201,AIML,SIBDR,electrical,1,5,5,[np.int64(5)]
+15,13,AIMR,AIBR,chemical,1,5,5,[np.int64(5)]
+15,208,AIMR,SMDDL,chemical,1,5,5,[np.int64(5)]
+15,219,AIMR,URXR,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+16,40,AINL,AUAL,chemical,1,5,5,[np.int64(5)]
+16,40,AINL,AUAL,electrical,1,5,5,[np.int64(5)]
+16,67,AINL,BAGR,chemical,1,5,5,[np.int64(5)]
+16,133,AINL,IL2R,chemical,1,5,5,[np.int64(5)]
+17,41,AINR,AUAR,electrical,1,5,5,[np.int64(5)]
+17,108,AINR,CEPshDR,chemical,1,5,5,[np.int64(5)]
+17,110,AINR,CEPshVR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+19,20,AIYR,AIZL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+19,67,AIYR,BAGR,chemical,1,5,5,[np.int64(5)]
+19,151,AIYR,PVQR,electrical,1,5,5,[np.int64(5)]
+19,154,AIYR,RIAL,chemical,1,5,5,[np.int64(5)]
+20,40,AIZL,AUAL,chemical,1,5,5,[np.int64(5)]
+21,154,AIZR,RIAL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+21,157,AIZR,RIBR,chemical,1,5,5,[np.int64(5)]
+21,206,AIZR,SMBVL,chemical,1,5,5,[np.int64(5)]
+22,107,ALA,CEPshDL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+23,14,ALML,AIML,chemical,1,5,5,[np.int64(5)]
+23,44,ALML,AVBL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+23,48,ALML,AVEL,chemical,1,5,5,[np.int64(5)]
+23,132,ALML,IL2L,chemical,1,5,5,[np.int64(5)]
+23,186,ALML,RMGL,chemical,1,5,5,[np.int64(5)]
+23,194,ALML,SDQL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+24,1,ALMR,ADAR,chemical,1,5,5,[np.int64(5)]
+24,50,ALMR,AVFL,chemical,1,5,5,[np.int64(5)]
+24,195,ALMR,SDQR,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+25,154,ALNL,RIAL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+26,210,ALNR,SMDVL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+27,56,AQR,AVKL,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+27,157,AQR,RIBR,chemical,1,5,5,[np.int64(5)]
+27,163,AQR,RIGL,chemical,1,5,5,[np.int64(5)]
+27,164,AQR,RIGR,chemical,1,5,5,[np.int64(5)]
+28,20,ASEL,AIZL,chemical,1,5,5,[np.int64(5)]
+29,28,ASER,ASEL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+32,53,ASHL,AVHR,electrical,1,5,5,[np.int64(5)]
+32,166,ASHL,RIML,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+33,205,ASHR,SMBDR,chemical,1,5,5,[np.int64(5)]
+34,110,ASIL,CEPshVR,chemical,1,5,5,[np.int64(5)]
+36,51,ASJL,AVFR,chemical,1,5,5,[np.int64(5)]
+37,38,ASJR,ASKL,chemical,1,5,5,[np.int64(5)]
+38,11,ASKL,AIAR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+38,32,ASKL,ASHL,chemical,1,5,5,[np.int64(5)]
+40,47,AUAL,AVDR,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+44,156,AVBL,RIBL,electrical,1,5,5,[np.int64(5)]
+44,160,AVBL,RID,electrical,1,5,5,[np.int64(5)]
+45,111,AVBR,DB1,electrical,1,5,5,[np.int64(5)]
+45,160,AVBR,RID,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+45,200,AVBR,SIBDL,electrical,1,5,5,[np.int64(5)]
+45,202,AVBR,SIBVL,electrical,1,5,5,[np.int64(5)]
+46,49,AVDL,AVER,electrical,1,5,5,[np.int64(5)]
+46,59,AVDL,AVM,electrical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+47,166,AVDR,RIML,electrical,1,5,5,[np.int64(5)]
+48,179,AVEL,RMDVR,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+48,180,AVEL,RMED,electrical,1,5,5,[np.int64(5)]
+48,183,AVEL,RMEV,electrical,1,5,5,[np.int64(5)]
+48,216,AVEL,URBL,electrical,1,5,5,[np.int64(5)]
+48,220,AVEL,URYDL,electrical,1,5,5,[np.int64(5)]
+49,178,AVER,RMDVL,electrical,1,5,5,[np.int64(5)]
+49,179,AVER,RMDVR,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+49,217,AVER,URBR,electrical,1,5,5,[np.int64(5)]
+50,33,AVFL,ASHR,chemical,1,5,5,[np.int64(5)]
+51,23,AVFR,ALML,chemical,1,5,5,[np.int64(5)]
+51,24,AVFR,ALMR,chemical,1,5,5,[np.int64(5)]
+51,44,AVFR,AVBL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+51,68,AVFR,BDUL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+51,109,AVFR,CEPshVL,chemical,1,5,5,[np.int64(5)]
+51,110,AVFR,CEPshVR,chemical,1,5,5,[np.int64(5)]
+51,151,AVFR,PVQR,electrical,1,5,5,[np.int64(5)]
+51,161,AVFR,RIFL,chemical,1,5,5,[np.int64(5)]
+51,186,AVFR,RMGL,chemical,1,5,5,[np.int64(5)]
+52,45,AVHL,AVBR,chemical,1,5,5,[np.int64(5)]
+52,54,AVHL,AVJL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+52,148,AVHL,PVPL,chemical,1,5,5,[np.int64(5)]
+52,161,AVHL,RIFL,chemical,1,5,5,[np.int64(5)]
+53,15,AVHR,AIMR,chemical,1,5,5,[np.int64(5)]
+53,28,AVHR,ASEL,chemical,1,5,5,[np.int64(5)]
+53,51,AVHR,AVFR,chemical,1,5,5,[np.int64(5)]
+53,63,AVHR,AWBR,chemical,1,5,5,[np.int64(5)]
+53,149,AVHR,PVPR,chemical,1,5,5,[np.int64(5)]
+53,198,AVHR,SIAVL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+54,44,AVJL,AVBL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+55,32,AVJR,ASHL,chemical,1,5,5,[np.int64(5)]
+56,13,AVKL,AIBR,chemical,1,5,5,[np.int64(5)]
+56,153,AVKL,PVT,chemical,1,5,5,[np.int64(5)]
+56,190,AVKL,SAADL,chemical,1,5,5,[np.int64(5)]
+56,206,AVKL,SMBVL,electrical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+57,12,AVKR,AIBL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+57,197,AVKR,SIADR,chemical,1,5,5,[np.int64(5)]
+59,3,AVM,ADER,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+59,46,AVM,AVDL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+59,52,AVM,AVHL,chemical,1,5,5,[np.int64(5)]
+59,149,AVM,PVPR,chemical,1,5,5,[np.int64(5)]
+59,152,AVM,PVR,chemical,1,5,5,[np.int64(5)]
+59,171,AVM,RIS,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+60,21,AWAL,AIZR,chemical,1,5,5,[np.int64(5)]
+60,40,AWAL,AUAL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+60,156,AWAL,RIBL,chemical,1,5,5,[np.int64(5)]
+62,28,AWBL,ASEL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+63,53,AWBR,AVHR,chemical,1,5,5,[np.int64(5)]
+63,205,AWBR,SMBDR,chemical,1,5,5,[np.int64(5)]
+64,6,AWCL,ADLL,chemical,1,5,5,[np.int64(5)]
+64,20,AWCL,AIZL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+64,34,AWCL,ASIL,chemical,1,5,5,[np.int64(5)]
+65,6,AWCR,ADLL,chemical,1,5,5,[np.int64(5)]
+65,17,AWCR,AINR,chemical,1,5,5,[np.int64(5)]
+65,28,AWCR,ASEL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+65,31,AWCR,ASGR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+68,52,BDUL,AVHL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+68,107,BDUL,CEPshDL,chemical,1,5,5,[np.int64(5)]
+68,108,BDUL,CEPshDR,chemical,1,5,5,[np.int64(5)]
+69,47,BDUR,AVDR,chemical,1,5,5,[np.int64(5)]
+69,162,BDUR,RIFR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+69,187,BDUR,RMGR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+69,204,BDUR,SMBDL,chemical,1,5,5,[np.int64(5)]
+69,217,BDUR,URBR,chemical,1,5,5,[np.int64(5)]
+83,187,BWM-DR06,RMGR,electrical,1,5,5,[np.int64(5)]
+101,187,BWM-VR08,RMGR,electrical,1,5,5,[np.int64(5)]
+104,139,CEPDR,OLQDR,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+104,157,CEPDR,RIBR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+104,178,CEPDR,RMDVL,chemical,1,5,5,[np.int64(5)]
+104,217,CEPDR,URBR,electrical,1,5,5,[np.int64(5)]
+106,3,CEPVR,ADER,chemical,1,5,5,[np.int64(5)]
+106,110,CEPVR,CEPshVR,chemical,1,5,5,[np.int64(5)]
+106,165,CEPVR,RIH,electrical,1,5,5,[np.int64(5)]
+112,148,DVA,PVPL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+112,149,DVA,PVPR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+112,168,DVA,RIPL,chemical,1,5,5,[np.int64(5)]
+112,202,DVA,SIBVL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+112,218,DVA,URXL,chemical,1,5,5,[np.int64(5)]
+113,57,DVC,AVKR,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+113,110,DVC,CEPshVR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+113,153,DVC,PVT,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+113,221,DVC,URYDR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+114,0,FLPL,ADAL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+115,0,FLPR,ADAL,chemical,1,5,5,[np.int64(5)]
+115,13,FLPR,AIBR,chemical,1,5,5,[np.int64(5)]
+115,166,FLPR,RIML,electrical,1,5,5,[np.int64(5)]
+124,73,IL1DL,BWM-DL04,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+124,183,IL1DL,RMEV,electrical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+124,220,IL1DL,URYDL,electrical,1,5,5,[np.int64(5)]
+125,137,IL1DR,OLLR,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+125,221,IL1DR,URYDR,electrical,1,5,5,[np.int64(5)]
+126,70,IL1L,BWM-DL01,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+126,214,IL1L,URAVL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+127,137,IL1R,OLLR,chemical,1,5,5,[np.int64(5)]
+127,189,IL1R,RMHR,chemical,1,5,5,[np.int64(5)]
+129,129,IL1VR,IL1VR,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+129,152,IL1VR,PVR,electrical,1,5,5,[np.int64(5)]
+129,180,IL1VR,RMED,electrical,2,5,6,"[np.int64(5), np.int64(6)]"
+130,158,IL2DL,RICL,chemical,1,5,5,[np.int64(5)]
+131,133,IL2DR,IL2R,electrical,1,5,5,[np.int64(5)]
+132,126,IL2L,IL1L,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+132,134,IL2L,IL2VL,chemical,1,5,5,[np.int64(5)]
+132,216,IL2L,URBL,electrical,1,5,5,[np.int64(5)]
+133,188,IL2R,RMHL,chemical,1,5,5,[np.int64(5)]
+133,189,IL2R,RMHR,chemical,1,5,5,[np.int64(5)]
+134,218,IL2VL,URXL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+135,66,IL2VR,BAGL,chemical,1,5,5,[np.int64(5)]
+137,179,OLLR,RMDVR,electrical,1,5,5,[np.int64(5)]
+138,178,OLQDL,RMDVL,electrical,2,5,7,"[np.int64(5), np.int64(7)]"
+138,180,OLQDL,RMED,chemical,1,5,5,[np.int64(5)]
+138,212,OLQDL,URADL,chemical,1,5,5,[np.int64(5)]
+144,2,PVCL,ADEL,chemical,1,5,5,[np.int64(5)]
+144,112,PVCL,DVA,chemical,1,5,5,[np.int64(5)]
+145,1,PVCR,ADAR,chemical,1,5,5,[np.int64(5)]
+148,51,PVPL,AVFR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+148,190,PVPL,SAADL,chemical,1,5,5,[np.int64(5)]
+149,33,PVPR,ASHR,chemical,1,5,5,[np.int64(5)]
+149,171,PVPR,RIS,chemical,1,5,5,[np.int64(5)]
+149,205,PVPR,SMBDR,chemical,1,5,5,[np.int64(5)]
+150,50,PVQL,AVFL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+151,33,PVQR,ASHR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+152,169,PVR,RIPR,electrical,1,5,5,[np.int64(5)]
+152,173,PVR,RIVR,chemical,1,5,5,[np.int64(5)]
+152,202,PVR,SIBVL,chemical,1,5,5,[np.int64(5)]
+152,212,PVR,URADL,chemical,1,5,5,[np.int64(5)]
+153,128,PVT,IL1VL,chemical,1,5,5,[np.int64(5)]
+153,205,PVT,SMBDR,chemical,1,5,5,[np.int64(5)]
+154,177,RIAL,RMDR,electrical,1,5,5,[np.int64(5)]
+154,188,RIAL,RMHL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+156,208,RIBL,SMDDL,chemical,1,5,5,[np.int64(5)]
+157,209,RIBR,SMDDR,electrical,1,5,5,[np.int64(5)]
+157,211,RIBR,SMDVR,electrical,2,5,6,"[np.int64(5), np.int64(6)]"
+157,223,RIBR,URYVR,electrical,1,5,5,[np.int64(5)]
+158,89,RICL,BWM-VL04,chemical,1,5,5,[np.int64(5)]
+158,176,RICL,RMDL,chemical,1,5,5,[np.int64(5)]
+158,177,RICL,RMDR,chemical,1,5,5,[np.int64(5)]
+158,203,RICL,SIBVR,chemical,1,5,5,[np.int64(5)]
+159,166,RICR,RIML,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+159,193,RICR,SAAVR,chemical,1,5,5,[np.int64(5)]
+161,194,RIFL,SDQL,chemical,1,5,5,[np.int64(5)]
+163,181,RIGL,RMEL,electrical,1,5,5,[np.int64(5)]
+164,164,RIGR,RIGR,electrical,1,5,5,[np.int64(5)]
+164,166,RIGR,RIML,chemical,1,5,5,[np.int64(5)]
+164,189,RIGR,RMHR,chemical,1,5,5,[np.int64(5)]
+165,5,RIH,ADFR,chemical,1,5,5,[np.int64(5)]
+166,172,RIML,RIVL,chemical,1,5,5,[np.int64(5)]
+167,171,RIMR,RIS,electrical,1,5,5,[np.int64(5)]
+167,183,RIMR,RMEV,chemical,1,5,5,[np.int64(5)]
+167,196,RIMR,SIADL,chemical,1,5,5,[np.int64(5)]
+167,197,RIMR,SIADR,chemical,1,5,5,[np.int64(5)]
+170,170,RIR,RIR,electrical,1,5,5,[np.int64(5)]
+171,58,RIS,AVL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+171,137,RIS,OLLR,chemical,1,5,5,[np.int64(5)]
+172,171,RIVL,RIS,chemical,1,5,5,[np.int64(5)]
+172,191,RIVL,SAADR,electrical,1,5,5,[np.int64(5)]
+172,195,RIVL,SDQR,electrical,2,5,6,"[np.int64(5), np.int64(6)]"
+172,208,RIVL,SMDDL,chemical,1,5,5,[np.int64(5)]
+173,167,RIVR,RIMR,chemical,1,5,5,[np.int64(5)]
+174,127,RMDDL,IL1R,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+174,175,RMDDL,RMDDR,chemical,1,5,5,[np.int64(5)]
+175,178,RMDDR,RMDVL,electrical,1,5,5,[np.int64(5)]
+175,182,RMDDR,RMER,chemical,1,5,5,[np.int64(5)]
+177,198,RMDR,SIAVL,chemical,1,5,5,[np.int64(5)]
+177,200,RMDR,SIBDL,chemical,1,5,5,[np.int64(5)]
+177,211,RMDR,SMDVR,chemical,1,5,5,[np.int64(5)]
+178,179,RMDVL,RMDVR,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+179,94,RMDVR,BWM-VR01,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+179,190,RMDVR,SAADL,electrical,1,5,5,[np.int64(5)]
+180,209,RMED,SMDDR,electrical,1,5,5,[np.int64(5)]
+181,121,RMEL,GLRVR,chemical,1,5,5,[np.int64(5)]
+182,212,RMER,URADL,chemical,1,5,5,[np.int64(5)]
+183,182,RMEV,RMER,chemical,1,5,5,[np.int64(5)]
+183,209,RMEV,SMDDR,chemical,1,5,5,[np.int64(5)]
+186,0,RMGL,ADAL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+186,32,RMGL,ASHL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+186,45,RMGL,AVBR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+186,57,RMGL,AVKR,chemical,1,5,5,[np.int64(5)]
+186,163,RMGL,RIGL,chemical,1,5,5,[np.int64(5)]
+186,186,RMGL,RMGL,electrical,1,5,5,[np.int64(5)]
+186,189,RMGL,RMHR,electrical,1,5,5,[np.int64(5)]
+186,190,RMGL,SAADL,chemical,1,5,5,[np.int64(5)]
+186,198,RMGL,SIAVL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+187,26,RMGR,ALNR,chemical,1,5,5,[np.int64(5)]
+187,54,RMGR,AVJL,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+187,188,RMGR,RMHL,electrical,1,5,5,[np.int64(5)]
+187,189,RMGR,RMHR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+187,190,RMGR,SAADL,chemical,1,5,5,[np.int64(5)]
+187,209,RMGR,SMDDR,electrical,1,5,5,[np.int64(5)]
+188,81,RMHL,BWM-DR04,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+188,97,RMHL,BWM-VR04,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+188,189,RMHL,RMHR,chemical,1,5,5,[np.int64(5)]
+189,79,RMHR,BWM-DR02,chemical,1,5,5,[np.int64(5)]
+189,81,RMHR,BWM-DR04,chemical,1,5,5,[np.int64(5)]
+189,95,RMHR,BWM-VR02,chemical,1,5,5,[np.int64(5)]
+189,97,RMHR,BWM-VR04,chemical,1,5,5,[np.int64(5)]
+189,174,RMHR,RMDDL,chemical,1,5,5,[np.int64(5)]
+189,188,RMHR,RMHL,chemical,1,5,5,[np.int64(5)]
+192,155,SAAVL,RIAR,chemical,1,5,5,[np.int64(5)]
+192,191,SAAVL,SAADR,chemical,1,5,5,[np.int64(5)]
+194,189,SDQL,RMHR,chemical,1,5,5,[np.int64(5)]
+194,203,SDQL,SIBVR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+195,195,SDQR,SDQR,electrical,1,5,5,[np.int64(5)]
+200,202,SIBDL,SIBVL,electrical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+201,203,SIBDR,SIBVR,electrical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+204,108,SMBDL,CEPshDR,chemical,1,5,5,[np.int64(5)]
+205,44,SMBDR,AVBL,chemical,1,5,5,[np.int64(5)]
+205,179,SMBDR,RMDVR,chemical,1,5,5,[np.int64(5)]
+206,165,SMBVL,RIH,chemical,1,5,5,[np.int64(5)]
+206,184,SMBVL,RMFL,chemical,1,5,5,[np.int64(5)]
+206,193,SMBVL,SAAVR,chemical,1,5,5,[np.int64(5)]
+206,200,SMBVL,SIBDL,chemical,1,5,5,[np.int64(5)]
+207,199,SMBVR,SIAVR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+209,183,SMDDR,RMEV,chemical,1,5,5,[np.int64(5)]
+210,97,SMDVL,BWM-VR04,chemical,1,5,5,[np.int64(5)]
+210,99,SMDVL,BWM-VR06,chemical,1,5,5,[np.int64(5)]
+210,176,SMDVL,RMDL,chemical,1,5,5,[np.int64(5)]
+212,183,URADL,RMEV,chemical,1,5,5,[np.int64(5)]
+214,126,URAVL,IL1L,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+214,179,URAVL,RMDVR,chemical,2,5,6,"[np.int64(5), np.int64(6)]"
+215,79,URAVR,BWM-DR02,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+215,181,URAVR,RMEL,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+216,176,URBL,RMDL,chemical,1,5,5,[np.int64(5)]
+217,3,URBR,ADER,chemical,1,5,5,[np.int64(5)]
+217,187,URBR,RMGR,chemical,1,5,5,[np.int64(5)]
+217,188,URBR,RMHL,chemical,3,5,7,"[np.int64(5), np.int64(6), np.int64(7)]"
+217,189,URBR,RMHR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+218,55,URXL,AVJR,chemical,1,5,5,[np.int64(5)]
+219,149,URXR,PVPR,chemical,2,5,7,"[np.int64(5), np.int64(7)]"
+219,215,URXR,URAVR,chemical,1,5,5,[np.int64(5)]
+220,174,URYDL,RMDDL,chemical,1,5,5,[np.int64(5)]
+221,104,URYDR,CEPDR,chemical,1,5,5,[np.int64(5)]
+221,137,URYDR,OLLR,chemical,1,5,5,[np.int64(5)]
+221,175,URYDR,RMDDR,chemical,1,5,5,[np.int64(5)]
+221,182,URYDR,RMER,chemical,1,5,5,[np.int64(5)]
+221,183,URYDR,RMEV,chemical,1,5,5,[np.int64(5)]
+221,213,URYDR,URADR,chemical,1,5,5,[np.int64(5)]
+222,154,URYVL,RIAL,chemical,1,5,5,[np.int64(5)]
+0,10,ADAL,AIAL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+0,12,ADAL,AIBL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+0,158,ADAL,RICL,chemical,1,6,6,[np.int64(6)]
+0,195,ADAL,SDQR,chemical,1,6,6,[np.int64(6)]
+1,32,ADAR,ASHL,electrical,1,6,6,[np.int64(6)]
+2,16,ADEL,AINL,chemical,1,6,6,[np.int64(6)]
+2,46,ADEL,AVDL,chemical,1,6,6,[np.int64(6)]
+2,56,ADEL,AVKL,electrical,1,6,6,[np.int64(6)]
+2,107,ADEL,CEPshDL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+2,126,ADEL,IL1L,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+2,132,ADEL,IL2L,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+2,136,ADEL,OLLL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+2,172,ADEL,RIVL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+2,177,ADEL,RMDR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+2,189,ADEL,RMHR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+3,24,ADER,ALMR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+3,81,ADER,BWM-DR04,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+3,97,ADER,BWM-VR04,chemical,1,6,6,[np.int64(6)]
+3,104,ADER,CEPDR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+3,119,ADER,GLRR,chemical,1,6,6,[np.int64(6)]
+3,133,ADER,IL2R,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+3,200,ADER,SIBDL,chemical,1,6,6,[np.int64(6)]
+4,140,ADFL,OLQVL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+6,11,ADLL,AIAR,chemical,1,6,6,[np.int64(6)]
+6,43,ADLL,AVAR,chemical,1,6,6,[np.int64(6)]
+6,44,ADLL,AVBL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+6,48,ADLL,AVEL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+6,109,ADLL,CEPshVL,chemical,1,6,6,[np.int64(6)]
+6,144,ADLL,PVCL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+6,148,ADLL,PVPL,chemical,1,6,6,[np.int64(6)]
+6,206,ADLL,SMBVL,electrical,1,6,6,[np.int64(6)]
+8,18,AFDL,AIYL,electrical,1,6,6,[np.int64(6)]
+9,28,AFDR,ASEL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+10,6,AIAL,ADLL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+10,17,AIAL,AINR,chemical,1,6,6,[np.int64(6)]
+11,11,AIAR,AIAR,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+11,17,AIAR,AINR,electrical,1,6,6,[np.int64(6)]
+11,31,AIAR,ASGR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+12,32,AIBL,ASHL,electrical,1,6,6,[np.int64(6)]
+12,192,AIBL,SAAVL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+12,197,AIBL,SIADR,chemical,1,6,6,[np.int64(6)]
+13,65,AIBR,AWCR,electrical,1,6,6,[np.int64(6)]
+13,67,AIBR,BAGR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+13,112,AIBR,DVA,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+13,167,AIBR,RIMR,electrical,2,6,7,"[np.int64(6), np.int64(7)]"
+13,185,AIBR,RMFR,chemical,1,6,6,[np.int64(6)]
+15,53,AIMR,AVHR,chemical,1,6,6,[np.int64(6)]
+15,63,AIMR,AWBR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+15,107,AIMR,CEPshDL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+15,110,AIMR,CEPshVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+15,187,AIMR,RMGR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+15,200,AIMR,SIBDL,electrical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+15,204,AIMR,SMBDL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+16,156,AINL,RIBL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+17,157,AINR,RIBR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+18,60,AIYL,AWAL,electrical,1,6,6,[np.int64(6)]
+18,218,AIYL,URXL,electrical,1,6,6,[np.int64(6)]
+19,18,AIYR,AIYL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+19,61,AIYR,AWAR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+19,170,AIYR,RIR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+20,18,AIZL,AIYL,chemical,1,6,6,[np.int64(6)]
+20,53,AIZL,AVHR,chemical,1,6,6,[np.int64(6)]
+20,56,AIZL,AVKL,chemical,1,6,6,[np.int64(6)]
+20,67,AIZL,BAGR,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+20,167,AIZL,RIMR,chemical,1,6,6,[np.int64(6)]
+21,61,AIZR,AWAR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+21,63,AIZR,AWBR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+22,102,ALA,CANR,chemical,1,6,6,[np.int64(6)]
+23,59,ALML,AVM,electrical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+23,107,ALML,CEPshDL,chemical,1,6,6,[np.int64(6)]
+23,144,ALML,PVCL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+23,161,ALML,RIFL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+24,46,ALMR,AVDL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+24,46,ALMR,AVDL,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+25,43,ALNL,AVAR,chemical,1,6,6,[np.int64(6)]
+26,42,ALNR,AVAL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+26,172,ALNR,RIVL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+27,2,AQR,ADEL,chemical,1,6,6,[np.int64(6)]
+27,112,AQR,DVA,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+27,149,AQR,PVPR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+28,11,ASEL,AIAR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+33,42,ASHR,AVAL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+33,52,ASHR,AVHL,electrical,1,6,6,[np.int64(6)]
+33,187,ASHR,RMGR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+34,8,ASIL,AFDL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+34,38,ASIL,ASKL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+35,39,ASIR,ASKR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+35,43,ASIR,AVAR,chemical,1,6,6,[np.int64(6)]
+35,66,ASIR,BAGL,chemical,1,6,6,[np.int64(6)]
+35,106,ASIR,CEPVR,chemical,1,6,6,[np.int64(6)]
+35,127,ASIR,IL1R,chemical,1,6,6,[np.int64(6)]
+35,155,ASIR,RIAR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+38,6,ASKL,ADLL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+38,12,ASKL,AIBL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+38,64,ASKL,AWCL,electrical,1,6,6,[np.int64(6)]
+39,37,ASKR,ASJR,chemical,1,6,6,[np.int64(6)]
+41,46,AUAR,AVDL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+46,114,AVDL,FLPL,electrical,1,6,6,[np.int64(6)]
+47,59,AVDR,AVM,electrical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+47,68,AVDR,BDUL,electrical,1,6,6,[np.int64(6)]
+47,114,AVDR,FLPL,electrical,1,6,6,[np.int64(6)]
+48,66,AVEL,BAGL,electrical,1,6,6,[np.int64(6)]
+48,104,AVEL,CEPDR,electrical,1,6,6,[np.int64(6)]
+48,174,AVEL,RMDDL,electrical,1,6,6,[np.int64(6)]
+49,66,AVER,BAGL,electrical,1,6,6,[np.int64(6)]
+51,45,AVFR,AVBR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+52,167,AVHL,RIMR,chemical,1,6,6,[np.int64(6)]
+53,27,AVHR,AQR,chemical,1,6,6,[np.int64(6)]
+54,171,AVJL,RIS,chemical,1,6,6,[np.int64(6)]
+55,59,AVJR,AVM,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+55,114,AVJR,FLPL,chemical,1,6,6,[np.int64(6)]
+55,144,AVJR,PVCL,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+56,26,AVKL,ALNR,chemical,1,6,6,[np.int64(6)]
+56,187,AVKL,RMGR,electrical,1,6,6,[np.int64(6)]
+56,209,AVKL,SMDDR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+57,148,AVKR,PVPL,electrical,1,6,6,[np.int64(6)]
+57,159,AVKR,RICR,chemical,1,6,6,[np.int64(6)]
+57,173,AVKR,RIVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+57,210,AVKR,SMDVL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+57,211,AVKR,SMDVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+59,0,AVM,ADAL,chemical,1,6,6,[np.int64(6)]
+59,2,AVM,ADEL,chemical,1,6,6,[np.int64(6)]
+59,49,AVM,AVER,chemical,1,6,6,[np.int64(6)]
+59,55,AVM,AVJR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+59,68,AVM,BDUL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+59,144,AVM,PVCL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+60,32,AWAL,ASHL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+61,33,AWAR,ASHR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+61,45,AWAR,AVBR,chemical,1,6,6,[np.int64(6)]
+61,162,AWAR,RIFR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+62,161,AWBL,RIFL,chemical,1,6,6,[np.int64(6)]
+62,204,AWBL,SMBDL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+63,4,AWBR,ADFL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+63,19,AWBR,AIYR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+65,34,AWCR,ASIL,chemical,1,6,6,[np.int64(6)]
+66,43,BAGL,AVAR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+66,67,BAGL,BAGR,electrical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+66,164,BAGL,RIGR,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+67,20,BAGR,AIZL,chemical,1,6,6,[np.int64(6)]
+67,66,BAGR,BAGL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+67,154,BAGR,RIAL,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+68,2,BDUL,ADEL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+68,59,BDUL,AVM,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+69,3,BDUR,ADER,chemical,1,6,6,[np.int64(6)]
+69,45,BDUR,AVBR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+69,46,BDUR,AVDL,chemical,1,6,6,[np.int64(6)]
+69,50,BDUR,AVFL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+69,127,BDUR,IL1R,chemical,1,6,6,[np.int64(6)]
+69,213,BDUR,URADR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+81,176,BWM-DR04,RMDL,electrical,1,6,6,[np.int64(6)]
+103,171,CEPDL,RIS,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+103,174,CEPDL,RMDDL,chemical,1,6,6,[np.int64(6)]
+103,197,CEPDL,SIADR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+104,127,CEPDR,IL1R,chemical,1,6,6,[np.int64(6)]
+105,156,CEPVL,RIBL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+105,176,CEPVL,RMDL,chemical,1,6,6,[np.int64(6)]
+105,216,CEPVL,URBL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+106,157,CEPVR,RIBR,chemical,1,6,6,[np.int64(6)]
+106,189,CEPVR,RMHR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+106,199,CEPVR,SIAVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+112,1,DVA,ADAR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+112,44,DVA,AVBL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+112,47,DVA,AVDR,chemical,1,6,6,[np.int64(6)]
+112,115,DVA,FLPR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+112,144,DVA,PVCL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+112,165,DVA,RIH,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+112,166,DVA,RIML,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+112,194,DVA,SDQL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+112,199,DVA,SIAVR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+113,135,DVC,IL2VR,chemical,1,6,6,[np.int64(6)]
+113,185,DVC,RMFR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+114,49,FLPL,AVER,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+114,171,FLPL,RIS,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+114,194,FLPL,SDQL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+115,12,FLPR,AIBL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+115,49,FLPR,AVER,chemical,1,6,6,[np.int64(6)]
+124,152,IL1DL,PVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+125,183,IL1DR,RMEV,electrical,1,6,6,[np.int64(6)]
+125,213,IL1DR,URADR,electrical,1,6,6,[np.int64(6)]
+126,73,IL1L,BWM-DL04,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+126,186,IL1L,RMGL,chemical,1,6,6,[np.int64(6)]
+127,94,IL1R,BWM-VR01,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+129,127,IL1VR,IL1R,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+130,107,IL2DL,CEPshDL,chemical,1,6,6,[np.int64(6)]
+130,138,IL2DL,OLQDL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+130,159,IL2DL,RICR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+131,139,IL2DR,OLQDR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+133,3,IL2R,ADER,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+133,127,IL2R,IL1R,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+133,183,IL2R,RMEV,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+134,120,IL2VL,GLRVL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+134,140,IL2VL,OLQVL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+136,126,OLLL,IL1L,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+136,128,OLLL,IL1VL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+136,171,OLLL,RIS,chemical,1,6,6,[np.int64(6)]
+136,180,OLLL,RMED,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+136,181,OLLL,RMEL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+136,208,OLLL,SMDDL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+137,124,OLLR,IL1DL,chemical,1,6,6,[np.int64(6)]
+137,125,OLLR,IL1DR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+137,127,OLLR,IL1R,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+137,141,OLLR,OLQVR,chemical,1,6,6,[np.int64(6)]
+137,180,OLLR,RMED,chemical,1,6,6,[np.int64(6)]
+138,188,OLQDL,RMHL,electrical,1,6,6,[np.int64(6)]
+138,205,OLQDL,SMBDR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+139,125,OLQDR,IL1DR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+139,182,OLQDR,RMER,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+140,128,OLQVL,IL1VL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+140,174,OLQVL,RMDDL,electrical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+140,181,OLQVL,RMEL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+141,175,OLQVR,RMDDR,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+144,114,PVCL,FLPL,chemical,1,6,6,[np.int64(6)]
+145,171,PVCR,RIS,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+145,201,PVCR,SIBDR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+145,202,PVCR,SIBVL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+145,203,PVCR,SIBVR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+148,0,PVPL,ADAL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+148,113,PVPL,DVC,chemical,1,6,6,[np.int64(6)]
+149,144,PVPR,PVCL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+149,162,PVPR,RIFR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+150,6,PVQL,ADLL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+150,51,PVQL,AVFR,chemical,1,6,6,[np.int64(6)]
+150,107,PVQL,CEPshDL,chemical,1,6,6,[np.int64(6)]
+150,161,PVQL,RIFL,chemical,1,6,6,[np.int64(6)]
+150,186,PVQL,RMGL,chemical,1,6,6,[np.int64(6)]
+151,1,PVQR,ADAR,chemical,1,6,6,[np.int64(6)]
+151,7,PVQR,ADLR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+151,50,PVQR,AVFL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+151,51,PVQR,AVFR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+152,69,PVR,BDUR,chemical,1,6,6,[np.int64(6)]
+152,103,PVR,CEPDL,chemical,1,6,6,[np.int64(6)]
+153,156,PVT,RIBL,electrical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+153,160,PVT,RID,chemical,1,6,6,[np.int64(6)]
+153,184,PVT,RMFL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+153,185,PVT,RMFR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+154,138,RIAL,OLQDL,chemical,1,6,6,[np.int64(6)]
+156,66,RIBL,BAGL,chemical,1,6,6,[np.int64(6)]
+156,163,RIBL,RIGL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+157,167,RIBR,RIMR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+157,183,RIBR,RMEV,electrical,1,6,6,[np.int64(6)]
+158,173,RICL,RIVR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+158,190,RICL,SAADL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+158,200,RICL,SIBDL,chemical,1,6,6,[np.int64(6)]
+158,217,RICL,URBR,chemical,1,6,6,[np.int64(6)]
+159,12,RICR,AIBL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+159,105,RICR,CEPVL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+159,177,RICR,RMDR,chemical,1,6,6,[np.int64(6)]
+161,50,RIFL,AVFL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+161,51,RIFL,AVFR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+161,53,RIFL,AVHR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+161,166,RIFL,RIML,electrical,1,6,6,[np.int64(6)]
+162,41,RIFR,AUAR,chemical,1,6,6,[np.int64(6)]
+162,167,RIFR,RIMR,electrical,1,6,6,[np.int64(6)]
+163,66,RIGL,BAGL,chemical,1,6,6,[np.int64(6)]
+163,164,RIGL,RIGR,chemical,1,6,6,[np.int64(6)]
+163,173,RIGL,RIVR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+163,184,RIGL,RMFL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+163,189,RIGL,RMHR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+164,185,RIGR,RMFR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+164,207,RIGR,SMBVR,electrical,1,6,6,[np.int64(6)]
+165,48,RIH,AVEL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+165,106,RIH,CEPVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+165,129,RIH,IL1VR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+165,133,RIH,IL2R,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+165,183,RIH,RMEV,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+165,212,RIH,URADL,chemical,1,6,6,[np.int64(6)]
+165,213,RIH,URADR,chemical,1,6,6,[np.int64(6)]
+166,0,RIML,ADAL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+166,47,RIML,AVDR,chemical,1,6,6,[np.int64(6)]
+166,55,RIML,AVJR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+166,57,RIML,AVKR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+166,85,RIML,BWM-DR08,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+166,101,RIML,BWM-VR08,chemical,1,6,6,[np.int64(6)]
+166,185,RIML,RMFR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+167,48,RIMR,AVEL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+167,184,RIMR,RMFL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+167,185,RIMR,RMFR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+169,215,RIPR,URAVR,electrical,1,6,6,[np.int64(6)]
+170,5,RIR,ADFR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+170,19,RIR,AIYR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+170,53,RIR,AVHR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+170,141,RIR,OLQVR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+171,12,RIS,AIBL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+171,172,RIS,RIVL,chemical,1,6,6,[np.int64(6)]
+172,97,RIVL,BWM-VR04,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+172,99,RIVL,BWM-VR06,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+172,101,RIVL,BWM-VR08,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+172,209,RIVL,SMDDR,electrical,1,6,6,[np.int64(6)]
+173,89,RIVR,BWM-VL04,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+173,109,RIVR,CEPshVL,chemical,1,6,6,[np.int64(6)]
+173,179,RIVR,RMDVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+173,195,RIVR,SDQR,chemical,1,6,6,[np.int64(6)]
+174,74,RMDDL,BWM-DL05,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+174,177,RMDDL,RMDR,electrical,1,6,6,[np.int64(6)]
+174,204,RMDDL,SMBDL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+174,211,RMDDL,SMDVR,electrical,1,6,6,[np.int64(6)]
+174,221,RMDDL,URYDR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+175,76,RMDDR,BWM-DL07,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+175,78,RMDDR,BWM-DR01,chemical,1,6,6,[np.int64(6)]
+175,198,RMDDR,SIAVL,electrical,1,6,6,[np.int64(6)]
+175,202,RMDDR,SIBVL,electrical,1,6,6,[np.int64(6)]
+175,205,RMDDR,SMBDR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+175,210,RMDDR,SMDVL,electrical,1,6,6,[np.int64(6)]
+175,212,RMDDR,URADL,chemical,1,6,6,[np.int64(6)]
+176,181,RMDL,RMEL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+176,210,RMDL,SMDVL,electrical,2,6,7,"[np.int64(6), np.int64(7)]"
+177,189,RMDR,RMHR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+178,88,RMDVL,BWM-VL03,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+178,90,RMDVL,BWM-VL05,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+178,180,RMDVL,RMED,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+178,189,RMDVL,RMHR,electrical,1,6,6,[np.int64(6)]
+178,199,RMDVL,SIAVR,electrical,1,6,6,[np.int64(6)]
+179,90,RMDVR,BWM-VL05,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+179,92,RMDVR,BWM-VL07,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+179,180,RMDVR,RMED,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+179,189,RMDVR,RMHR,electrical,1,6,6,[np.int64(6)]
+180,98,RMED,BWM-VR05,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+181,81,RMEL,BWM-DR04,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+181,97,RMEL,BWM-VR04,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+182,73,RMER,BWM-DL04,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+183,79,RMEV,BWM-DR02,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+184,56,RMFL,AVKL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+184,57,RMFL,AVKR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+184,113,RMFL,DVC,chemical,1,6,6,[np.int64(6)]
+184,176,RMFL,RMDL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+185,56,RMFR,AVKL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+185,57,RMFR,AVKR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+185,153,RMFR,PVT,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+185,177,RMFR,RMDR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+186,48,RMGL,AVEL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+186,93,RMGL,BWM-VL08,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+187,33,RMGR,ASHR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+187,44,RMGR,AVBL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+187,49,RMGR,AVER,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+187,85,RMGR,BWM-DR08,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+187,144,RMGR,PVCL,chemical,1,6,6,[np.int64(6)]
+187,207,RMGR,SMBVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+188,104,RMHL,CEPDR,chemical,1,6,6,[np.int64(6)]
+189,71,RMHR,BWM-DL02,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+189,87,RMHR,BWM-VL02,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+189,89,RMHR,BWM-VL04,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+189,176,RMHR,RMDL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+189,186,RMHR,RMGL,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+190,137,SAADL,OLLR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+191,42,SAADR,AVAL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+191,185,SAADR,RMFR,chemical,1,6,6,[np.int64(6)]
+191,186,SAADR,RMGL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+192,184,SAAVL,RMFL,chemical,1,6,6,[np.int64(6)]
+193,185,SAAVR,RMFR,chemical,1,6,6,[np.int64(6)]
+194,43,SDQL,AVAR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+194,49,SDQL,AVER,chemical,1,6,6,[np.int64(6)]
+194,112,SDQL,DVA,chemical,1,6,6,[np.int64(6)]
+194,158,SDQL,RICL,chemical,1,6,6,[np.int64(6)]
+194,159,SDQL,RICR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+194,195,SDQL,SDQR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+194,195,SDQL,SDQR,electrical,2,6,7,"[np.int64(6), np.int64(7)]"
+195,13,SDQR,AIBR,chemical,1,6,6,[np.int64(6)]
+195,43,SDQR,AVAR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+195,45,SDQR,AVBR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+195,144,SDQR,PVCL,chemical,1,6,6,[np.int64(6)]
+195,203,SDQR,SIBVR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+200,204,SIBDL,SMBDL,electrical,2,6,7,"[np.int64(6), np.int64(7)]"
+204,42,SMBDL,AVAL,chemical,1,6,6,[np.int64(6)]
+204,84,SMBDL,BWM-DR07,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+204,117,SMBDL,GLRDR,chemical,1,6,6,[np.int64(6)]
+204,203,SMBDL,SIBVR,chemical,1,6,6,[np.int64(6)]
+204,205,SMBDL,SMBDR,electrical,1,6,6,[np.int64(6)]
+205,76,SMBDR,BWM-DL07,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+206,91,SMBVL,BWM-VL06,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+206,93,SMBVL,BWM-VL08,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+207,110,SMBVR,CEPshVR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+207,119,SMBVR,GLRR,chemical,1,6,6,[np.int64(6)]
+208,26,SMDDL,ALNR,chemical,1,6,6,[np.int64(6)]
+209,177,SMDDR,RMDR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+209,197,SMDDR,SIADR,chemical,1,6,6,[np.int64(6)]
+210,86,SMDVL,BWM-VL01,chemical,1,6,6,[np.int64(6)]
+210,88,SMDVL,BWM-VL03,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+210,191,SMDVL,SAADR,chemical,1,6,6,[np.int64(6)]
+214,71,URAVL,BWM-DL02,chemical,1,6,6,[np.int64(6)]
+214,89,URAVL,BWM-VL04,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+215,97,URAVR,BWM-VR04,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+215,175,URAVR,RMDDR,chemical,1,6,6,[np.int64(6)]
+215,178,URAVR,RMDVL,chemical,1,6,6,[np.int64(6)]
+217,175,URBR,RMDDR,chemical,1,6,6,[np.int64(6)]
+217,176,URBR,RMDL,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+217,219,URBR,URXR,electrical,2,6,8,"[np.int64(6), np.int64(8)]"
+218,132,URXL,IL2L,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+220,87,URYDL,BWM-VL02,chemical,1,6,6,[np.int64(6)]
+221,125,URYDR,IL1DR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+221,139,URYDR,OLQDR,chemical,2,6,8,"[np.int64(6), np.int64(8)]"
+222,45,URYVL,AVBR,chemical,2,6,7,"[np.int64(6), np.int64(7)]"
+222,128,URYVL,IL1VL,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+222,203,URYVL,SIBVR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+223,129,URYVR,IL1VR,chemical,3,6,8,"[np.int64(6), np.int64(7), np.int64(8)]"
+0,49,ADAL,AVER,chemical,1,7,7,[np.int64(7)]
+0,112,ADAL,DVA,chemical,1,7,7,[np.int64(7)]
+0,218,ADAL,URXL,chemical,1,7,7,[np.int64(7)]
+1,3,ADAR,ADER,chemical,1,7,7,[np.int64(7)]
+1,162,ADAR,RIFR,chemical,1,7,7,[np.int64(7)]
+1,185,ADAR,RMFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+1,191,ADAR,SAADR,chemical,1,7,7,[np.int64(7)]
+1,210,ADAR,SMDVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+1,219,ADAR,URXR,chemical,1,7,7,[np.int64(7)]
+2,2,ADEL,ADEL,chemical,1,7,7,[np.int64(7)]
+2,3,ADEL,ADER,electrical,1,7,7,[np.int64(7)]
+2,23,ADEL,ALML,chemical,1,7,7,[np.int64(7)]
+2,25,ADEL,ALNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+2,27,ADEL,AQR,chemical,1,7,7,[np.int64(7)]
+2,36,ADEL,ASJL,chemical,1,7,7,[np.int64(7)]
+2,51,ADEL,AVFR,electrical,1,7,7,[np.int64(7)]
+2,57,ADEL,AVKR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+2,68,ADEL,BDUL,chemical,1,7,7,[np.int64(7)]
+2,103,ADEL,CEPDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+2,165,ADEL,RIH,chemical,1,7,7,[np.int64(7)]
+2,173,ADEL,RIVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+2,176,ADEL,RMDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+2,182,ADEL,RMER,chemical,1,7,7,[np.int64(7)]
+2,185,ADEL,RMFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+2,192,ADEL,SAAVL,chemical,1,7,7,[np.int64(7)]
+2,203,ADEL,SIBVR,chemical,1,7,7,[np.int64(7)]
+3,45,ADER,AVBR,chemical,1,7,7,[np.int64(7)]
+3,112,ADER,DVA,chemical,1,7,7,[np.int64(7)]
+3,113,ADER,DVC,chemical,1,7,7,[np.int64(7)]
+3,137,ADER,OLLR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,147,ADER,PVNR,chemical,1,7,7,[np.int64(7)]
+3,148,ADER,PVPL,chemical,1,7,7,[np.int64(7)]
+3,165,ADER,RIH,chemical,1,7,7,[np.int64(7)]
+3,166,ADER,RIML,electrical,1,7,7,[np.int64(7)]
+3,172,ADER,RIVL,chemical,1,7,7,[np.int64(7)]
+3,173,ADER,RIVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,176,ADER,RMDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,177,ADER,RMDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,184,ADER,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,185,ADER,RMFR,chemical,1,7,7,[np.int64(7)]
+3,187,ADER,RMGR,chemical,1,7,7,[np.int64(7)]
+3,188,ADER,RMHL,chemical,1,7,7,[np.int64(7)]
+3,190,ADER,SAADL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,207,ADER,SMBVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+3,217,ADER,URBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+4,150,ADFL,PVQL,chemical,1,7,7,[np.int64(7)]
+4,159,ADFL,RICR,chemical,1,7,7,[np.int64(7)]
+4,164,ADFL,RIGR,chemical,1,7,7,[np.int64(7)]
+4,222,ADFL,URYVL,chemical,1,7,7,[np.int64(7)]
+5,20,ADFR,AIZL,chemical,1,7,7,[np.int64(7)]
+5,31,ADFR,ASGR,chemical,1,7,7,[np.int64(7)]
+5,218,ADFR,URXL,chemical,1,7,7,[np.int64(7)]
+6,18,ADLL,AIYL,electrical,1,7,7,[np.int64(7)]
+6,62,ADLL,AWBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+6,122,ADLL,HSNL,chemical,1,7,7,[np.int64(7)]
+6,123,ADLL,HSNR,chemical,1,7,7,[np.int64(7)]
+6,146,ADLL,PVNL,chemical,1,7,7,[np.int64(7)]
+7,45,ADLR,AVBR,chemical,1,7,7,[np.int64(7)]
+7,49,ADLR,AVER,chemical,1,7,7,[np.int64(7)]
+7,149,ADLR,PVPR,chemical,1,7,7,[np.int64(7)]
+10,16,AIAL,AINL,electrical,1,7,7,[np.int64(7)]
+10,28,AIAL,ASEL,chemical,1,7,7,[np.int64(7)]
+10,34,AIAL,ASIL,chemical,1,7,7,[np.int64(7)]
+11,122,AIAR,HSNL,chemical,1,7,7,[np.int64(7)]
+11,122,AIAR,HSNL,electrical,1,7,7,[np.int64(7)]
+11,161,AIAR,RIFL,chemical,1,7,7,[np.int64(7)]
+11,219,AIAR,URXR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+12,1,AIBL,ADAR,chemical,1,7,7,[np.int64(7)]
+12,41,AIBL,AUAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+12,43,AIBL,AVAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+12,164,AIBL,RIGR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+12,191,AIBL,SAADR,chemical,1,7,7,[np.int64(7)]
+13,0,AIBR,ADAL,chemical,1,7,7,[np.int64(7)]
+13,27,AIBR,AQR,chemical,1,7,7,[np.int64(7)]
+13,113,AIBR,DVC,chemical,1,7,7,[np.int64(7)]
+13,153,AIBR,PVT,electrical,1,7,7,[np.int64(7)]
+13,154,AIBR,RIAL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+13,172,AIBR,RIVL,electrical,1,7,7,[np.int64(7)]
+13,173,AIBR,RIVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+13,184,AIBR,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+13,193,AIBR,SAAVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+13,203,AIBR,SIBVR,chemical,1,7,7,[np.int64(7)]
+14,0,AIML,ADAL,chemical,1,7,7,[np.int64(7)]
+14,42,AIML,AVAL,chemical,1,7,7,[np.int64(7)]
+14,44,AIML,AVBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+14,62,AIML,AWBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+14,105,AIML,CEPVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+14,122,AIML,HSNL,chemical,1,7,7,[np.int64(7)]
+14,146,AIML,PVNL,chemical,1,7,7,[np.int64(7)]
+14,160,AIML,RID,chemical,1,7,7,[np.int64(7)]
+14,194,AIML,SDQL,chemical,1,7,7,[np.int64(7)]
+14,197,AIML,SIADR,chemical,1,7,7,[np.int64(7)]
+14,203,AIML,SIBVR,electrical,1,7,7,[np.int64(7)]
+14,205,AIML,SMBDR,chemical,1,7,7,[np.int64(7)]
+14,206,AIML,SMBVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+15,15,AIMR,AIMR,chemical,1,7,7,[np.int64(7)]
+15,19,AIMR,AIYR,chemical,1,7,7,[np.int64(7)]
+15,21,AIMR,AIZR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+15,55,AIMR,AVJR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+15,122,AIMR,HSNL,chemical,1,7,7,[np.int64(7)]
+15,146,AIMR,PVNL,chemical,1,7,7,[np.int64(7)]
+15,159,AIMR,RICR,chemical,1,7,7,[np.int64(7)]
+15,161,AIMR,RIFL,chemical,1,7,7,[np.int64(7)]
+16,12,AINL,AIBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+16,155,AINL,RIAR,chemical,1,7,7,[np.int64(7)]
+16,219,AINL,URXR,chemical,1,7,7,[np.int64(7)]
+17,13,AINR,AIBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+17,41,AINR,AUAR,chemical,1,7,7,[np.int64(7)]
+17,166,AINR,RIML,chemical,1,7,7,[np.int64(7)]
+18,19,AIYL,AIYR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+18,62,AIYL,AWBL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+18,156,AIYL,RIBL,electrical,1,7,7,[np.int64(7)]
+19,13,AIYR,AIBR,chemical,1,7,7,[np.int64(7)]
+19,29,AIYR,ASER,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+19,64,AIYR,AWCL,chemical,1,7,7,[np.int64(7)]
+20,60,AIZL,AWAL,chemical,1,7,7,[np.int64(7)]
+20,220,AIZL,URYDL,chemical,1,7,7,[np.int64(7)]
+21,9,AIZR,AFDR,chemical,1,7,7,[np.int64(7)]
+21,32,AIZR,ASHL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+21,64,AIZR,AWCL,chemical,1,7,7,[np.int64(7)]
+21,66,AIZR,BAGL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+21,112,AIZR,DVA,chemical,1,7,7,[np.int64(7)]
+21,204,AIZR,SMBDL,chemical,1,7,7,[np.int64(7)]
+22,6,ALA,ADLL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+22,68,ALA,BDUL,chemical,1,7,7,[np.int64(7)]
+22,146,ALA,PVNL,chemical,1,7,7,[np.int64(7)]
+23,146,ALML,PVNL,chemical,1,7,7,[np.int64(7)]
+23,147,ALML,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+23,175,ALML,RMDDR,chemical,1,7,7,[np.int64(7)]
+23,205,ALML,SMBDR,chemical,1,7,7,[np.int64(7)]
+24,26,ALMR,ALNR,chemical,1,7,7,[np.int64(7)]
+25,173,ALNL,RIVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+25,186,ALNL,RMGL,chemical,1,7,7,[np.int64(7)]
+25,211,ALNL,SMDVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+26,83,ALNR,BWM-DR06,chemical,1,7,7,[np.int64(7)]
+26,164,ALNR,RIGR,chemical,1,7,7,[np.int64(7)]
+26,188,ALNR,RMHL,chemical,1,7,7,[np.int64(7)]
+26,191,ALNR,SAADR,chemical,1,7,7,[np.int64(7)]
+26,208,ALNR,SMDDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+26,211,ALNR,SMDVR,chemical,1,7,7,[np.int64(7)]
+27,13,AQR,AIBR,chemical,1,7,7,[np.int64(7)]
+27,52,AQR,AVHL,chemical,1,7,7,[np.int64(7)]
+27,194,AQR,SDQL,chemical,1,7,7,[np.int64(7)]
+28,6,ASEL,ADLL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+28,155,ASEL,RIAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+29,29,ASER,ASER,chemical,1,7,7,[np.int64(7)]
+29,123,ASER,HSNR,chemical,1,7,7,[np.int64(7)]
+29,151,ASER,PVQR,chemical,1,7,7,[np.int64(7)]
+29,154,ASER,RIAL,chemical,1,7,7,[np.int64(7)]
+30,36,ASGL,ASJL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+31,64,ASGR,AWCL,chemical,1,7,7,[np.int64(7)]
+32,18,ASHL,AIYL,chemical,1,7,7,[np.int64(7)]
+32,32,ASHL,ASHL,chemical,1,7,7,[np.int64(7)]
+32,51,ASHL,AVFR,chemical,1,7,7,[np.int64(7)]
+32,55,ASHL,AVJR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+32,122,ASHL,HSNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+32,123,ASHL,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+32,146,ASHL,PVNL,chemical,1,7,7,[np.int64(7)]
+33,19,ASHR,AIYR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+33,51,ASHR,AVFR,chemical,1,7,7,[np.int64(7)]
+33,123,ASHR,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+33,162,ASHR,RIFR,chemical,1,7,7,[np.int64(7)]
+34,18,ASIL,AIYL,chemical,1,7,7,[np.int64(7)]
+34,60,ASIL,AWAL,chemical,1,7,7,[np.int64(7)]
+34,154,ASIL,RIAL,chemical,1,7,7,[np.int64(7)]
+35,61,ASIR,AWAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+36,30,ASJL,ASGL,chemical,1,7,7,[np.int64(7)]
+36,123,ASJL,HSNR,chemical,1,7,7,[np.int64(7)]
+37,123,ASJR,HSNR,chemical,1,7,7,[np.int64(7)]
+37,146,ASJR,PVNL,chemical,1,7,7,[np.int64(7)]
+38,16,ASKL,AINL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+38,30,ASKL,ASGL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+38,34,ASKL,ASIL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+39,7,ASKR,ADLR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+39,33,ASKR,ASHR,chemical,1,7,7,[np.int64(7)]
+39,47,ASKR,AVDR,chemical,1,7,7,[np.int64(7)]
+39,55,ASKR,AVJR,chemical,1,7,7,[np.int64(7)]
+39,122,ASKR,HSNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+39,123,ASKR,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+39,146,ASKR,PVNL,chemical,1,7,7,[np.int64(7)]
+39,187,ASKR,RMGR,chemical,1,7,7,[np.int64(7)]
+40,62,AUAL,AWBL,electrical,1,7,7,[np.int64(7)]
+40,192,AUAL,SAAVL,chemical,1,7,7,[np.int64(7)]
+41,66,AUAR,BAGL,chemical,1,7,7,[np.int64(7)]
+42,48,AVAL,AVEL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+42,222,AVAL,URYVL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+43,49,AVAR,AVER,electrical,1,7,7,[np.int64(7)]
+43,179,AVAR,RMDVR,electrical,1,7,7,[np.int64(7)]
+44,145,AVBL,PVCR,electrical,1,7,7,[np.int64(7)]
+44,203,AVBL,SIBVR,electrical,1,7,7,[np.int64(7)]
+45,145,AVBR,PVCR,electrical,1,7,7,[np.int64(7)]
+45,149,AVBR,PVPR,electrical,1,7,7,[np.int64(7)]
+48,105,AVEL,CEPVL,electrical,1,7,7,[np.int64(7)]
+48,173,AVEL,RIVR,electrical,1,7,7,[np.int64(7)]
+49,106,AVER,CEPVR,electrical,1,7,7,[np.int64(7)]
+50,15,AVFL,AIMR,chemical,1,7,7,[np.int64(7)]
+50,27,AVFL,AQR,chemical,1,7,7,[np.int64(7)]
+50,49,AVFL,AVER,chemical,1,7,7,[np.int64(7)]
+50,54,AVFL,AVJL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+50,112,AVFL,DVA,chemical,1,7,7,[np.int64(7)]
+50,122,AVFL,HSNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+50,123,AVFL,HSNR,chemical,1,7,7,[np.int64(7)]
+50,147,AVFL,PVNR,chemical,1,7,7,[np.int64(7)]
+50,161,AVFL,RIFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+51,0,AVFR,ADAL,chemical,1,7,7,[np.int64(7)]
+51,54,AVFR,AVJL,chemical,1,7,7,[np.int64(7)]
+51,59,AVFR,AVM,chemical,1,7,7,[np.int64(7)]
+51,60,AVFR,AWAL,chemical,1,7,7,[np.int64(7)]
+51,62,AVFR,AWBL,chemical,1,7,7,[np.int64(7)]
+51,123,AVFR,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+51,146,AVFR,PVNL,chemical,1,7,7,[np.int64(7)]
+51,147,AVFR,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+51,162,AVFR,RIFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+51,198,AVFR,SIAVL,chemical,1,7,7,[np.int64(7)]
+51,211,AVFR,SMDVR,chemical,1,7,7,[np.int64(7)]
+52,11,AVHL,AIAR,chemical,1,7,7,[np.int64(7)]
+52,27,AVHL,AQR,chemical,1,7,7,[np.int64(7)]
+52,43,AVHL,AVAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+52,44,AVHL,AVBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+52,66,AVHL,BAGL,chemical,1,7,7,[np.int64(7)]
+52,145,AVHL,PVCR,chemical,1,7,7,[np.int64(7)]
+52,172,AVHL,RIVL,chemical,1,7,7,[np.int64(7)]
+52,205,AVHL,SMBDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+52,210,AVHL,SMDVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+53,12,AVHR,AIBL,chemical,1,7,7,[np.int64(7)]
+53,17,AVHR,AINR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+53,59,AVHR,AVM,chemical,1,7,7,[np.int64(7)]
+53,144,AVHR,PVCL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+53,173,AVHR,RIVR,chemical,1,7,7,[np.int64(7)]
+53,211,AVHR,SMDVR,chemical,1,7,7,[np.int64(7)]
+54,1,AVJL,ADAR,chemical,1,7,7,[np.int64(7)]
+54,43,AVJL,AVAR,chemical,1,7,7,[np.int64(7)]
+54,59,AVJL,AVM,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+55,160,AVJR,RID,chemical,1,7,7,[np.int64(7)]
+56,44,AVKL,AVBL,chemical,1,7,7,[np.int64(7)]
+56,172,AVKL,RIVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+56,184,AVKL,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+56,205,AVKL,SMBDR,chemical,1,7,7,[np.int64(7)]
+56,208,AVKL,SMDDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+56,210,AVKL,SMDVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+57,58,AVKR,AVL,chemical,1,7,7,[np.int64(7)]
+57,113,AVKR,DVC,chemical,1,7,7,[np.int64(7)]
+57,163,AVKR,RIGL,chemical,1,7,7,[np.int64(7)]
+57,185,AVKR,RMFR,chemical,1,7,7,[np.int64(7)]
+58,153,AVL,PVT,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+59,47,AVM,AVDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+59,147,AVM,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+60,12,AWAL,AIBL,chemical,1,7,7,[np.int64(7)]
+60,38,AWAL,ASKL,chemical,1,7,7,[np.int64(7)]
+60,123,AWAL,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+60,161,AWAL,RIFL,chemical,1,7,7,[np.int64(7)]
+61,1,AWAR,ADAR,chemical,1,7,7,[np.int64(7)]
+61,41,AWAR,AUAR,chemical,1,7,7,[np.int64(7)]
+62,18,AWBL,AIYL,chemical,1,7,7,[np.int64(7)]
+62,198,AWBL,SIAVL,chemical,1,7,7,[np.int64(7)]
+63,123,AWBR,HSNR,chemical,1,7,7,[np.int64(7)]
+63,201,AWBR,SIBDR,chemical,1,7,7,[np.int64(7)]
+64,21,AWCL,AIZR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+65,38,AWCR,ASKL,chemical,1,7,7,[np.int64(7)]
+65,66,AWCR,BAGL,chemical,1,7,7,[np.int64(7)]
+65,133,AWCR,IL2R,chemical,1,7,7,[np.int64(7)]
+65,137,AWCR,OLLR,chemical,1,7,7,[np.int64(7)]
+66,13,BAGL,AIBR,chemical,1,7,7,[np.int64(7)]
+66,185,BAGL,RMFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+67,12,BAGR,AIBL,chemical,1,7,7,[np.int64(7)]
+67,18,BAGR,AIYL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+67,46,BAGR,AVDL,chemical,1,7,7,[np.int64(7)]
+67,148,BAGR,PVPL,chemical,1,7,7,[np.int64(7)]
+67,157,BAGR,RIBR,electrical,1,7,7,[np.int64(7)]
+67,160,BAGR,RID,chemical,1,7,7,[np.int64(7)]
+67,164,BAGR,RIGR,chemical,1,7,7,[np.int64(7)]
+67,184,BAGR,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+67,218,BAGR,URXL,chemical,1,7,7,[np.int64(7)]
+68,142,BDUL,PLNL,chemical,1,7,7,[np.int64(7)]
+68,147,BDUL,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+68,150,BDUL,PVQL,chemical,1,7,7,[np.int64(7)]
+68,160,BDUL,RID,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+69,123,BDUR,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+69,146,BDUR,PVNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+69,147,BDUR,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+69,147,BDUR,PVNR,electrical,1,7,7,[np.int64(7)]
+70,78,BWM-DL01,BWM-DR01,electrical,1,7,7,[np.int64(7)]
+71,87,BWM-DL02,BWM-VL02,electrical,1,7,7,[np.int64(7)]
+72,80,BWM-DL03,BWM-DR03,electrical,1,7,7,[np.int64(7)]
+74,82,BWM-DL05,BWM-DR05,electrical,1,7,7,[np.int64(7)]
+76,103,BWM-DL07,CEPDL,electrical,1,7,7,[np.int64(7)]
+79,95,BWM-DR02,BWM-VR02,electrical,1,7,7,[np.int64(7)]
+79,174,BWM-DR02,RMDDL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+82,152,BWM-DR05,PVR,electrical,1,7,7,[np.int64(7)]
+83,174,BWM-DR06,RMDDL,electrical,1,7,7,[np.int64(7)]
+84,152,BWM-DR07,PVR,electrical,1,7,7,[np.int64(7)]
+86,94,BWM-VL01,BWM-VR01,electrical,1,7,7,[np.int64(7)]
+88,96,BWM-VL03,BWM-VR03,electrical,1,7,7,[np.int64(7)]
+89,182,BWM-VL04,RMER,electrical,1,7,7,[np.int64(7)]
+90,183,BWM-VL05,RMEV,electrical,1,7,7,[np.int64(7)]
+91,177,BWM-VL06,RMDR,electrical,1,7,7,[np.int64(7)]
+95,181,BWM-VR02,RMEL,electrical,1,7,7,[np.int64(7)]
+97,110,BWM-VR04,CEPshVR,electrical,1,7,7,[np.int64(7)]
+97,178,BWM-VR04,RMDVL,electrical,1,7,7,[np.int64(7)]
+97,187,BWM-VR04,RMGR,electrical,1,7,7,[np.int64(7)]
+102,108,CANR,CEPshDR,electrical,1,7,7,[np.int64(7)]
+103,2,CEPDL,ADEL,chemical,1,7,7,[np.int64(7)]
+103,76,CEPDL,BWM-DL07,chemical,1,7,7,[np.int64(7)]
+103,189,CEPDL,RMHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+103,194,CEPDL,SDQL,chemical,1,7,7,[np.int64(7)]
+103,205,CEPDL,SMBDR,chemical,1,7,7,[np.int64(7)]
+103,218,CEPDL,URXL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+104,44,CEPDR,AVBL,chemical,1,7,7,[np.int64(7)]
+104,47,CEPDR,AVDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+104,55,CEPDR,AVJR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+104,171,CEPDR,RIS,chemical,1,7,7,[np.int64(7)]
+104,177,CEPDR,RMDR,chemical,1,7,7,[np.int64(7)]
+104,179,CEPDR,RMDVR,electrical,1,7,7,[np.int64(7)]
+104,188,CEPDR,RMHL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+104,189,CEPDR,RMHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+104,196,CEPDR,SIADL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+104,219,CEPDR,URXR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+105,48,CEPVL,AVEL,chemical,1,7,7,[np.int64(7)]
+105,90,CEPVL,BWM-VL05,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+105,126,CEPVL,IL1L,chemical,1,7,7,[np.int64(7)]
+105,208,CEPVL,SMDDL,chemical,1,7,7,[np.int64(7)]
+105,218,CEPVL,URXL,chemical,1,7,7,[np.int64(7)]
+105,218,CEPVL,URXL,electrical,1,7,7,[np.int64(7)]
+106,24,CEPVR,ALMR,chemical,1,7,7,[np.int64(7)]
+106,45,CEPVR,AVBR,chemical,1,7,7,[np.int64(7)]
+106,49,CEPVR,AVER,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+106,94,CEPVR,BWM-VR01,chemical,1,7,7,[np.int64(7)]
+106,177,CEPVR,RMDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+106,187,CEPVR,RMGR,chemical,1,7,7,[np.int64(7)]
+106,219,CEPVR,URXR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,154,DVA,RIAL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,155,DVA,RIAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,185,DVA,RMFR,chemical,1,7,7,[np.int64(7)]
+112,198,DVA,SIAVL,chemical,1,7,7,[np.int64(7)]
+112,204,DVA,SMBDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,205,DVA,SMBDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,206,DVA,SMBVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,207,DVA,SMBVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+112,219,DVA,URXR,chemical,1,7,7,[np.int64(7)]
+113,56,DVC,AVKL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+113,58,DVC,AVL,chemical,1,7,7,[np.int64(7)]
+113,136,DVC,OLLL,chemical,1,7,7,[np.int64(7)]
+113,160,DVC,RID,chemical,1,7,7,[np.int64(7)]
+113,166,DVC,RIML,chemical,1,7,7,[np.int64(7)]
+113,172,DVC,RIVL,chemical,1,7,7,[np.int64(7)]
+113,184,DVC,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+113,193,DVC,SAAVR,chemical,1,7,7,[np.int64(7)]
+114,12,FLPL,AIBL,chemical,1,7,7,[np.int64(7)]
+114,13,FLPL,AIBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+114,165,FLPL,RIH,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+115,1,FLPR,ADAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+115,47,FLPR,AVDR,chemical,1,7,7,[np.int64(7)]
+115,149,FLPR,PVPR,chemical,1,7,7,[np.int64(7)]
+122,6,HSNL,ADLL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,10,HSNL,AIAL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,20,HSNL,AIZL,chemical,1,7,7,[np.int64(7)]
+122,21,HSNL,AIZR,chemical,1,7,7,[np.int64(7)]
+122,27,HSNL,AQR,chemical,1,7,7,[np.int64(7)]
+122,29,HSNL,ASER,chemical,1,7,7,[np.int64(7)]
+122,33,HSNL,ASHR,chemical,1,7,7,[np.int64(7)]
+122,43,HSNL,AVAR,chemical,1,7,7,[np.int64(7)]
+122,44,HSNL,AVBL,chemical,1,7,7,[np.int64(7)]
+122,45,HSNL,AVBR,chemical,1,7,7,[np.int64(7)]
+122,47,HSNL,AVDR,chemical,1,7,7,[np.int64(7)]
+122,52,HSNL,AVHL,chemical,1,7,7,[np.int64(7)]
+122,60,HSNL,AWAL,chemical,1,7,7,[np.int64(7)]
+122,61,HSNL,AWAR,chemical,1,7,7,[np.int64(7)]
+122,62,HSNL,AWBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,63,HSNL,AWBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,146,HSNL,PVNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,147,HSNL,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,150,HSNL,PVQL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,161,HSNL,RIFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+122,167,HSNL,RIMR,chemical,1,7,7,[np.int64(7)]
+123,10,HSNR,AIAL,chemical,1,7,7,[np.int64(7)]
+123,11,HSNR,AIAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+123,20,HSNR,AIZL,chemical,1,7,7,[np.int64(7)]
+123,21,HSNR,AIZR,chemical,1,7,7,[np.int64(7)]
+123,24,HSNR,ALMR,chemical,1,7,7,[np.int64(7)]
+123,29,HSNR,ASER,chemical,1,7,7,[np.int64(7)]
+123,33,HSNR,ASHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+123,38,HSNR,ASKL,chemical,1,7,7,[np.int64(7)]
+123,39,HSNR,ASKR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+123,44,HSNR,AVBL,chemical,1,7,7,[np.int64(7)]
+123,47,HSNR,AVDR,chemical,1,7,7,[np.int64(7)]
+123,51,HSNR,AVFR,chemical,1,7,7,[np.int64(7)]
+123,62,HSNR,AWBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+123,63,HSNR,AWBR,chemical,1,7,7,[np.int64(7)]
+123,69,HSNR,BDUR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+123,146,HSNR,PVNL,electrical,1,7,7,[np.int64(7)]
+123,150,HSNR,PVQL,chemical,1,7,7,[np.int64(7)]
+123,162,HSNR,RIFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+123,167,HSNR,RIMR,chemical,1,7,7,[np.int64(7)]
+124,72,IL1DL,BWM-DL03,chemical,1,7,7,[np.int64(7)]
+124,136,IL1DL,OLLL,electrical,1,7,7,[np.int64(7)]
+124,175,IL1DL,RMDDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+125,80,IL1DR,BWM-DR03,chemical,1,7,7,[np.int64(7)]
+125,125,IL1DR,IL1DR,electrical,1,7,7,[np.int64(7)]
+125,129,IL1DR,IL1VR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+125,152,IL1DR,PVR,chemical,1,7,7,[np.int64(7)]
+126,49,IL1L,AVER,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+126,86,IL1L,BWM-VL01,chemical,1,7,7,[np.int64(7)]
+126,124,IL1L,IL1DL,chemical,1,7,7,[np.int64(7)]
+126,132,IL1L,IL2L,electrical,1,7,7,[np.int64(7)]
+126,180,IL1L,RMED,chemical,1,7,7,[np.int64(7)]
+126,183,IL1L,RMEV,chemical,1,7,7,[np.int64(7)]
+126,189,IL1L,RMHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+127,48,IL1R,AVEL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+127,78,IL1R,BWM-DR01,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+127,119,IL1R,GLRR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+127,129,IL1R,IL1VR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+127,169,IL1R,RIPR,chemical,1,7,7,[np.int64(7)]
+127,171,IL1R,RIS,chemical,1,7,7,[np.int64(7)]
+127,176,IL1R,RMDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+127,184,IL1R,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+128,88,IL1VL,BWM-VL03,chemical,1,7,7,[np.int64(7)]
+128,128,IL1VL,IL1VL,electrical,1,7,7,[np.int64(7)]
+128,152,IL1VL,PVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+128,183,IL1VL,RMEV,chemical,1,7,7,[np.int64(7)]
+130,0,IL2DL,ADAL,chemical,1,7,7,[np.int64(7)]
+130,72,IL2DL,BWM-DL03,chemical,1,7,7,[np.int64(7)]
+130,103,IL2DL,CEPDL,chemical,1,7,7,[np.int64(7)]
+130,132,IL2DL,IL2L,chemical,1,7,7,[np.int64(7)]
+130,188,IL2DL,RMHL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+130,220,IL2DL,URYDL,chemical,1,7,7,[np.int64(7)]
+131,158,IL2DR,RICL,chemical,1,7,7,[np.int64(7)]
+131,179,IL2DR,RMDVR,chemical,1,7,7,[np.int64(7)]
+131,189,IL2DR,RMHR,chemical,1,7,7,[np.int64(7)]
+132,124,IL2L,IL1DL,chemical,1,7,7,[np.int64(7)]
+132,159,IL2L,RICR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+132,182,IL2L,RMER,chemical,1,7,7,[np.int64(7)]
+132,191,IL2L,SAADR,electrical,1,7,7,[np.int64(7)]
+132,200,IL2L,SIBDL,chemical,1,7,7,[np.int64(7)]
+132,206,IL2L,SMBVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+133,95,IL2R,BWM-VR02,chemical,1,7,7,[np.int64(7)]
+133,97,IL2R,BWM-VR04,chemical,1,7,7,[np.int64(7)]
+133,119,IL2R,GLRR,chemical,1,7,7,[np.int64(7)]
+133,129,IL2R,IL1VR,chemical,1,7,7,[np.int64(7)]
+133,158,IL2R,RICL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+133,159,IL2R,RICR,chemical,1,7,7,[np.int64(7)]
+133,207,IL2R,SMBVR,chemical,1,7,7,[np.int64(7)]
+133,215,IL2R,URAVR,chemical,1,7,7,[np.int64(7)]
+133,217,IL2R,URBR,chemical,1,7,7,[np.int64(7)]
+133,219,IL2R,URXR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+134,67,IL2VL,BAGR,chemical,1,7,7,[np.int64(7)]
+134,174,IL2VL,RMDDL,chemical,1,7,7,[np.int64(7)]
+135,133,IL2VR,IL2R,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+135,141,IL2VR,OLQVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+135,175,IL2VR,RMDDR,chemical,1,7,7,[np.int64(7)]
+135,178,IL2VR,RMDVL,chemical,1,7,7,[np.int64(7)]
+135,223,IL2VR,URYVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+136,2,OLLL,ADEL,chemical,1,7,7,[np.int64(7)]
+136,124,OLLL,IL1DL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+136,137,OLLL,OLLR,chemical,1,7,7,[np.int64(7)]
+136,140,OLLL,OLQVL,chemical,1,7,7,[np.int64(7)]
+136,157,OLLL,RIBR,chemical,1,7,7,[np.int64(7)]
+136,218,OLLL,URXL,chemical,1,7,7,[np.int64(7)]
+137,129,OLLR,IL1VR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+137,133,OLLR,IL2R,chemical,1,7,7,[np.int64(7)]
+137,181,OLLR,RMEL,chemical,1,7,7,[np.int64(7)]
+137,223,OLLR,URYVR,chemical,1,7,7,[np.int64(7)]
+138,130,OLQDL,IL2DL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+138,165,OLQDL,RIH,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+138,188,OLQDL,RMHL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+139,165,OLQDR,RIH,chemical,1,7,7,[np.int64(7)]
+139,189,OLQDR,RMHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+139,204,OLQDR,SMBDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+140,180,OLQVL,RMED,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+140,186,OLQVL,RMGL,electrical,1,7,7,[np.int64(7)]
+141,129,OLQVR,IL1VR,chemical,1,7,7,[np.int64(7)]
+141,149,OLQVR,PVPR,chemical,1,7,7,[np.int64(7)]
+141,164,OLQVR,RIGR,chemical,1,7,7,[np.int64(7)]
+141,178,OLQVR,RMDVL,electrical,1,7,7,[np.int64(7)]
+141,182,OLQVR,RMER,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+141,189,OLQVR,RMHR,chemical,1,7,7,[np.int64(7)]
+142,45,PLNL,AVBR,chemical,1,7,7,[np.int64(7)]
+142,88,PLNL,BWM-VL03,chemical,1,7,7,[np.int64(7)]
+142,160,PLNL,RID,chemical,1,7,7,[np.int64(7)]
+142,190,PLNL,SAADL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+142,193,PLNL,SAAVR,chemical,1,7,7,[np.int64(7)]
+142,206,PLNL,SMBVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+142,211,PLNL,SMDVR,chemical,1,7,7,[np.int64(7)]
+143,187,PLNR,RMGR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+143,189,PLNR,RMHR,electrical,1,7,7,[np.int64(7)]
+143,191,PLNR,SAADR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+143,207,PLNR,SMBVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+143,210,PLNR,SMDVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+144,0,PVCL,ADAL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+144,145,PVCL,PVCR,electrical,1,7,7,[np.int64(7)]
+144,194,PVCL,SDQL,chemical,1,7,7,[np.int64(7)]
+145,54,PVCR,AVJL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+145,200,PVCR,SIBDL,chemical,1,7,7,[np.int64(7)]
+146,10,PVNL,AIAL,chemical,1,7,7,[np.int64(7)]
+146,21,PVNL,AIZR,chemical,1,7,7,[np.int64(7)]
+146,36,PVNL,ASJL,chemical,1,7,7,[np.int64(7)]
+146,44,PVNL,AVBL,chemical,1,7,7,[np.int64(7)]
+146,47,PVNL,AVDR,chemical,1,7,7,[np.int64(7)]
+146,50,PVNL,AVFL,chemical,1,7,7,[np.int64(7)]
+146,59,PVNL,AVM,chemical,1,7,7,[np.int64(7)]
+146,68,PVNL,BDUL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+146,69,PVNL,BDUR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+146,122,PVNL,HSNL,chemical,1,7,7,[np.int64(7)]
+146,123,PVNL,HSNR,chemical,1,7,7,[np.int64(7)]
+146,147,PVNL,PVNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+146,206,PVNL,SMBVL,chemical,1,7,7,[np.int64(7)]
+147,23,PVNR,ALML,chemical,1,7,7,[np.int64(7)]
+147,44,PVNR,AVBL,chemical,1,7,7,[np.int64(7)]
+147,54,PVNR,AVJL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+147,68,PVNR,BDUL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+147,69,PVNR,BDUR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+147,146,PVNR,PVNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+147,162,PVNR,RIFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+147,194,PVNR,SDQL,chemical,1,7,7,[np.int64(7)]
+148,50,PVPL,AVFL,chemical,1,7,7,[np.int64(7)]
+148,196,PVPL,SIADL,chemical,1,7,7,[np.int64(7)]
+149,56,PVPR,AVKL,chemical,1,7,7,[np.int64(7)]
+149,185,PVPR,RMFR,chemical,1,7,7,[np.int64(7)]
+150,22,PVQL,ALA,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+150,59,PVQL,AVM,chemical,1,7,7,[np.int64(7)]
+150,144,PVQL,PVCL,chemical,1,7,7,[np.int64(7)]
+151,29,PVQR,ASER,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+151,31,PVQR,ASGR,chemical,1,7,7,[np.int64(7)]
+151,61,PVQR,AWAR,chemical,1,7,7,[np.int64(7)]
+151,122,PVQR,HSNL,chemical,1,7,7,[np.int64(7)]
+151,123,PVQR,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+151,146,PVQR,PVNL,chemical,1,7,7,[np.int64(7)]
+151,187,PVQR,RMGR,chemical,1,7,7,[np.int64(7)]
+154,166,RIAL,RIML,electrical,1,7,7,[np.int64(7)]
+154,195,RIAL,SDQR,chemical,1,7,7,[np.int64(7)]
+154,204,RIAL,SMBDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+154,205,RIAL,SMBDR,chemical,1,7,7,[np.int64(7)]
+154,207,RIAL,SMBVR,chemical,1,7,7,[np.int64(7)]
+155,192,RIAR,SAAVL,electrical,1,7,7,[np.int64(7)]
+155,200,RIAR,SIBDL,chemical,1,7,7,[np.int64(7)]
+155,204,RIAR,SMBDL,chemical,1,7,7,[np.int64(7)]
+155,206,RIAR,SMBVL,chemical,1,7,7,[np.int64(7)]
+156,12,RIBL,AIBL,chemical,1,7,7,[np.int64(7)]
+156,41,RIBL,AUAR,chemical,1,7,7,[np.int64(7)]
+156,165,RIBL,RIH,chemical,1,7,7,[np.int64(7)]
+156,220,RIBL,URYDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+156,222,RIBL,URYVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+158,45,RICL,AVBR,chemical,1,7,7,[np.int64(7)]
+158,46,RICL,AVDL,chemical,1,7,7,[np.int64(7)]
+158,104,RICL,CEPDR,chemical,1,7,7,[np.int64(7)]
+158,145,RICL,PVCR,chemical,1,7,7,[np.int64(7)]
+158,218,RICL,URXL,chemical,1,7,7,[np.int64(7)]
+159,13,RICR,AIBR,chemical,1,7,7,[np.int64(7)]
+159,44,RICR,AVBL,chemical,1,7,7,[np.int64(7)]
+159,103,RICR,CEPDL,chemical,1,7,7,[np.int64(7)]
+159,186,RICR,RMGL,chemical,1,7,7,[np.int64(7)]
+161,13,RIFL,AIBR,chemical,1,7,7,[np.int64(7)]
+161,15,RIFL,AIMR,chemical,1,7,7,[np.int64(7)]
+161,24,RIFL,ALMR,chemical,1,7,7,[np.int64(7)]
+161,47,RIFL,AVDR,chemical,1,7,7,[np.int64(7)]
+161,146,RIFL,PVNL,chemical,1,7,7,[np.int64(7)]
+161,167,RIFL,RIMR,chemical,1,7,7,[np.int64(7)]
+162,11,RIFR,AIAR,chemical,1,7,7,[np.int64(7)]
+162,15,RIFR,AIMR,chemical,1,7,7,[np.int64(7)]
+162,27,RIFR,AQR,chemical,1,7,7,[np.int64(7)]
+162,50,RIFR,AVFL,chemical,1,7,7,[np.int64(7)]
+162,53,RIFR,AVHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+162,123,RIFR,HSNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+162,147,RIFR,PVNR,chemical,1,7,7,[np.int64(7)]
+162,148,RIFR,PVPL,chemical,1,7,7,[np.int64(7)]
+162,187,RIFR,RMGR,chemical,1,7,7,[np.int64(7)]
+162,219,RIFR,URXR,electrical,1,7,7,[np.int64(7)]
+163,25,RIGL,ALNL,chemical,1,7,7,[np.int64(7)]
+163,32,RIGL,ASHL,chemical,1,7,7,[np.int64(7)]
+163,45,RIGL,AVBR,chemical,1,7,7,[np.int64(7)]
+163,150,RIGL,PVQL,chemical,1,7,7,[np.int64(7)]
+163,185,RIGL,RMFR,chemical,1,7,7,[np.int64(7)]
+163,188,RIGL,RMHL,chemical,1,7,7,[np.int64(7)]
+163,218,RIGL,URXL,chemical,1,7,7,[np.int64(7)]
+164,26,RIGR,ALNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+164,67,RIGR,BAGR,chemical,1,7,7,[np.int64(7)]
+164,143,RIGR,PLNR,chemical,1,7,7,[np.int64(7)]
+164,149,RIGR,PVPR,chemical,1,7,7,[np.int64(7)]
+165,18,RIH,AIYL,chemical,1,7,7,[np.int64(7)]
+165,41,RIH,AUAR,chemical,1,7,7,[np.int64(7)]
+165,49,RIH,AVER,chemical,1,7,7,[np.int64(7)]
+165,128,RIH,IL1VL,chemical,1,7,7,[np.int64(7)]
+165,214,RIH,URAVL,chemical,1,7,7,[np.int64(7)]
+165,215,RIH,URAVR,chemical,1,7,7,[np.int64(7)]
+165,222,RIH,URYVL,chemical,1,7,7,[np.int64(7)]
+166,42,RIML,AVAL,chemical,1,7,7,[np.int64(7)]
+166,49,RIML,AVER,chemical,1,7,7,[np.int64(7)]
+166,137,RIML,OLLR,chemical,1,7,7,[np.int64(7)]
+166,167,RIML,RIMR,electrical,1,7,7,[np.int64(7)]
+166,171,RIML,RIS,electrical,1,7,7,[np.int64(7)]
+166,184,RIML,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+166,218,RIML,URXL,electrical,1,7,7,[np.int64(7)]
+167,41,RIMR,AUAR,chemical,1,7,7,[np.int64(7)]
+167,154,RIMR,RIAL,chemical,1,7,7,[np.int64(7)]
+167,162,RIMR,RIFR,chemical,1,7,7,[np.int64(7)]
+168,169,RIPL,RIPR,electrical,1,7,7,[np.int64(7)]
+169,183,RIPR,RMEV,electrical,1,7,7,[np.int64(7)]
+170,171,RIR,RIS,electrical,1,7,7,[np.int64(7)]
+170,207,RIR,SMBVR,chemical,1,7,7,[np.int64(7)]
+171,175,RIS,RMDDR,electrical,1,7,7,[np.int64(7)]
+171,210,RIS,SMDVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+171,221,RIS,URYDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+171,222,RIS,URYVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+172,195,RIVL,SDQR,chemical,1,7,7,[np.int64(7)]
+173,100,RIVR,BWM-VR07,chemical,1,7,7,[np.int64(7)]
+173,116,RIVR,GLRDL,chemical,1,7,7,[np.int64(7)]
+173,159,RIVR,RICR,chemical,1,7,7,[np.int64(7)]
+173,179,RIVR,RMDVR,electrical,1,7,7,[np.int64(7)]
+173,195,RIVR,SDQR,electrical,1,7,7,[np.int64(7)]
+173,206,RIVR,SMBVL,chemical,1,7,7,[np.int64(7)]
+174,76,RMDDL,BWM-DL07,chemical,1,7,7,[np.int64(7)]
+174,83,RMDDL,BWM-DR06,chemical,1,7,7,[np.int64(7)]
+174,84,RMDDL,BWM-DR07,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+174,125,RMDDL,IL1DR,chemical,1,7,7,[np.int64(7)]
+174,174,RMDDL,RMDDL,chemical,1,7,7,[np.int64(7)]
+174,183,RMDDL,RMEV,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+174,199,RMDDL,SIAVR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+175,89,RMDDR,BWM-VL04,chemical,1,7,7,[np.int64(7)]
+175,124,RMDDR,IL1DL,chemical,1,7,7,[np.int64(7)]
+175,175,RMDDR,RMDDR,chemical,1,7,7,[np.int64(7)]
+175,176,RMDDR,RMDL,chemical,1,7,7,[np.int64(7)]
+175,201,RMDDR,SIBDR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+176,85,RMDL,BWM-DR08,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+176,99,RMDL,BWM-VR06,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+176,166,RMDL,RIML,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+176,181,RMDL,RMEL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+176,199,RMDL,SIAVR,chemical,1,7,7,[np.int64(7)]
+177,77,RMDR,BWM-DL08,chemical,1,7,7,[np.int64(7)]
+177,91,RMDR,BWM-VL06,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+177,118,RMDR,GLRL,chemical,1,7,7,[np.int64(7)]
+177,167,RMDR,RIMR,chemical,1,7,7,[np.int64(7)]
+177,182,RMDR,RMER,electrical,1,7,7,[np.int64(7)]
+177,185,RMDR,RMFR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+177,189,RMDR,RMHR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+178,92,RMDVL,BWM-VL07,chemical,1,7,7,[np.int64(7)]
+178,99,RMDVL,BWM-VR06,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+178,100,RMDVL,BWM-VR07,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+178,121,RMDVL,GLRVR,chemical,1,7,7,[np.int64(7)]
+178,207,RMDVL,SMBVR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+180,90,RMED,BWM-VL05,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+180,180,RMED,RMED,chemical,1,7,7,[np.int64(7)]
+180,181,RMED,RMEL,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+180,182,RMED,RMER,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+181,119,RMEL,GLRR,chemical,1,7,7,[np.int64(7)]
+181,181,RMEL,RMEL,chemical,1,7,7,[np.int64(7)]
+181,183,RMEL,RMEV,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+182,175,RMER,RMDDR,chemical,1,7,7,[np.int64(7)]
+182,182,RMER,RMER,chemical,1,7,7,[np.int64(7)]
+183,74,RMEV,BWM-DL05,chemical,1,7,7,[np.int64(7)]
+183,82,RMEV,BWM-DR05,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+184,81,RMFL,BWM-DR04,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+184,83,RMFL,BWM-DR06,chemical,1,7,7,[np.int64(7)]
+184,95,RMFL,BWM-VR02,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+184,97,RMFL,BWM-VR04,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+184,153,RMFL,PVT,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+184,175,RMFL,RMDDR,chemical,1,7,7,[np.int64(7)]
+184,177,RMFL,RMDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+184,188,RMFL,RMHL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,13,RMFR,AIBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,67,RMFR,BAGR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,71,RMFR,BWM-DL02,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,73,RMFR,BWM-DL04,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,75,RMFR,BWM-DL06,chemical,1,7,7,[np.int64(7)]
+185,103,RMFR,CEPDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,126,RMFR,IL1L,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,156,RMFR,RIBL,chemical,1,7,7,[np.int64(7)]
+185,166,RMFR,RIML,chemical,1,7,7,[np.int64(7)]
+185,176,RMFR,RMDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,184,RMFR,RMFL,chemical,1,7,7,[np.int64(7)]
+185,186,RMFR,RMGL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,189,RMFR,RMHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+185,190,RMFR,SAADL,chemical,1,7,7,[np.int64(7)]
+186,13,RMGL,AIBR,chemical,1,7,7,[np.int64(7)]
+186,14,RMGL,AIML,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+186,42,RMGL,AVAL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+186,122,RMGL,HSNL,chemical,1,7,7,[np.int64(7)]
+186,126,RMGL,IL1L,chemical,1,7,7,[np.int64(7)]
+186,148,RMGL,PVPL,chemical,1,7,7,[np.int64(7)]
+186,175,RMGL,RMDDR,chemical,1,7,7,[np.int64(7)]
+186,186,RMGL,RMGL,chemical,1,7,7,[np.int64(7)]
+186,194,RMGL,SDQL,chemical,1,7,7,[np.int64(7)]
+186,197,RMGL,SIADR,chemical,1,7,7,[np.int64(7)]
+186,200,RMGL,SIBDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+186,204,RMGL,SMBDL,chemical,1,7,7,[np.int64(7)]
+186,218,RMGL,URXL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+187,24,RMGR,ALMR,chemical,1,7,7,[np.int64(7)]
+187,79,RMGR,BWM-DR02,chemical,1,7,7,[np.int64(7)]
+187,81,RMGR,BWM-DR04,chemical,1,7,7,[np.int64(7)]
+187,104,RMGR,CEPDR,chemical,1,7,7,[np.int64(7)]
+187,143,RMGR,PLNR,chemical,1,7,7,[np.int64(7)]
+187,147,RMGR,PVNR,chemical,1,7,7,[np.int64(7)]
+187,154,RMGR,RIAL,chemical,1,7,7,[np.int64(7)]
+187,162,RMGR,RIFR,chemical,1,7,7,[np.int64(7)]
+187,174,RMGR,RMDDL,chemical,1,7,7,[np.int64(7)]
+187,189,RMGR,RMHR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+187,196,RMGR,SIADL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+187,208,RMGR,SMDDL,chemical,1,7,7,[np.int64(7)]
+188,184,RMHL,RMFL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+188,219,RMHL,URXR,electrical,1,7,7,[np.int64(7)]
+189,57,RMHR,AVKR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+189,73,RMHR,BWM-DL04,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+189,75,RMHR,BWM-DL06,chemical,1,7,7,[np.int64(7)]
+189,126,RMHR,IL1L,chemical,1,7,7,[np.int64(7)]
+189,185,RMHR,RMFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+190,185,SAADL,RMFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+192,185,SAAVL,RMFR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+193,13,SAAVR,AIBR,chemical,1,7,7,[np.int64(7)]
+193,136,SAAVR,OLLL,chemical,1,7,7,[np.int64(7)]
+193,184,SAAVR,RMFL,chemical,1,7,7,[np.int64(7)]
+194,13,SDQL,AIBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+194,44,SDQL,AVBL,chemical,1,7,7,[np.int64(7)]
+194,45,SDQL,AVBR,chemical,1,7,7,[np.int64(7)]
+194,114,SDQL,FLPL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+194,154,SDQL,RIAL,chemical,1,7,7,[np.int64(7)]
+194,171,SDQL,RIS,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+194,194,SDQL,SDQL,chemical,1,7,7,[np.int64(7)]
+194,194,SDQL,SDQL,electrical,1,7,7,[np.int64(7)]
+194,222,SDQL,URYVL,chemical,1,7,7,[np.int64(7)]
+195,24,SDQR,ALMR,chemical,1,7,7,[np.int64(7)]
+195,154,SDQR,RIAL,chemical,1,7,7,[np.int64(7)]
+195,159,SDQR,RICR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+195,166,SDQR,RIML,chemical,1,7,7,[np.int64(7)]
+195,173,SDQR,RIVR,chemical,1,7,7,[np.int64(7)]
+195,186,SDQR,RMGL,chemical,1,7,7,[np.int64(7)]
+195,194,SDQR,SDQL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+198,211,SIAVL,SMDVR,electrical,1,7,7,[np.int64(7)]
+200,206,SIBDL,SMBVL,electrical,1,7,7,[np.int64(7)]
+202,204,SIBVL,SMBDL,electrical,1,7,7,[np.int64(7)]
+203,205,SIBVR,SMBDR,electrical,2,7,8,"[np.int64(7), np.int64(8)]"
+204,83,SMBDL,BWM-DR06,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+204,192,SMBDL,SAAVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+204,206,SMBDL,SMBVL,electrical,1,7,7,[np.int64(7)]
+205,75,SMBDR,BWM-DL06,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+205,189,SMBDR,RMHR,chemical,1,7,7,[np.int64(7)]
+206,142,SMBVL,PLNL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+207,101,SMBVR,BWM-VR08,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+207,143,SMBVR,PLNR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+208,85,SMDDL,BWM-DR08,chemical,1,7,7,[np.int64(7)]
+209,76,SMDDR,BWM-DL07,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+209,77,SMDDR,BWM-DL08,chemical,1,7,7,[np.int64(7)]
+209,220,SMDDR,URYDL,chemical,1,7,7,[np.int64(7)]
+210,98,SMDVL,BWM-VR05,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+210,180,SMDVL,RMED,chemical,1,7,7,[np.int64(7)]
+210,208,SMDVL,SMDDL,chemical,1,7,7,[np.int64(7)]
+211,171,SMDVR,RIS,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+211,198,SMDVR,SIAVL,chemical,1,7,7,[np.int64(7)]
+212,73,URADL,BWM-DL04,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+212,182,URADL,RMER,chemical,1,7,7,[np.int64(7)]
+213,80,URADR,BWM-DR03,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+213,81,URADR,BWM-DR04,chemical,1,7,7,[np.int64(7)]
+213,127,URADR,IL1R,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+214,118,URAVL,GLRL,chemical,1,7,7,[np.int64(7)]
+214,132,URAVL,IL2L,chemical,1,7,7,[np.int64(7)]
+214,182,URAVL,RMER,chemical,1,7,7,[np.int64(7)]
+215,96,URAVR,BWM-VR03,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+216,2,URBL,ADEL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+216,44,URBL,AVBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+216,47,URBL,AVDR,chemical,1,7,7,[np.int64(7)]
+216,48,URBL,AVEL,chemical,1,7,7,[np.int64(7)]
+216,138,URBL,OLQDL,chemical,1,7,7,[np.int64(7)]
+216,156,URBL,RIBL,chemical,1,7,7,[np.int64(7)]
+216,172,URBL,RIVL,chemical,1,7,7,[np.int64(7)]
+216,186,URBL,RMGL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+216,189,URBL,RMHR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+216,194,URBL,SDQL,chemical,1,7,7,[np.int64(7)]
+216,205,URBL,SMBDR,chemical,1,7,7,[np.int64(7)]
+216,210,URBL,SMDVL,chemical,1,7,7,[np.int64(7)]
+216,218,URBL,URXL,electrical,1,7,7,[np.int64(7)]
+217,1,URBR,ADAR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+217,44,URBR,AVBL,chemical,1,7,7,[np.int64(7)]
+217,45,URBR,AVBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+217,46,URBR,AVDL,chemical,1,7,7,[np.int64(7)]
+217,54,URBR,AVJL,chemical,1,7,7,[np.int64(7)]
+217,139,URBR,OLQDR,chemical,1,7,7,[np.int64(7)]
+217,141,URBR,OLQVR,chemical,1,7,7,[np.int64(7)]
+217,204,URBR,SMBDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+218,42,URXL,AVAL,chemical,1,7,7,[np.int64(7)]
+218,44,URXL,AVBL,chemical,1,7,7,[np.int64(7)]
+218,45,URXL,AVBR,chemical,1,7,7,[np.int64(7)]
+218,105,URXL,CEPVL,chemical,1,7,7,[np.int64(7)]
+218,216,URXL,URBL,chemical,1,7,7,[np.int64(7)]
+219,54,URXR,AVJL,chemical,1,7,7,[np.int64(7)]
+219,185,URXR,RMFR,chemical,1,7,7,[np.int64(7)]
+219,196,URXR,SIADL,chemical,1,7,7,[np.int64(7)]
+220,44,URYDL,AVBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+220,46,URYDL,AVDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+220,72,URYDL,BWM-DL03,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+220,74,URYDL,BWM-DL05,chemical,1,7,7,[np.int64(7)]
+220,103,URYDL,CEPDL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+220,180,URYDL,RMED,chemical,1,7,7,[np.int64(7)]
+220,181,URYDL,RMEL,chemical,1,7,7,[np.int64(7)]
+220,183,URYDL,RMEV,chemical,1,7,7,[np.int64(7)]
+221,44,URYDR,AVBL,chemical,1,7,7,[np.int64(7)]
+221,45,URYDR,AVBR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+221,47,URYDR,AVDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+221,82,URYDR,BWM-DR05,chemical,1,7,7,[np.int64(7)]
+221,180,URYDR,RMED,chemical,1,7,7,[np.int64(7)]
+222,88,URYVL,BWM-VL03,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+222,90,URYVL,BWM-VL05,chemical,1,7,7,[np.int64(7)]
+222,177,URYVL,RMDR,chemical,1,7,7,[np.int64(7)]
+223,44,URYVR,AVBL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+223,94,URYVR,BWM-VR01,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+223,96,URYVR,BWM-VR03,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+223,201,URYVR,SIBDR,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+223,202,URYVR,SIBVL,chemical,2,7,8,"[np.int64(7), np.int64(8)]"
+0,54,ADAL,AVJL,chemical,1,8,8,[np.int64(8)]
+0,62,ADAL,AWBL,electrical,1,8,8,[np.int64(8)]
+0,140,ADAL,OLQVL,electrical,1,8,8,[np.int64(8)]
+0,169,ADAL,RIPR,chemical,1,8,8,[np.int64(8)]
+0,184,ADAL,RMFL,chemical,1,8,8,[np.int64(8)]
+0,190,ADAL,SAADL,chemical,1,8,8,[np.int64(8)]
+0,211,ADAL,SMDVR,chemical,1,8,8,[np.int64(8)]
+1,63,ADAR,AWBR,electrical,1,8,8,[np.int64(8)]
+2,68,ADEL,BDUL,electrical,1,8,8,[np.int64(8)]
+2,108,ADEL,CEPshDR,chemical,1,8,8,[np.int64(8)]
+2,153,ADEL,PVT,chemical,1,8,8,[np.int64(8)]
+2,175,ADEL,RMDDR,chemical,1,8,8,[np.int64(8)]
+2,209,ADEL,SMDDR,chemical,1,8,8,[np.int64(8)]
+2,210,ADEL,SMDVL,chemical,1,8,8,[np.int64(8)]
+3,17,ADER,AINR,chemical,1,8,8,[np.int64(8)]
+3,17,ADER,AINR,electrical,1,8,8,[np.int64(8)]
+3,26,ADER,ALNR,chemical,1,8,8,[np.int64(8)]
+3,57,ADER,AVKR,chemical,1,8,8,[np.int64(8)]
+3,153,ADER,PVT,chemical,1,8,8,[np.int64(8)]
+3,192,ADER,SAAVL,chemical,1,8,8,[np.int64(8)]
+3,196,ADER,SIADL,chemical,1,8,8,[np.int64(8)]
+4,10,ADFL,AIAL,chemical,1,8,8,[np.int64(8)]
+4,13,ADFL,AIBR,chemical,1,8,8,[np.int64(8)]
+4,67,ADFL,BAGR,chemical,1,8,8,[np.int64(8)]
+5,63,ADFR,AWBR,chemical,1,8,8,[np.int64(8)]
+5,165,ADFR,RIH,chemical,1,8,8,[np.int64(8)]
+5,203,ADFR,SIBVR,chemical,1,8,8,[np.int64(8)]
+6,30,ADLL,ASGL,chemical,1,8,8,[np.int64(8)]
+6,53,ADLL,AVHR,chemical,1,8,8,[np.int64(8)]
+6,60,ADLL,AWAL,chemical,1,8,8,[np.int64(8)]
+7,42,ADLR,AVAL,chemical,1,8,8,[np.int64(8)]
+7,61,ADLR,AWAR,chemical,1,8,8,[np.int64(8)]
+7,63,ADLR,AWBR,chemical,1,8,8,[np.int64(8)]
+7,145,ADLR,PVCR,chemical,1,8,8,[np.int64(8)]
+7,223,ADLR,URYVR,chemical,1,8,8,[np.int64(8)]
+8,17,AFDL,AINR,chemical,1,8,8,[np.int64(8)]
+8,62,AFDL,AWBL,chemical,1,8,8,[np.int64(8)]
+10,10,AIAL,AIAL,electrical,1,8,8,[np.int64(8)]
+10,218,AIAL,URXL,electrical,1,8,8,[np.int64(8)]
+11,34,AIAR,ASIL,chemical,1,8,8,[np.int64(8)]
+11,151,AIAR,PVQR,chemical,1,8,8,[np.int64(8)]
+12,6,AIBL,ADLL,chemical,1,8,8,[np.int64(8)]
+12,10,AIBL,AIAL,chemical,1,8,8,[np.int64(8)]
+12,13,AIBL,AIBR,chemical,1,8,8,[np.int64(8)]
+12,18,AIBL,AIYL,chemical,1,8,8,[np.int64(8)]
+12,38,AIBL,ASKL,electrical,1,8,8,[np.int64(8)]
+12,40,AIBL,AUAL,chemical,1,8,8,[np.int64(8)]
+12,49,AIBL,AVER,electrical,1,8,8,[np.int64(8)]
+12,166,AIBL,RIML,electrical,1,8,8,[np.int64(8)]
+12,173,AIBL,RIVR,electrical,1,8,8,[np.int64(8)]
+12,185,AIBL,RMFR,chemical,1,8,8,[np.int64(8)]
+12,202,AIBL,SIBVL,chemical,1,8,8,[np.int64(8)]
+13,40,AIBR,AUAL,chemical,1,8,8,[np.int64(8)]
+13,42,AIBR,AVAL,chemical,1,8,8,[np.int64(8)]
+13,48,AIBR,AVEL,electrical,1,8,8,[np.int64(8)]
+13,56,AIBR,AVKL,chemical,1,8,8,[np.int64(8)]
+13,114,AIBR,FLPL,electrical,1,8,8,[np.int64(8)]
+13,163,AIBR,RIGL,electrical,1,8,8,[np.int64(8)]
+13,180,AIBR,RMED,electrical,1,8,8,[np.int64(8)]
+14,20,AIML,AIZL,chemical,1,8,8,[np.int64(8)]
+14,54,AIML,AVJL,chemical,1,8,8,[np.int64(8)]
+14,161,AIML,RIFL,chemical,1,8,8,[np.int64(8)]
+14,186,AIML,RMGL,chemical,1,8,8,[np.int64(8)]
+14,186,AIML,RMGL,electrical,1,8,8,[np.int64(8)]
+15,1,AIMR,ADAR,chemical,1,8,8,[np.int64(8)]
+15,14,AIMR,AIML,chemical,1,8,8,[np.int64(8)]
+15,43,AIMR,AVAR,chemical,1,8,8,[np.int64(8)]
+15,162,AIMR,RIFR,chemical,1,8,8,[np.int64(8)]
+15,187,AIMR,RMGR,electrical,1,8,8,[np.int64(8)]
+15,196,AIMR,SIADL,chemical,1,8,8,[np.int64(8)]
+16,19,AINL,AIYR,chemical,1,8,8,[np.int64(8)]
+16,41,AINL,AUAR,electrical,1,8,8,[np.int64(8)]
+16,43,AINL,AVAR,chemical,1,8,8,[np.int64(8)]
+16,184,AINL,RMFL,chemical,1,8,8,[np.int64(8)]
+18,12,AIYL,AIBL,chemical,1,8,8,[np.int64(8)]
+18,29,AIYL,ASER,electrical,1,8,8,[np.int64(8)]
+18,40,AIYL,AUAL,chemical,1,8,8,[np.int64(8)]
+18,44,AIYL,AVBL,chemical,1,8,8,[np.int64(8)]
+18,67,AIYL,BAGR,electrical,1,8,8,[np.int64(8)]
+18,155,AIYL,RIAR,chemical,1,8,8,[np.int64(8)]
+18,157,AIYL,RIBR,chemical,1,8,8,[np.int64(8)]
+18,166,AIYL,RIML,chemical,1,8,8,[np.int64(8)]
+19,29,AIYR,ASER,electrical,1,8,8,[np.int64(8)]
+19,66,AIYR,BAGL,electrical,1,8,8,[np.int64(8)]
+20,30,AIZL,ASGL,chemical,1,8,8,[np.int64(8)]
+20,41,AIZL,AUAR,electrical,1,8,8,[np.int64(8)]
+20,46,AIZL,AVDL,chemical,1,8,8,[np.int64(8)]
+20,112,AIZL,DVA,chemical,1,8,8,[np.int64(8)]
+20,160,AIZL,RID,chemical,1,8,8,[np.int64(8)]
+20,163,AIZL,RIGL,electrical,1,8,8,[np.int64(8)]
+21,21,AIZR,AIZR,electrical,1,8,8,[np.int64(8)]
+21,49,AIZR,AVER,electrical,1,8,8,[np.int64(8)]
+21,62,AIZR,AWBL,electrical,1,8,8,[np.int64(8)]
+21,65,AIZR,AWCR,chemical,1,8,8,[np.int64(8)]
+21,113,AIZR,DVC,electrical,1,8,8,[np.int64(8)]
+21,163,AIZR,RIGL,electrical,1,8,8,[np.int64(8)]
+21,165,AIZR,RIH,chemical,1,8,8,[np.int64(8)]
+22,43,ALA,AVAR,chemical,1,8,8,[np.int64(8)]
+22,108,ALA,CEPshDR,chemical,1,8,8,[np.int64(8)]
+22,151,ALA,PVQR,electrical,1,8,8,[np.int64(8)]
+23,47,ALML,AVDR,chemical,1,8,8,[np.int64(8)]
+23,59,ALML,AVM,chemical,1,8,8,[np.int64(8)]
+24,3,ALMR,ADER,chemical,1,8,8,[np.int64(8)]
+24,47,ALMR,AVDR,chemical,1,8,8,[np.int64(8)]
+24,147,ALMR,PVNR,chemical,1,8,8,[np.int64(8)]
+24,219,ALMR,URXR,electrical,1,8,8,[np.int64(8)]
+25,2,ALNL,ADEL,chemical,1,8,8,[np.int64(8)]
+25,191,ALNL,SAADR,electrical,1,8,8,[np.int64(8)]
+25,210,ALNL,SMDVL,chemical,1,8,8,[np.int64(8)]
+26,81,ALNR,BWM-DR04,chemical,1,8,8,[np.int64(8)]
+26,155,ALNR,RIAR,chemical,1,8,8,[np.int64(8)]
+26,187,ALNR,RMGR,chemical,1,8,8,[np.int64(8)]
+26,190,ALNR,SAADL,electrical,1,8,8,[np.int64(8)]
+26,204,ALNR,SMBDL,electrical,1,8,8,[np.int64(8)]
+27,27,AQR,AQR,electrical,1,8,8,[np.int64(8)]
+27,41,AQR,AUAR,chemical,1,8,8,[np.int64(8)]
+27,114,AQR,FLPL,chemical,1,8,8,[np.int64(8)]
+27,128,AQR,IL1VL,chemical,1,8,8,[np.int64(8)]
+28,30,ASEL,ASGL,chemical,1,8,8,[np.int64(8)]
+28,67,ASEL,BAGR,chemical,1,8,8,[np.int64(8)]
+30,20,ASGL,AIZL,chemical,1,8,8,[np.int64(8)]
+30,109,ASGL,CEPshVL,chemical,1,8,8,[np.int64(8)]
+30,105,ASGL,CEPVL,chemical,1,8,8,[np.int64(8)]
+32,11,ASHL,AIAR,chemical,1,8,8,[np.int64(8)]
+32,186,ASHL,RMGL,chemical,1,8,8,[np.int64(8)]
+33,10,ASHR,AIAL,chemical,1,8,8,[np.int64(8)]
+33,15,ASHR,AIMR,chemical,1,8,8,[np.int64(8)]
+33,122,ASHR,HSNL,chemical,1,8,8,[np.int64(8)]
+33,144,ASHR,PVCL,chemical,1,8,8,[np.int64(8)]
+34,11,ASIL,AIAR,chemical,1,8,8,[np.int64(8)]
+34,13,ASIL,AIBR,chemical,1,8,8,[np.int64(8)]
+34,32,ASIL,ASHL,chemical,1,8,8,[np.int64(8)]
+34,105,ASIL,CEPVL,chemical,1,8,8,[np.int64(8)]
+35,63,ASIR,AWBR,chemical,1,8,8,[np.int64(8)]
+36,22,ASJL,ALA,chemical,1,8,8,[np.int64(8)]
+37,17,ASJR,AINR,chemical,1,8,8,[np.int64(8)]
+37,22,ASJR,ALA,chemical,1,8,8,[np.int64(8)]
+38,62,ASKL,AWBL,chemical,1,8,8,[np.int64(8)]
+38,201,ASKL,SIBDR,chemical,1,8,8,[np.int64(8)]
+38,209,ASKL,SMDDR,chemical,1,8,8,[np.int64(8)]
+39,10,ASKR,AIAL,chemical,1,8,8,[np.int64(8)]
+39,29,ASKR,ASER,chemical,1,8,8,[np.int64(8)]
+39,50,ASKR,AVFL,chemical,1,8,8,[np.int64(8)]
+39,51,ASKR,AVFR,chemical,1,8,8,[np.int64(8)]
+39,151,ASKR,PVQR,chemical,1,8,8,[np.int64(8)]
+40,4,AUAL,ADFL,chemical,1,8,8,[np.int64(8)]
+40,17,AUAL,AINR,chemical,1,8,8,[np.int64(8)]
+40,170,AUAL,RIR,chemical,1,8,8,[np.int64(8)]
+41,16,AUAR,AINL,chemical,1,8,8,[np.int64(8)]
+43,223,AVAR,URYVR,electrical,1,8,8,[np.int64(8)]
+44,148,AVBL,PVPL,electrical,1,8,8,[np.int64(8)]
+45,184,AVBR,RMFL,electrical,1,8,8,[np.int64(8)]
+48,49,AVEL,AVER,electrical,1,8,8,[np.int64(8)]
+48,171,AVEL,RIS,electrical,1,8,8,[np.int64(8)]
+48,192,AVEL,SAAVL,electrical,1,8,8,[np.int64(8)]
+49,67,AVER,BAGR,electrical,1,8,8,[np.int64(8)]
+49,221,AVER,URYDR,electrical,1,8,8,[np.int64(8)]
+50,10,AVFL,AIAL,chemical,1,8,8,[np.int64(8)]
+50,42,AVFL,AVAL,chemical,1,8,8,[np.int64(8)]
+50,44,AVFL,AVBL,chemical,1,8,8,[np.int64(8)]
+50,53,AVFL,AVHR,chemical,1,8,8,[np.int64(8)]
+50,69,AVFL,BDUR,chemical,1,8,8,[np.int64(8)]
+50,146,AVFL,PVNL,chemical,1,8,8,[np.int64(8)]
+50,150,AVFL,PVQL,chemical,1,8,8,[np.int64(8)]
+51,15,AVFR,AIMR,chemical,1,8,8,[np.int64(8)]
+51,36,AVFR,ASJL,chemical,1,8,8,[np.int64(8)]
+51,37,AVFR,ASJR,chemical,1,8,8,[np.int64(8)]
+51,39,AVFR,ASKR,chemical,1,8,8,[np.int64(8)]
+51,57,AVFR,AVKR,chemical,1,8,8,[np.int64(8)]
+51,69,AVFR,BDUR,chemical,1,8,8,[np.int64(8)]
+51,112,AVFR,DVA,chemical,1,8,8,[np.int64(8)]
+51,122,AVFR,HSNL,chemical,1,8,8,[np.int64(8)]
+51,160,AVFR,RID,chemical,1,8,8,[np.int64(8)]
+51,207,AVFR,SMBVR,chemical,1,8,8,[np.int64(8)]
+51,213,AVFR,URADR,chemical,1,8,8,[np.int64(8)]
+53,54,AVHR,AVJL,chemical,1,8,8,[np.int64(8)]
+53,108,AVHR,CEPshDR,chemical,1,8,8,[np.int64(8)]
+53,184,AVHR,RMFL,chemical,1,8,8,[np.int64(8)]
+54,38,AVJL,ASKL,chemical,1,8,8,[np.int64(8)]
+54,145,AVJL,PVCR,electrical,1,8,8,[np.int64(8)]
+54,147,AVJL,PVNR,chemical,1,8,8,[np.int64(8)]
+55,27,AVJR,AQR,chemical,1,8,8,[np.int64(8)]
+55,42,AVJR,AVAL,chemical,1,8,8,[np.int64(8)]
+55,148,AVJR,PVPL,chemical,1,8,8,[np.int64(8)]
+55,166,AVJR,RIML,chemical,1,8,8,[np.int64(8)]
+56,185,AVKL,RMFR,electrical,1,8,8,[np.int64(8)]
+56,197,AVKL,SIADR,chemical,1,8,8,[np.int64(8)]
+56,201,AVKL,SIBDR,chemical,1,8,8,[np.int64(8)]
+56,210,AVKL,SMDVL,electrical,1,8,8,[np.int64(8)]
+57,184,AVKR,RMFL,chemical,1,8,8,[np.int64(8)]
+57,204,AVKR,SMBDL,chemical,1,8,8,[np.int64(8)]
+57,210,AVKR,SMDVL,electrical,1,8,8,[np.int64(8)]
+58,157,AVL,RIBR,chemical,1,8,8,[np.int64(8)]
+58,223,AVL,URYVR,chemical,1,8,8,[np.int64(8)]
+59,23,AVM,ALML,chemical,1,8,8,[np.int64(8)]
+59,114,AVM,FLPL,chemical,1,8,8,[np.int64(8)]
+59,115,AVM,FLPR,electrical,1,8,8,[np.int64(8)]
+60,14,AWAL,AIML,chemical,1,8,8,[np.int64(8)]
+60,30,AWAL,ASGL,chemical,1,8,8,[np.int64(8)]
+60,34,AWAL,ASIL,chemical,1,8,8,[np.int64(8)]
+61,31,AWAR,ASGR,chemical,1,8,8,[np.int64(8)]
+61,164,AWAR,RIGR,chemical,1,8,8,[np.int64(8)]
+62,40,AWBL,AUAL,chemical,1,8,8,[np.int64(8)]
+62,60,AWBL,AWAL,chemical,1,8,8,[np.int64(8)]
+62,163,AWBL,RIGL,chemical,1,8,8,[np.int64(8)]
+63,15,AWBR,AIMR,chemical,1,8,8,[np.int64(8)]
+63,185,AWBR,RMFR,electrical,1,8,8,[np.int64(8)]
+64,9,AWCL,AFDR,chemical,1,8,8,[np.int64(8)]
+64,35,AWCL,ASIR,chemical,1,8,8,[np.int64(8)]
+64,66,AWCL,BAGL,chemical,1,8,8,[np.int64(8)]
+64,67,AWCL,BAGR,chemical,1,8,8,[np.int64(8)]
+64,107,AWCL,CEPshDL,chemical,1,8,8,[np.int64(8)]
+64,126,AWCL,IL1L,chemical,1,8,8,[np.int64(8)]
+64,132,AWCL,IL2L,chemical,1,8,8,[np.int64(8)]
+64,184,AWCL,RMFL,chemical,1,8,8,[np.int64(8)]
+66,167,BAGL,RIMR,electrical,1,8,8,[np.int64(8)]
+67,8,BAGR,AFDL,chemical,1,8,8,[np.int64(8)]
+67,13,BAGR,AIBR,chemical,1,8,8,[np.int64(8)]
+67,157,BAGR,RIBR,chemical,1,8,8,[np.int64(8)]
+67,170,BAGR,RIR,chemical,1,8,8,[np.int64(8)]
+68,50,BDUL,AVFL,chemical,1,8,8,[np.int64(8)]
+68,57,BDUL,AVKR,chemical,1,8,8,[np.int64(8)]
+68,130,BDUL,IL2DL,chemical,1,8,8,[np.int64(8)]
+68,144,BDUL,PVCL,electrical,1,8,8,[np.int64(8)]
+68,146,BDUL,PVNL,chemical,1,8,8,[np.int64(8)]
+69,51,BDUR,AVFR,chemical,1,8,8,[np.int64(8)]
+69,55,BDUR,AVJR,chemical,1,8,8,[np.int64(8)]
+71,175,BWM-DL02,RMDDR,electrical,1,8,8,[np.int64(8)]
+88,179,BWM-VL03,RMDVR,electrical,1,8,8,[np.int64(8)]
+95,178,BWM-VR02,RMDVL,electrical,1,8,8,[np.int64(8)]
+98,178,BWM-VR05,RMDVL,electrical,1,8,8,[np.int64(8)]
+98,179,BWM-VR05,RMDVR,electrical,1,8,8,[np.int64(8)]
+103,104,CEPDL,CEPDR,electrical,1,8,8,[np.int64(8)]
+104,24,CEPDR,ALMR,chemical,1,8,8,[np.int64(8)]
+104,76,CEPDR,BWM-DL07,chemical,1,8,8,[np.int64(8)]
+104,82,CEPDR,BWM-DR05,chemical,1,8,8,[np.int64(8)]
+104,84,CEPDR,BWM-DR07,chemical,1,8,8,[np.int64(8)]
+104,174,CEPDR,RMDDL,chemical,1,8,8,[np.int64(8)]
+104,187,CEPDR,RMGR,chemical,1,8,8,[np.int64(8)]
+105,109,CEPVL,CEPshVL,chemical,1,8,8,[np.int64(8)]
+105,142,CEPVL,PLNL,chemical,1,8,8,[np.int64(8)]
+105,154,CEPVL,RIAL,chemical,1,8,8,[np.int64(8)]
+105,198,CEPVL,SIAVL,chemical,1,8,8,[np.int64(8)]
+105,206,CEPVL,SMBVL,chemical,1,8,8,[np.int64(8)]
+106,127,CEPVR,IL1R,chemical,1,8,8,[np.int64(8)]
+112,2,DVA,ADEL,chemical,1,8,8,[np.int64(8)]
+112,46,DVA,AVDL,chemical,1,8,8,[np.int64(8)]
+112,145,DVA,PVCR,chemical,1,8,8,[np.int64(8)]
+112,156,DVA,RIBL,chemical,1,8,8,[np.int64(8)]
+112,222,DVA,URYVL,chemical,1,8,8,[np.int64(8)]
+113,20,DVC,AIZL,chemical,1,8,8,[np.int64(8)]
+113,27,DVC,AQR,chemical,1,8,8,[np.int64(8)]
+113,115,DVC,FLPR,chemical,1,8,8,[np.int64(8)]
+113,157,DVC,RIBR,electrical,1,8,8,[np.int64(8)]
+113,173,DVC,RIVR,chemical,1,8,8,[np.int64(8)]
+113,222,DVC,URYVL,chemical,1,8,8,[np.int64(8)]
+114,144,FLPL,PVCL,electrical,1,8,8,[np.int64(8)]
+114,166,FLPL,RIML,electrical,1,8,8,[np.int64(8)]
+114,195,FLPL,SDQR,chemical,1,8,8,[np.int64(8)]
+122,11,HSNL,AIAR,chemical,1,8,8,[np.int64(8)]
+122,32,HSNL,ASHL,chemical,1,8,8,[np.int64(8)]
+122,39,HSNL,ASKR,chemical,1,8,8,[np.int64(8)]
+122,51,HSNL,AVFR,chemical,1,8,8,[np.int64(8)]
+122,53,HSNL,AVHR,chemical,1,8,8,[np.int64(8)]
+122,68,HSNL,BDUL,chemical,1,8,8,[np.int64(8)]
+122,123,HSNL,HSNR,chemical,1,8,8,[np.int64(8)]
+122,162,HSNL,RIFR,chemical,1,8,8,[np.int64(8)]
+122,186,HSNL,RMGL,chemical,1,8,8,[np.int64(8)]
+123,32,HSNR,ASHL,chemical,1,8,8,[np.int64(8)]
+123,54,HSNR,AVJL,chemical,1,8,8,[np.int64(8)]
+123,59,HSNR,AVM,chemical,1,8,8,[np.int64(8)]
+123,60,HSNR,AWAL,chemical,1,8,8,[np.int64(8)]
+123,151,HSNR,PVQR,chemical,1,8,8,[np.int64(8)]
+124,136,IL1DL,OLLL,chemical,1,8,8,[np.int64(8)]
+125,136,IL1DR,OLLL,electrical,1,8,8,[np.int64(8)]
+125,137,IL1DR,OLLR,chemical,1,8,8,[np.int64(8)]
+125,139,IL1DR,OLQDR,electrical,1,8,8,[np.int64(8)]
+126,189,IL1L,RMHR,electrical,1,8,8,[np.int64(8)]
+127,133,IL1R,IL2R,electrical,1,8,8,[np.int64(8)]
+128,89,IL1VL,BWM-VL04,chemical,1,8,8,[np.int64(8)]
+128,179,IL1VL,RMDVR,chemical,1,8,8,[np.int64(8)]
+129,97,IL1VR,BWM-VR04,chemical,1,8,8,[np.int64(8)]
+129,119,IL1VR,GLRR,chemical,1,8,8,[np.int64(8)]
+130,48,IL2DL,AVEL,chemical,1,8,8,[np.int64(8)]
+130,163,IL2DL,RIGL,chemical,1,8,8,[np.int64(8)]
+130,178,IL2DL,RMDVL,chemical,1,8,8,[np.int64(8)]
+131,35,IL2DR,ASIR,chemical,1,8,8,[np.int64(8)]
+131,65,IL2DR,AWCR,chemical,1,8,8,[np.int64(8)]
+131,78,IL2DR,BWM-DR01,chemical,1,8,8,[np.int64(8)]
+131,79,IL2DR,BWM-DR02,chemical,1,8,8,[np.int64(8)]
+131,108,IL2DR,CEPshDR,chemical,1,8,8,[np.int64(8)]
+132,6,IL2L,ADLL,chemical,1,8,8,[np.int64(8)]
+132,64,IL2L,AWCL,chemical,1,8,8,[np.int64(8)]
+132,176,IL2L,RMDL,chemical,1,8,8,[np.int64(8)]
+132,216,IL2L,URBL,chemical,1,8,8,[np.int64(8)]
+132,218,IL2L,URXL,chemical,1,8,8,[np.int64(8)]
+133,125,IL2R,IL1DR,chemical,1,8,8,[np.int64(8)]
+133,180,IL2R,RMED,chemical,1,8,8,[np.int64(8)]
+133,181,IL2R,RMEL,chemical,1,8,8,[np.int64(8)]
+134,13,IL2VL,AIBR,chemical,1,8,8,[np.int64(8)]
+134,156,IL2VL,RIBL,chemical,1,8,8,[np.int64(8)]
+135,219,IL2VR,URXR,chemical,1,8,8,[np.int64(8)]
+136,96,OLLL,BWM-VR03,chemical,1,8,8,[np.int64(8)]
+136,176,OLLL,RMDL,chemical,1,8,8,[np.int64(8)]
+137,177,OLLR,RMDR,chemical,1,8,8,[np.int64(8)]
+138,103,OLQDL,CEPDL,chemical,1,8,8,[np.int64(8)]
+138,124,OLQDL,IL1DL,chemical,1,8,8,[np.int64(8)]
+138,183,OLQDL,RMEV,chemical,1,8,8,[np.int64(8)]
+139,196,OLQDR,SIADL,chemical,1,8,8,[np.int64(8)]
+140,179,OLQVL,RMDVR,electrical,1,8,8,[np.int64(8)]
+140,216,OLQVL,URBL,chemical,1,8,8,[np.int64(8)]
+141,135,OLQVR,IL2VR,chemical,1,8,8,[np.int64(8)]
+141,180,OLQVR,RMED,chemical,1,8,8,[np.int64(8)]
+141,189,OLQVR,RMHR,electrical,1,8,8,[np.int64(8)]
+142,186,PLNL,RMGL,chemical,1,8,8,[np.int64(8)]
+143,192,PLNR,SAAVL,chemical,1,8,8,[np.int64(8)]
+144,54,PVCL,AVJL,chemical,1,8,8,[np.int64(8)]
+144,193,PVCL,SAAVR,chemical,1,8,8,[np.int64(8)]
+145,52,PVCR,AVHL,chemical,1,8,8,[np.int64(8)]
+145,57,PVCR,AVKR,chemical,1,8,8,[np.int64(8)]
+146,54,PVNL,AVJL,chemical,1,8,8,[np.int64(8)]
+146,55,PVNL,AVJR,chemical,1,8,8,[np.int64(8)]
+146,109,PVNL,CEPshVL,chemical,1,8,8,[np.int64(8)]
+146,110,PVNL,CEPshVR,chemical,1,8,8,[np.int64(8)]
+146,161,PVNL,RIFL,chemical,1,8,8,[np.int64(8)]
+147,24,PVNR,ALMR,chemical,1,8,8,[np.int64(8)]
+147,49,PVNR,AVER,chemical,1,8,8,[np.int64(8)]
+147,59,PVNR,AVM,chemical,1,8,8,[np.int64(8)]
+147,106,PVNR,CEPVR,chemical,1,8,8,[np.int64(8)]
+147,186,PVNR,RMGL,chemical,1,8,8,[np.int64(8)]
+148,32,PVPL,ASHL,chemical,1,8,8,[np.int64(8)]
+148,47,PVPL,AVDR,chemical,1,8,8,[np.int64(8)]
+148,49,PVPL,AVER,chemical,1,8,8,[np.int64(8)]
+148,161,PVPL,RIFL,chemical,1,8,8,[np.int64(8)]
+148,184,PVPL,RMFL,chemical,1,8,8,[np.int64(8)]
+149,52,PVPR,AVHL,chemical,1,8,8,[np.int64(8)]
+149,155,PVPR,RIAR,chemical,1,8,8,[np.int64(8)]
+150,123,PVQL,HSNR,chemical,1,8,8,[np.int64(8)]
+151,22,PVQR,ALA,chemical,1,8,8,[np.int64(8)]
+154,206,RIAL,SMBVL,chemical,1,8,8,[np.int64(8)]
+154,210,RIAL,SMDVL,electrical,1,8,8,[np.int64(8)]
+155,103,RIAR,CEPDL,chemical,1,8,8,[np.int64(8)]
+155,174,RIAR,RMDDL,electrical,1,8,8,[np.int64(8)]
+155,176,RIAR,RMDL,electrical,1,8,8,[np.int64(8)]
+155,185,RIAR,RMFR,chemical,1,8,8,[np.int64(8)]
+156,43,RIBL,AVAR,chemical,1,8,8,[np.int64(8)]
+156,105,RIBL,CEPVL,chemical,1,8,8,[np.int64(8)]
+156,172,RIBL,RIVL,electrical,1,8,8,[np.int64(8)]
+156,197,RIBL,SIADR,electrical,1,8,8,[np.int64(8)]
+157,63,RIBR,AWBR,chemical,1,8,8,[np.int64(8)]
+157,165,RIBR,RIH,chemical,1,8,8,[np.int64(8)]
+157,184,RIBR,RMFL,chemical,1,8,8,[np.int64(8)]
+157,185,RIBR,RMFR,chemical,1,8,8,[np.int64(8)]
+157,209,RIBR,SMDDR,chemical,1,8,8,[np.int64(8)]
+158,172,RICL,RIVL,chemical,1,8,8,[np.int64(8)]
+158,209,RICL,SMDDR,electrical,1,8,8,[np.int64(8)]
+158,216,RICL,URBL,chemical,1,8,8,[np.int64(8)]
+158,219,RICL,URXR,chemical,1,8,8,[np.int64(8)]
+159,171,RICR,RIS,chemical,1,8,8,[np.int64(8)]
+159,173,RICR,RIVR,chemical,1,8,8,[np.int64(8)]
+159,216,RICR,URBL,chemical,1,8,8,[np.int64(8)]
+161,218,RIFL,URXL,chemical,1,8,8,[np.int64(8)]
+162,51,RIFR,AVFR,chemical,1,8,8,[np.int64(8)]
+162,52,RIFR,AVHL,chemical,1,8,8,[np.int64(8)]
+162,122,RIFR,HSNL,chemical,1,8,8,[np.int64(8)]
+163,21,RIGL,AIZR,chemical,1,8,8,[np.int64(8)]
+163,142,RIGL,PLNL,chemical,1,8,8,[np.int64(8)]
+163,153,RIGL,PVT,chemical,1,8,8,[np.int64(8)]
+163,163,RIGL,RIGL,electrical,1,8,8,[np.int64(8)]
+163,190,RIGL,SAADL,chemical,1,8,8,[np.int64(8)]
+164,5,RIGR,ADFR,chemical,1,8,8,[np.int64(8)]
+164,20,RIGR,AIZL,chemical,1,8,8,[np.int64(8)]
+164,191,RIGR,SAADR,chemical,1,8,8,[np.int64(8)]
+164,221,RIGR,URYDR,chemical,1,8,8,[np.int64(8)]
+165,19,RIH,AIYR,chemical,1,8,8,[np.int64(8)]
+165,164,RIH,RIGR,chemical,1,8,8,[np.int64(8)]
+166,20,RIML,AIZL,chemical,1,8,8,[np.int64(8)]
+166,48,RIML,AVEL,chemical,1,8,8,[np.int64(8)]
+166,56,RIML,AVKL,chemical,1,8,8,[np.int64(8)]
+166,201,RIML,SIBDR,chemical,1,8,8,[np.int64(8)]
+167,43,RIMR,AVAR,chemical,1,8,8,[np.int64(8)]
+167,56,RIMR,AVKL,chemical,1,8,8,[np.int64(8)]
+167,166,RIMR,RIML,chemical,1,8,8,[np.int64(8)]
+168,168,RIPL,RIPL,electrical,1,8,8,[np.int64(8)]
+169,169,RIPR,RIPR,electrical,1,8,8,[np.int64(8)]
+170,52,RIR,AVHL,chemical,1,8,8,[np.int64(8)]
+170,148,RIR,PVPL,chemical,1,8,8,[np.int64(8)]
+170,206,RIR,SMBVL,chemical,1,8,8,[np.int64(8)]
+171,107,RIS,CEPshDL,chemical,1,8,8,[np.int64(8)]
+171,139,RIS,OLQDR,chemical,1,8,8,[np.int64(8)]
+171,158,RIS,RICL,chemical,1,8,8,[np.int64(8)]
+171,183,RIS,RMEV,chemical,1,8,8,[np.int64(8)]
+171,184,RIS,RMFL,chemical,1,8,8,[np.int64(8)]
+172,92,RIVL,BWM-VL07,chemical,1,8,8,[np.int64(8)]
+172,96,RIVL,BWM-VR03,chemical,1,8,8,[np.int64(8)]
+173,186,RIVR,RMGL,chemical,1,8,8,[np.int64(8)]
+174,213,RMDDL,URADR,chemical,1,8,8,[np.int64(8)]
+175,180,RMDDR,RMED,chemical,1,8,8,[np.int64(8)]
+175,183,RMDDR,RMEV,chemical,1,8,8,[np.int64(8)]
+175,220,RMDDR,URYDL,chemical,1,8,8,[np.int64(8)]
+176,3,RMDL,ADER,chemical,1,8,8,[np.int64(8)]
+176,172,RMDL,RIVL,chemical,1,8,8,[np.int64(8)]
+176,184,RMDL,RMFL,chemical,1,8,8,[np.int64(8)]
+176,184,RMDL,RMFL,electrical,1,8,8,[np.int64(8)]
+176,188,RMDL,RMHL,electrical,1,8,8,[np.int64(8)]
+176,201,RMDL,SIBDR,chemical,1,8,8,[np.int64(8)]
+176,207,RMDL,SMBVR,chemical,1,8,8,[np.int64(8)]
+176,210,RMDL,SMDVL,chemical,1,8,8,[np.int64(8)]
+177,186,RMDR,RMGL,electrical,1,8,8,[np.int64(8)]
+177,209,RMDR,SMDDR,chemical,1,8,8,[np.int64(8)]
+178,79,RMDVL,BWM-DR02,chemical,1,8,8,[np.int64(8)]
+178,129,RMDVL,IL1VR,chemical,1,8,8,[np.int64(8)]
+178,201,RMDVL,SIBDR,chemical,1,8,8,[np.int64(8)]
+182,183,RMER,RMEV,electrical,1,8,8,[np.int64(8)]
+184,64,RMFL,AWCL,chemical,1,8,8,[np.int64(8)]
+184,66,RMFL,BAGL,chemical,1,8,8,[np.int64(8)]
+184,79,RMFL,BWM-DR02,chemical,1,8,8,[np.int64(8)]
+184,110,RMFL,CEPshVR,chemical,1,8,8,[np.int64(8)]
+184,106,RMFL,CEPVR,chemical,1,8,8,[np.int64(8)]
+184,166,RMFL,RIML,chemical,1,8,8,[np.int64(8)]
+184,178,RMFL,RMDVL,chemical,1,8,8,[np.int64(8)]
+184,181,RMFL,RMEL,chemical,1,8,8,[np.int64(8)]
+184,187,RMFL,RMGR,electrical,1,8,8,[np.int64(8)]
+185,48,RMFR,AVEL,chemical,1,8,8,[np.int64(8)]
+185,87,RMFR,BWM-VL02,chemical,1,8,8,[np.int64(8)]
+185,89,RMFR,BWM-VL04,chemical,1,8,8,[np.int64(8)]
+185,113,RMFR,DVC,chemical,1,8,8,[np.int64(8)]
+185,163,RMFR,RIGL,chemical,1,8,8,[np.int64(8)]
+185,171,RMFR,RIS,chemical,1,8,8,[np.int64(8)]
+185,173,RMFR,RIVR,chemical,1,8,8,[np.int64(8)]
+185,178,RMFR,RMDVL,chemical,1,8,8,[np.int64(8)]
+186,23,RMGL,ALML,chemical,1,8,8,[np.int64(8)]
+186,55,RMGL,AVJR,chemical,1,8,8,[np.int64(8)]
+186,132,RMGL,IL2L,chemical,1,8,8,[np.int64(8)]
+186,160,RMGL,RID,chemical,1,8,8,[np.int64(8)]
+186,192,RMGL,SAAVL,chemical,1,8,8,[np.int64(8)]
+186,193,RMGL,SAAVR,chemical,1,8,8,[np.int64(8)]
+186,201,RMGL,SIBDR,chemical,1,8,8,[np.int64(8)]
+187,15,RMGR,AIMR,chemical,1,8,8,[np.int64(8)]
+187,50,RMGR,AVFL,chemical,1,8,8,[np.int64(8)]
+187,51,RMGR,AVFR,chemical,1,8,8,[np.int64(8)]
+187,191,RMGR,SAADR,chemical,1,8,8,[np.int64(8)]
+187,200,RMGR,SIBDL,chemical,1,8,8,[np.int64(8)]
+187,219,RMGR,URXR,chemical,1,8,8,[np.int64(8)]
+189,163,RMHR,RIGL,chemical,1,8,8,[np.int64(8)]
+191,48,SAADR,AVEL,chemical,1,8,8,[np.int64(8)]
+191,184,SAADR,RMFL,chemical,1,8,8,[np.int64(8)]
+191,192,SAADR,SAAVL,electrical,1,8,8,[np.int64(8)]
+192,12,SAAVL,AIBL,chemical,1,8,8,[np.int64(8)]
+194,12,SDQL,AIBL,chemical,1,8,8,[np.int64(8)]
+194,42,SDQL,AVAL,chemical,1,8,8,[np.int64(8)]
+194,126,SDQL,IL1L,chemical,1,8,8,[np.int64(8)]
+194,206,SDQL,SMBVL,chemical,1,8,8,[np.int64(8)]
+194,208,SDQL,SMDDL,chemical,1,8,8,[np.int64(8)]
+195,12,SDQR,AIBL,chemical,1,8,8,[np.int64(8)]
+195,209,SDQR,SMDDR,chemical,1,8,8,[np.int64(8)]
+202,205,SIBVL,SMBDR,electrical,1,8,8,[np.int64(8)]
+205,42,SMBDR,AVAL,chemical,1,8,8,[np.int64(8)]
+205,197,SMBDR,SIADR,chemical,1,8,8,[np.int64(8)]
+208,84,SMDDL,BWM-DR07,chemical,1,8,8,[np.int64(8)]
+209,82,SMDDR,BWM-DR05,chemical,1,8,8,[np.int64(8)]
+209,171,SMDDR,RIS,chemical,1,8,8,[np.int64(8)]
+211,89,SMDVR,BWM-VL04,chemical,1,8,8,[np.int64(8)]
+211,91,SMDVR,BWM-VL06,chemical,1,8,8,[np.int64(8)]
+211,136,SMDVR,OLLL,chemical,1,8,8,[np.int64(8)]
+211,167,SMDVR,RIMR,chemical,1,8,8,[np.int64(8)]
+212,87,URADL,BWM-VL02,chemical,1,8,8,[np.int64(8)]
+212,175,URADL,RMDDR,chemical,1,8,8,[np.int64(8)]
+213,174,URADR,RMDDL,chemical,1,8,8,[np.int64(8)]
+215,119,URAVR,GLRR,chemical,1,8,8,[np.int64(8)]
+216,46,URBL,AVDL,chemical,1,8,8,[np.int64(8)]
+216,174,URBL,RMDDL,chemical,1,8,8,[np.int64(8)]
+216,175,URBL,RMDDR,chemical,1,8,8,[np.int64(8)]
+216,197,URBL,SIADR,chemical,1,8,8,[np.int64(8)]
+216,206,URBL,SMBVL,chemical,1,8,8,[np.int64(8)]
+216,209,URBL,SMDDR,chemical,1,8,8,[np.int64(8)]
+217,137,URBR,OLLR,chemical,1,8,8,[np.int64(8)]
+217,195,URBR,SDQR,chemical,1,8,8,[np.int64(8)]
+217,199,URBR,SIAVR,chemical,1,8,8,[np.int64(8)]
+218,27,URXL,AQR,chemical,1,8,8,[np.int64(8)]
+218,205,URXL,SMBDR,chemical,1,8,8,[np.int64(8)]
+219,12,URXR,AIBL,chemical,1,8,8,[np.int64(8)]
+219,127,URXR,IL1R,chemical,1,8,8,[np.int64(8)]
+220,45,URYDL,AVBR,chemical,1,8,8,[np.int64(8)]
+220,47,URYDL,AVDR,chemical,1,8,8,[np.int64(8)]
+220,48,URYDL,AVEL,chemical,1,8,8,[np.int64(8)]
+220,138,URYDL,OLQDL,chemical,1,8,8,[np.int64(8)]
+220,160,URYDL,RID,chemical,1,8,8,[np.int64(8)]
+222,44,URYVL,AVBL,chemical,1,8,8,[np.int64(8)]
+222,160,URYVL,RID,chemical,1,8,8,[np.int64(8)]
+222,171,URYVL,RIS,chemical,1,8,8,[np.int64(8)]
+222,202,URYVL,SIBVL,chemical,1,8,8,[np.int64(8)]
+223,12,URYVR,AIBL,chemical,1,8,8,[np.int64(8)]
+223,42,URYVR,AVAL,chemical,1,8,8,[np.int64(8)]
+223,45,URYVR,AVBR,chemical,1,8,8,[np.int64(8)]
+223,46,URYVR,AVDL,chemical,1,8,8,[np.int64(8)]
+223,98,URYVR,BWM-VR05,chemical,1,8,8,[np.int64(8)]
+223,169,URYVR,RIPR,chemical,1,8,8,[np.int64(8)]
+223,203,URYVR,SIBVR,chemical,1,8,8,[np.int64(8)]

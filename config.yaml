@@ -5,7 +5,7 @@ data:
   feature_dim: 172
   csv_path: "data/cell_lineage_datasets/cells_birth_and_pos.csv"
   processed_data_path: "data/processed_datasets/"
-  
+
 # Model configuration
 model:
   memory_dim: 100
@@ -31,32 +31,32 @@ visualization:
   # Size-based thresholds (will be calculated automatically if not provided)
   size_threshold_small: null  # Will use 1-sigma below mean
   size_threshold_large: null  # Will use 1-sigma above mean
-  
-  # Time-based thresholds (will be calculated automatically if not provided) 
+
+  # Time-based thresholds (will be calculated automatically if not provided)
   birth_time_threshold_low: null   # Will use 1-sigma below mean
   birth_time_threshold_high: null  # Will use 1-sigma above mean
-  
+
   # Plot settings
   figure_size:
     width: 1000
     height: 800
-  
+
   # Color schemes
   colors:
     size:
       small: '#3498db'    # Blue
-      medium: '#f39c12'   # Orange  
+      medium: '#f39c12'   # Orange
       large: '#e74c3c'    # Red
     time:
       early: '#2ecc71'    # Green
       mid: '#9b59b6'      # Purple
       late: '#e67e22'     # Orange
-  
+
   # Animation settings
   animation:
     interval: 1000  # milliseconds between frames
     fps: 2          # frames per second for video export
-    
+
   # Export settings
   export:
     dpi: 300
@@ -68,20 +68,55 @@ analysis:
   statistical_tests: true
   generate_reports: true
   save_intermediate_results: true
-  
+
   # Threshold calculation method
   threshold_method: "1sigma"  # "1sigma", "2sigma", "percentile", "manual"
   percentile_values: [25, 75]  # Used if threshold_method is "percentile"
+
+# Connectome Analysis & Visualization Settings
+connectome_analysis:
+  # Parameters for network_analysis.py
+  analysis_params:
+    stability_threshold: 7      # Min timepoints for a connection to be 'stable'
+    top_k_nodes: 10             # Number of top nodes for centrality analysis
+    community_method: 'louvain' # 'louvain', 'girvan_newman', 'label_propagation'
+
+  # Parameters for connectome_visualizer.py
+  visualization_params:
+    top_n_hubs: 50              # Number of top hub nodes for the network graph plot
+    figure_size_growth: [16, 12]
+    figure_size_centrality: [12, 8]
+    figure_size_network_graph: [20, 20]
+    neuron_type_colors:
+      inter: '#87CEEB'
+      modulatory: '#FFD700'
+      sensory: '#98FB98'
+      motor: '#FFA07A'
+      muscle: '#F08080'
+      glia: '#DDA0DD'
+      unknown: '#D3D3D3'
+
+# Parameters for neural_animator.py
+  animation_params:
+    layout_spring_k: 1          # 'k' parameter for the spring layout force
+    layout_iterations: 50       # Number of iterations for network layout simulation
+    max_edge_width: 6.0         # Max visual thickness of an edge in animations
+    frame_duration: 1600        # Milliseconds per frame in the animation
+    transition_duration: 400    # Milliseconds for transition between frames
 
 # Output settings
 output:
   base_dir: "outputs/"
   subdirs:
-    visualizations: "visualizations/"
-    statistics: "statistics/"
+    connectome_analysis: "connectome_analysis/"
+    connectome_statistics: "connectome_analysis/statistics/"
+    connectome_visualizations: "connectome_analysis/visualizations/"
+    cell_lineage_analysis: "cell_lineage_analysis/"
+    cell_lineage_statistics: "cell_lineage_analysis/statistics/"
+    cell_lineage_visualizations: "cell_lineage_analysis/visualizations/"
     models: "models/"
     reports: "reports/"
-  
+
   # File naming
   timestamp_format: "%Y%m%d_%H%M%S"
   include_timestamp: true
