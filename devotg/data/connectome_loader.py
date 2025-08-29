@@ -135,7 +135,20 @@ class ConnectomeDatasetLoader:
                 
         logger.info(f"Successfully downloaded {len(successful_downloads)} datasets")
         return self.datasets
-    
+
+    def load_datasets(self) -> Dict[str, pd.DataFrame]:
+        """Load datasets from local Excel files into memory."""
+        for excel_file in self.excel_files:
+            file_path = os.path.join(self.data_dir, excel_file)
+            if os.path.exists(file_path):
+                df = pd.read_excel(file_path)
+                dataset_num = excel_file.split('_')[2].split('.')[0]
+                self.datasets[f'Dataset{dataset_num}'] = df
+                logger.info(f"Loaded {excel_file}: {df.shape[0]} connections")
+            else:
+                logger.warning(f"File not found locally: {excel_file}")
+        return self.datasets  
+ 
     def analyze_datasets(self) -> None:
         """Analyze the structure and content of downloaded datasets."""
         if not self.datasets:
@@ -410,6 +423,7 @@ def load_connectome_datasets(data_dir: str = "data/connectome_datasets",
         loader.download_datasets()
     else:
         logger.info("Datasets already present. Skipping download.")
+        loader.load_datasets()
         
     # Load datasets
     if not loader.datasets:

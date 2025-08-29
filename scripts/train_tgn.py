@@ -25,6 +25,7 @@ Options:
   --save_model
   --verbose
 Example:
+  python scripts/train_tgn.py
   python scripts/train_tgn.py --csv_path data/cell_lineage_datasets/cells_birth_and_pos.csv --epochs 30 --output_dir outputs/models --save_model --verbose
 Outputs:
 - Trained model weights in specified output directory (if --save_model is used)

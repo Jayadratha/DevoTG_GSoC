@@ -1,10 +1,8 @@
 ```
-├── .github
-│   └── copilot-instructions.md
+├── .git
 ├── .gitignore
+├── LICENCE.md
 ├── README.md
-├── README_ok.md
-├── changes to make.txt
 ├── config.yaml
 ├── data
 │   ├── cell_lineage_datasets
@@ -58,7 +56,6 @@
 │       ├── connectome_visualizer.py
 │       ├── lineage_animator.py
 │       └── neural_animator.py
-├── env.yml
 ├── environment.yml
 ├── logs
 │   ├── analysis_pipeline.log
@@ -87,7 +84,9 @@
 │   │       ├── network_analysis_dashboard.html
 │   │       ├── network_development_animation.mp4
 │   │       ├── network_graph_directed_weighted.png
+│   │       ├── network_graph_hubs.png
 │   │       ├── network_growth_metrics.png
+│   │       ├── neural_development_animation.html
 │   │       ├── neural_network_development_animation.html
 │   │       └── node_importance_heatmap.html
 │   ├── lineage_analysis
@@ -126,13 +125,10 @@
 │       ├── trained_tgn_model.pth
 │       ├── training_history.png
 │       └── training_summary.json
-├── project_structure.md
 ├── requirements.txt
 ├── scripts
 │   ├── run_cell_lineage_analysis.py
 │   ├── run_connectome_analysis.py
 │   └── train_tgn.py
-├── setup.py
-├── struc.py
-└── updated_project_structure.md
+└── project_structure.md
 ```

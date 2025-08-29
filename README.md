@@ -52,9 +52,9 @@ The project focuses on:
 DevoTG/
 ├── README.md                          # This file
 ├── requirements.txt                   # Package dependencies
-├── setup.py                          # Package installation
-├── .gitignore                        # Git ignore rules
-├── config.yaml                       # Configuration parameters
+├── environment.yml                    # Conda environment file
+├── .gitignore                         # Git ignore rules
+├── config.yaml                        # Configuration parameters
 │
 ├── devotg/                           # Main package
 │   ├── __init__.py
@@ -384,11 +384,11 @@ If you use DevoTG in your research, please cite:
 
 ### Related Publications
 Please also cite the original data sources:
-- Witvliet, D., et al. (2021). Connectomes across development reveal principles of brain maturation. Nature, 596(7871), 257-261.
+- Witvliet, Daniel, et al. "Connectomes across development reveal principles of brain maturation." Nature 596.7871 (2021): 257-261.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -410,7 +410,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Clone repository and install dependencies
 - [ ] Run `python scripts/run_cell_lineage_analysis.py` for cell division analysis
 - [ ] Run `python scripts/train_tgn.py` for model training
-- [ ] Run `python scripts/run_connectome_analysis.py` for connectome DTDG analysis
+- [ ] Run `python scripts/run_connectome_analysis.py --skip-download` for connectome DTDG analysis
 - [ ] Open generated HTML files in web browser for interactive exploration
 - [ ] Review Jupyter notebooks for detailed analysis examples
 - [ ] Explore configuration options in `config.yaml`

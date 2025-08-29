@@ -154,6 +154,7 @@ data/processed_datasets/
 
 # Output files
 # outputs/
+outputs/connectome_analysis/visualizations/neural_development_animation.html
 # results/
 # visualizations/
 # plots/
@@ -218,3 +219,6 @@ sample_data/
 
 # FFmpeg temporary files
 *.ffmpeg_*
+
+#setup file
+setup.py

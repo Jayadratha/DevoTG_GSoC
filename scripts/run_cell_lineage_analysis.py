@@ -20,6 +20,7 @@ Options:
                           Method for threshold calculation: '1sigma', '2sigma', 'percentile' (default: '1sigma')
   --verbose               Enable verbose output
 Example:
+  python scripts/run_cell_lineage_analysis.py
   python scripts/run_cell_lineage_analysis.py --csv_path data/cell_lineage_datasets/cells_birth_and_pos.csv --output_dir outputs/lineage_analysis --threshold_method 1sigma --verbose
 """
 

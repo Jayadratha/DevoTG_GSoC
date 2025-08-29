@@ -17,8 +17,9 @@ Options:
   --output-dir OUTPUT_DIR
                         Base output directory (default: current directory)
 Example:
-  python scripts/run_connectome_analysis.py --output-dir ./outputs/connectome_analysis/connectome_analysis
+  python scripts/run_connectome_analysis.py --skip-download
   python scripts/run_connectome_analysis.py --skip-download --output-dir ./outputs/connectome_analysis/connectome_analysis
+  python scripts/run_connectome_analysis.py --output-dir ./outputs/connectome_analysis/connectome_analysis
 Requirements:
 - Internet connection for dataset download (unless --skip-download is used)
 """
@@ -177,7 +178,7 @@ def main():
             nodes_csv_path="data/processed_datasets/dtdg_nodes.csv",
             edges_csv_path="data/processed_datasets/dtdg_edges_temporal.csv",
             summary_csv_path="data/processed_datasets/dtdg_summary_statistics.csv",
-            output_path="outputs/connectome_analysis/visualizations/neural_network_development_animation.html"
+            output_path="outputs/connectome_analysis/visualizations/neural_development_animation.html"
         )
         logger.info("✅ Interactive animation complete")
     except Exception as e:
@@ -219,7 +220,7 @@ def main():
     logger.info("      - outputs/connectome_analysis/visualizations/*.png (static plots)")
     logger.info("      - outputs/connectome_analysis/visualizations/*.html (interactive plots)")
     logger.info("      - outputs/connectome_analysis/visualizations/network_development_animation.mp4")
-    logger.info("      - outputs/connectome_analysis/visualizations/neural_network_development_animation.html")
+    logger.info("      - outputs/connectome_analysis/visualizations/neural_development_animation.html")
     logger.info("\n🚀 Open the HTML files in a web browser to explore interactive visualizations!")
     
     return 0
