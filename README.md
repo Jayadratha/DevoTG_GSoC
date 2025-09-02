@@ -62,14 +62,11 @@ DevoTG/
 │   │   ├── __init__.py
 │   │   ├── dataset_loader.py         # Cell division dataset loading
 │   │   ├── connectome_loader.py      # Connectome dataset processing
-│   │   ├── temporal_graph_builder.py # CTDG/DTDG construction
-│   │   └── preprocessing.py          # Data preprocessing utilities
+│   │   └── temporal_graph_builder.py # CTDG/DTDG construction
 │   │
 │   ├── models/                       # Neural network models
 │   │   ├── __init__.py
-│   │   ├── tgn_model.py             # TGN implementation
-│   │   ├── attention.py             # Attention mechanisms
-│   │   └── link_predictor.py        # Link prediction model
+│   │   └── tgn_model.py             # TGN implementation for link prediction
 │   │
 │   ├── visualization/                # Visualization components
 │   │   ├── __init__.py
@@ -81,15 +78,11 @@ DevoTG/
 │   ├── analysis/                     # Analysis utilities
 │   │   ├── __init__.py
 │   │   ├── statistics.py            # Statistical analysis
-│   │   ├── network_analysis.py      # Network topology analysis
-│   │   ├── patterns.py              # Pattern detection
-│   │   └── metrics.py               # Evaluation metrics
+│   │   └── network_analysis.py      # Network topology analysis
 │   │
 │   └── utils/                        # Utility functions
 │       ├── __init__.py
-│       ├── thresholds.py            # Threshold calculations
-│       ├── io_utils.py              # Input/output utilities
-│       └── constants.py             # Project constants
+│       └── thresholds.py            # Threshold calculations
 │
 ├── notebooks/                        # Jupyter notebooks
 │   ├── 01_cell_lineage_data_analysis.ipynb       # Dataset understanding
