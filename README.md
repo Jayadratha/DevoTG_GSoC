@@ -369,7 +369,7 @@ If you use DevoTG in your research, please cite:
 @software{devotg2025,
   publisher={GitHub},
   title={DevoTG: Developmental Temporal Graph Networks},
-  author={Jayadratha Gayen},
+  author={Jayadratha Gayen, Mehul Arora, and Bradly Alicea},
   year={2025},
   url={https://github.com/Jayadratha/DevoTG}
 }
@@ -385,6 +385,9 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENCE.md)
 
 ## 🙏 Acknowledgments
 
+- My GSoC 2025 mentors Mehul Arora, Bradly Alicea, Sarrah Bastawala and Jesse Parent for their guidance and support
+- The DevoLearn organization for hosting this project
+- The Google Open Source Programs team for supporting this project
 - C. elegans developmental biology community
 - Witvliet et al. for providing the connectome datasets
 - PyTorch Geometric team for temporal graph tools
