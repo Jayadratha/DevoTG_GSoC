@@ -399,7 +399,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENCE.md)
 
 - **Email**: jayadratha.gayen@research.iiit.ac.in
 - **GitHub**: [@Jayadratha](https://github.com/Jayadratha)
-- **Project Link**: [https://github.com/Jayadratha/DevoTG](https://github.com/Jayadratha/DevoTG)
+- **Project Link**: [https://github.com/Jayadratha/DevoTG_GSoC](https://github.com/Jayadratha/DevoTG_GSoC)
 
 ## 🚀 Getting Started Checklist
 
