@@ -223,11 +223,11 @@ def generate_figure1_sample_devotg(output_dir: Path) -> None:
 
     ax.set_xlabel("X", fontsize=8, labelpad=2)
     ax.set_ylabel("Y", fontsize=8, labelpad=2)
-    ax.set_zlabel("Developmental time", fontsize=8, labelpad=6)
+    ax.set_zlabel("")   # tick labels are self-explanatory; no redundant label
     # Use built-in z-tick labels — matplotlib positions them correctly on the axis
     ax.set_zticks([tp_z[tp] * z_scale for tp in tp_indices])
     ax.set_zticklabels([tp_labels[tp] for tp in tp_indices],
-                       fontsize=8, fontweight="bold", color="#222222")
+                       fontsize=8.5, fontweight="bold", color="#222222")
     ax.set_xticklabels([])
     ax.set_yticklabels([])
     ax.view_init(elev=22, azim=-55)
