@@ -228,6 +228,7 @@ def generate_figure1_sample_devotg(output_dir: Path) -> None:
     ax.set_zticks([tp_z[tp] * z_scale for tp in tp_indices])
     ax.set_zticklabels([tp_labels[tp] for tp in tp_indices],
                        fontsize=8.5, fontweight="bold", color="#222222")
+    ax.tick_params(axis='z', pad=10)   # push tick labels right, away from axis line
     ax.set_xticklabels([])
     ax.set_yticklabels([])
     ax.view_init(elev=22, azim=-55)
