@@ -99,6 +99,9 @@ def generate_figure1_sample_devotg(output_dir: Path) -> None:
     # --- Load data ---------------------------------------------------------- #
     nodes_path = PROCESSED_DIR / "dtdg_nodes.csv"
     edges_path = PROCESSED_DIR / "dtdg_edges_temporal.csv"
+    stable_csv  = STATS_DIR / "stable_connections.csv"
+    dev_csv     = STATS_DIR / "developmental_connections.csv"
+    var_csv     = STATS_DIR / "variable_connections.csv"
     if not nodes_path.exists() or not edges_path.exists():
         print(f"    ERROR: data files missing ({nodes_path}, {edges_path})")
         return
@@ -106,71 +109,87 @@ def generate_figure1_sample_devotg(output_dir: Path) -> None:
     nodes_df = pd.read_csv(nodes_path)
     edges_df = pd.read_csv(edges_path)
 
-    # Timepoints to show: 1, 3, 5, 8 (z=0,1,2,3)
-    tp_indices = [1, 3, 5, 8]
-    tp_z = {tp: z for z, tp in enumerate(tp_indices)}
-    tp_labels = {1: "L1 (0h)", 3: "L1 (8h)", 5: "L2 (23h)", 8: "Adult (45h)"}
+    # --- Classify each neuron by its DOMINANT connection type --------------- #
+    # Count how many stable / developmental / variable connections involve each node
+    from collections import defaultdict
+    cnt = defaultdict(lambda: {"s": 0, "d": 0, "v": 0})
+    for csv_path, key in [(stable_csv, "s"), (dev_csv, "d"), (var_csv, "v")]:
+        if csv_path.exists():
+            df = pd.read_csv(csv_path)
+            for col in ["source_name", "target_name"]:
+                for name in df[col]:
+                    cnt[name][key] += 1
 
-    # Select top-15 nodes by total degree across all timepoints
-    deg_counter = {}
-    for _, row in edges_df.iterrows():
-        for nid in [row["source_id"], row["target_id"]]:
-            deg_counter[nid] = deg_counter.get(nid, 0) + 1
-    top15_ids = sorted(deg_counter, key=lambda x: -deg_counter[x])[:15]
-    top15_names = nodes_df.set_index("node_id").loc[top15_ids, "node_name"].tolist()
-
-    # Filter edges to top-15 subgraph at selected timepoints
-    sub_edges = edges_df[
-        (edges_df["timepoint"].isin(tp_indices))
-        & (edges_df["source_name"].isin(top15_names))
-        & (edges_df["target_name"].isin(top15_names))
-    ].copy()
-
-    # Build a combined graph for spring layout (ignore time)
-    G_all = nx.Graph()
-    G_all.add_nodes_from(top15_names)
-    for _, row in sub_edges.iterrows():
-        G_all.add_edge(row["source_name"], row["target_name"])
-    pos2d = nx.spring_layout(G_all, seed=42, k=1.5)
-
-    # Load stability info for node colouring
-    stable_csv = STATS_DIR / "stable_connections.csv"
-    dev_csv = STATS_DIR / "developmental_connections.csv"
-    stable_nodes, dev_nodes = set(), set()
-    if stable_csv.exists():
-        sc = pd.read_csv(stable_csv)
-        for col in ["source_name", "target_name"]:
-            stable_nodes.update(sc[col].tolist())
-    if dev_csv.exists():
-        dc = pd.read_csv(dev_csv)
-        for col in ["source_name", "target_name"]:
-            dev_nodes.update(dc[col].tolist())
+    def dominant_class(name):
+        c = cnt[name]
+        mx = max(c, key=c.get)
+        return {"s": "stable", "d": "developmental", "v": "variable"}[mx]
 
     def node_color(name):
-        if name in stable_nodes:
+        cl = dominant_class(name)
+        if cl == "stable":
             return PALETTE["stable"]
-        if name in dev_nodes:
+        if cl == "developmental":
             return PALETTE["developmental"]
         return "#AAAAAA"
 
+    # --- Select ~5 nodes from each class (top degree within class) ---------- #
+    deg_name = defaultdict(int)
+    for _, row in edges_df.iterrows():
+        deg_name[row["source_name"]] += 1
+        deg_name[row["target_name"]] += 1
+
+    deg_sorted = sorted(deg_name, key=lambda x: -deg_name[x])
+    per_class = {"stable": [], "developmental": [], "variable": []}
+    for name in deg_sorted:
+        cl = dominant_class(name)
+        if len(per_class[cl]) < 5:
+            per_class[cl].append(name)
+        if all(len(v) == 5 for v in per_class.values()):
+            break
+
+    selected_names = per_class["stable"] + per_class["developmental"] + per_class["variable"]
+
+    # Timepoints to show: 1, 3, 5, 8
+    tp_indices = [1, 3, 5, 8]
+    tp_z      = {tp: z for z, tp in enumerate(tp_indices)}
+    tp_labels = {1: "L1 (0h)", 3: "L1 (8h)", 5: "L2 (23h)", 8: "Adult (45h)"}
+
+    # Subgraph edges
+    sub_edges = edges_df[
+        (edges_df["timepoint"].isin(tp_indices))
+        & (edges_df["source_name"].isin(selected_names))
+        & (edges_df["target_name"].isin(selected_names))
+    ].copy()
+
+    # 2D layout from accumulated graph
+    G_all = nx.Graph()
+    G_all.add_nodes_from(selected_names)
+    for _, row in sub_edges.iterrows():
+        G_all.add_edge(row["source_name"], row["target_name"])
+    pos2d = nx.spring_layout(G_all, seed=42, k=1.8)
+
     # --- Plot --------------------------------------------------------------- #
-    fig = plt.figure(figsize=(8, 6))
+    fig = plt.figure(figsize=(10, 6.5))
     ax = fig.add_subplot(111, projection="3d")
+    # Left margin gives room for z-axis tick labels
+    fig.subplots_adjust(top=0.94, bottom=0.04, left=0.08, right=0.98)
 
-    z_scale = 1.2  # vertical spacing between layers
+    z_scale = 1.2
 
-    # Draw each layer
     for tp in tp_indices:
         z = tp_z[tp] * z_scale
         tp_sub = sub_edges[sub_edges["timepoint"] == tp]
 
-        # Nodes
-        for name in top15_names:
+        # Nodes — sized by degree in this timepoint
+        for name in selected_names:
             x, y = pos2d[name]
             col = node_color(name)
-            ax.scatter(x, y, z, color=col, s=60, zorder=5, edgecolors="white", linewidths=0.4)
+            sz = 60 + deg_name[name] * 0.4
+            ax.scatter(x, y, z, color=col, s=sz, zorder=5,
+                       edgecolors="white", linewidths=0.5)
 
-        # Within-layer edges (horizontal)
+        # Within-layer edges
         drawn = set()
         for _, row in tp_sub.iterrows():
             key = (min(row["source_name"], row["target_name"]),
@@ -181,65 +200,56 @@ def generate_figure1_sample_devotg(output_dir: Path) -> None:
             x0, y0 = pos2d[row["source_name"]]
             x1, y1 = pos2d[row["target_name"]]
             ax.plot([x0, x1], [y0, y1], [z, z],
-                    color="#888888", lw=0.6, alpha=0.5, zorder=3)
+                    color="#888888", lw=0.7, alpha=0.5)
 
-    # "New connections" between consecutive layers: dashed inter-layer lines
+    # Dashed vertical lines for new connections between layers
     prev_edges = None
     for i, tp in enumerate(tp_indices):
-        cur_edges = set(
-            zip(
-                sub_edges[sub_edges["timepoint"] == tp]["source_name"],
-                sub_edges[sub_edges["timepoint"] == tp]["target_name"],
-            )
-        )
-        if prev_edges is not None and i > 0:
+        cur_edges = set(zip(
+            sub_edges[sub_edges["timepoint"] == tp]["source_name"],
+            sub_edges[sub_edges["timepoint"] == tp]["target_name"],
+        ))
+        if prev_edges is not None:
             new_edges = cur_edges - prev_edges
             z_lo = tp_z[tp_indices[i - 1]] * z_scale
             z_hi = tp_z[tp] * z_scale
-            for (src, tgt) in list(new_edges)[:25]:  # cap at 25 for clarity
+            for (src, tgt) in list(new_edges)[:20]:
                 if src in pos2d and tgt in pos2d:
-                    x_mid = (pos2d[src][0] + pos2d[tgt][0]) / 2
-                    y_mid = (pos2d[src][1] + pos2d[tgt][1]) / 2
-                    ax.plot(
-                        [x_mid, x_mid], [y_mid, y_mid], [z_lo, z_hi],
-                        color="#E08020", lw=0.7, linestyle="--", alpha=0.55, zorder=4
-                    )
+                    xm = (pos2d[src][0] + pos2d[tgt][0]) / 2
+                    ym = (pos2d[src][1] + pos2d[tgt][1]) / 2
+                    ax.plot([xm, xm], [ym, ym], [z_lo, z_hi],
+                            color="#E08020", lw=0.9, linestyle="--", alpha=0.65)
         prev_edges = cur_edges
-
-    # Layer label text
-    for tp in tp_indices:
-        z = tp_z[tp] * z_scale
-        ax.text(
-            1.2, 1.2, z,
-            tp_labels[tp],
-            fontsize=8, color="#444444", zorder=10,
-        )
-
-    # Legend
-    legend_handles = [
-        mpatches.Patch(color=PALETTE["stable"], label="Stable neurons"),
-        mpatches.Patch(color=PALETTE["developmental"], label="Developmental neurons"),
-        mpatches.Patch(color="#AAAAAA", label="Variable neurons"),
-        Line2D([0], [0], color="#888888", lw=1.2, label="Within-layer edge"),
-        Line2D([0], [0], color="#E08020", lw=1.2, linestyle="--", label="New connection"),
-    ]
-    ax.legend(handles=legend_handles, loc="upper left", framealpha=0.8,
-              fontsize=7, bbox_to_anchor=(-0.05, 1.05))
 
     ax.set_xlabel("X", fontsize=8, labelpad=2)
     ax.set_ylabel("Y", fontsize=8, labelpad=2)
-    ax.set_zlabel("Time", fontsize=8, labelpad=2)
+    ax.set_zlabel("Developmental time", fontsize=8, labelpad=6)
+    # Use built-in z-tick labels — matplotlib positions them correctly on the axis
     ax.set_zticks([tp_z[tp] * z_scale for tp in tp_indices])
-    ax.set_zticklabels([tp_labels[tp] for tp in tp_indices], fontsize=7)
-    ax.set_title("DevoTG: Temporal Evolution of Neural Connectivity",
-                 fontsize=12, pad=10)
+    ax.set_zticklabels([tp_labels[tp] for tp in tp_indices],
+                       fontsize=8, fontweight="bold", color="#222222")
     ax.set_xticklabels([])
     ax.set_yticklabels([])
-    ax.view_init(elev=20, azim=-60)
+    ax.view_init(elev=22, azim=-55)
 
-    plt.tight_layout()
+    # Title above the plot
+    fig.suptitle("DevoTG: Temporal Evolution of Neural Connectivity",
+                 fontsize=12, fontweight="bold", y=0.99)
+
+    # Legend inside the figure at the bottom — avoids external whitespace
+    legend_handles = [
+        mpatches.Patch(color=PALETTE["stable"],       label="Stable neurons"),
+        mpatches.Patch(color=PALETTE["developmental"], label="Developmental neurons"),
+        mpatches.Patch(color="#AAAAAA",               label="Variable neurons"),
+        Line2D([0], [0], color="#888888", lw=1.5,                label="Within-layer edge"),
+        Line2D([0], [0], color="#E08020", lw=1.5, linestyle="--", label="New connection"),
+    ]
+    ax.legend(handles=legend_handles, loc="lower center",
+              ncol=3, framealpha=0.85, fontsize=8,
+              bbox_to_anchor=(0.5, -0.12))
+
     out_path = output_dir / "fig1_sample_devotg.png"
-    fig.savefig(out_path, dpi=300, bbox_inches="tight")
+    fig.savefig(out_path, dpi=300, bbox_inches="tight", pad_inches=0.05)
     plt.close(fig)
     print(f"    Saved {out_path}")
 
